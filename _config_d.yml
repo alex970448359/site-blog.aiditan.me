@@ -10,12 +10,12 @@ url:              http://0.0.0.0:4000
 owner:
   name:           Aidi Stan
   avatar:         avatar.jpg
-  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
+  bio:            
   email:          aidistan@live.cn
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
   facebook:       
-  github:         
+  github:         aidistan
   stackexchange:  
   linkedin:       
   instagram:      
@@ -36,10 +36,8 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: Theme Setup
-    url: /theme-setup
-  - title: External Link
-    url: http://mademistakes.com
+  - title: 归根
+    url: http://aidistan.net
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
