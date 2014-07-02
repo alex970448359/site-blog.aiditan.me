@@ -11,6 +11,7 @@ desc "Start the server by full compilation"
 task :serve do
   system("jekyll serve --config _config_d.yml")
 end
+task :s => :serve
 
 # serve with drafts
 desc "Start the server with drafts"
