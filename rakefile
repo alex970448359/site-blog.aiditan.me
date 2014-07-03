@@ -1,22 +1,17 @@
 # encoding: UTF-8
 
-# default
-desc "Start the server by incremental compilation"
-task :default do
-  system("jekyll serve --config _config_d.yml -w")
-end
+task :default => :serve
 
 # serve
 desc "Start the server by full compilation"
 task :serve do
-  system("jekyll serve --config _config_d.yml")
+  system("jekyll serve --config _config_d.yml -w")
 end
-task :s => :serve
 
 # serve with drafts
 desc "Start the server with drafts"
 task :serve_with_drafts do
-  system("jekyll serve --config _config_d.yml -D")
+  system("jekyll serve --config _config_d.yml -w -D")
 end
 
 require "stringex"
