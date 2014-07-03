@@ -4,7 +4,7 @@ title: 智能家居无线技术调研
 modified: 2014-07-03 09:30:34 +0800
 tags: [调研, 智能家居]
 image:
-  feature: 
+  feature: 2014/feature-smart-home.jpg
   credit: 
   creditlink: 
 ---
