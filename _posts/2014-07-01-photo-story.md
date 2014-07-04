@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "[转]兰尼斯特、坦格利安、马泰尔的情仇"
+title: 多少生命为一阵屁风所熄灭
 modified: 2014-07-03 14:07:32 +0800
-tags: [范例, 转载]
+tags: [冰与火之歌, 转载, 范例]
 image:
   feature: abstract-1.jpg
   credit: 
@@ -11,7 +11,7 @@ comments:
 share: 
 ---
 
-<small>从知乎的回答里看到的一个作品，观感不错，留以学习。</small>
+从知乎里找见的一个作品，观感不错，留以学习～
 
 <figure>
 	<a href="{{site.url}}/images/2014/2014-07-01-photo-story-1.jpg"><img src="{{site.url}}/images/2014/2014-07-01-photo-story-1.jpg"></a>
