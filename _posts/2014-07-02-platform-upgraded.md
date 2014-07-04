@@ -2,8 +2,13 @@
 layout: post
 title: "博客平台更换"
 modified: 2014-07-03 13:59:17 +0800
+tags: [心情]
 image:
   feature: abstract-5.jpg
+  credit: 
+  creditlink: 
+comments: 
+share: 
 ---
 
 一直很喜欢Markdown的风格，因此在初遇Jekyll时，被惊艳了一次。从初遇到开始尝试，从尝试到最终确定搬迁，各间隔了俩月。

@@ -6,7 +6,9 @@ tags: [调研, 智能家居]
 image:
   feature: 2014/2014-06-30-smart-home.jpg
   credit: 
-  creditlink: 
+  creditlink:
+comments: 
+share: 
 ---
 
 调研智能家居无线技术的现状，为项目选择合适的实现方案，便是我来创能做的第一件事。
