@@ -11,7 +11,7 @@ comments:
 share: 
 ---
 
-从知乎里找见的一个作品，观感不错，留以学习～
+从知乎里找见的一个图文作品，字体、颜色等总体的排版感觉不错，留以学习～
 
 <figure>
 	<a href="{{site.url}}/images/2014/2014-07-01-photo-story-1.jpg"><img src="{{site.url}}/images/2014/2014-07-01-photo-story-1.jpg"></a>
