@@ -7,7 +7,7 @@ image:
   feature: 2014/2014-06-30-smart-home.jpg
   credit: 
   creditlink:
-comments: 
+comments: post-20140630-0
 share: 
 ---
 
