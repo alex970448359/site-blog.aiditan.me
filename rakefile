@@ -39,7 +39,7 @@ image:
   feature: 
   credit: 
   creditlink: 
-comments: 
+comments: post-#{Time.now.strftime('%Y%m%d')}-0
 share: 
 ---
   END_OF_DOC
