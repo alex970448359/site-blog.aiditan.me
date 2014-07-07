@@ -24,11 +24,9 @@ image:
         <span class="entry-tags pull-right">{% for tag in post.tags %}<a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</span>
       {% endif %}
     </div><!-- /.entry-meta -->
-    {% if post.link %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}"><i class="fa fa-angle-double-right"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
-    {% else %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
-    {% endif %}
+
+    <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a>{% if post.link %} <sup><a class="fa fa-external-link" href="{{ page.link }}"></a></sup>{% endif %}</h1>
+    
   </header>
   <div class="entry-content">
     {{ post.content | split:"</p>" | first }}</p>
