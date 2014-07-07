@@ -54,8 +54,14 @@
           </ul>
         </div><!-- /.social-share -->{% endif %}
       </footer>
+
+    {% if site.duoshuo_shortname and page.comments %}
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="{{ page.comments }} " data-title="{{ page.title }}" data-url="{{ site.duoshuo_url }}{{ page.url }}"></div>
+    <!-- 多说评论框 end -->
+    {% endif %}
+    
     </div><!-- /.entry-content -->
-    {% if site.disqus_shortname and page.comments %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
     {% if site.related_posts.size %}
     <div class="read-more">
       {% for post in site.related_posts limit:1 %}

@@ -1,21 +1,22 @@
-title:            Adome
-description:      "记录心情的点滴"
-disqus_shortname: 
-reading_time:     false
-words_per_minute: 150
+title:             Adome
+description:       "记录心情的点滴"
+duoshuo_shortname: adome
+duoshuo_url:       http://adome.aidistan.net
+reading_time:      false
+words_per_minute:  150
 #Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              http://0.0.0.0:4000
+url:               http://0.0.0.0:4000
 
 # Owner/author information
 owner:
-  name:           Aidi Stan
-  avatar:         avatar.jpg
-  bio:            "留下学步的脚印"
-  email:          aidistan@live.cn
+  name:            Aidi Stan
+  avatar:          avatar.jpg
+  bio:             "留下学步的脚印"
+  email:           aidistan@live.cn
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
   facebook:       
-  github:         aidistan
+  github:          aidistan
   stackexchange:  
   linkedin:       
   instagram:      
@@ -36,8 +37,8 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: 归根
-    url: http://aidistan.net
+  - title:    归根
+    url:      http://aidistan.net
     external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
@@ -47,7 +48,7 @@ highlighter: pygments
 markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink:   /:categories/:title/
+permalink:   pretty
 
 # Amount of post to show on home page
 paginate: 10
