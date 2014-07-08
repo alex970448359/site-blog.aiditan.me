@@ -11,9 +11,9 @@ comments: post-20140708-0
 share: 
 ---
 
-<style type="text/css">
+<style type="text/css"><!--
   li { list-style-type:none; }
-</style>
+--></style>
 
 为了更加有效地开展实践活动，在这里列一份清单供自己备忘～
 
