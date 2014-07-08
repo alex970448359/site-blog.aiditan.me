@@ -41,6 +41,7 @@ image:
   creditlink: 
 comments: post-#{Time.now.strftime('%Y%m%d')}-0
 share: 
+link: 
 ---
   END_OF_DOC
   File.open(filename, 'w').puts rtn
