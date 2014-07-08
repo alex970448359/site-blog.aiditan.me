@@ -14,15 +14,7 @@ image:
   <header>
     <div class="entry-meta">
       <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%Y年%-m月%-d日" }}</a></time></span>{% if site.disqus_shortname and post.comments %}&nbsp; &bull; &nbsp;<span class="entry-comments"><a href="{{ site.url }}{{ post.url }}#disqus_thread">Comment</a></span>{% endif %}
-      {% if site.reading_time %}
-      <span class="entry-reading-time pull-right">
-        <i class="fa fa-clock-o"></i>
-        {% assign readtime = post.content | number_of_words | divided_by:site.words_per_minute %}
-        Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
-      </span><!-- /.entry-reading-time -->
-      {% else %}
-        <span class="entry-tags pull-right">{% for tag in post.tags %}<a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</span>
-      {% endif %}
+      <span class="entry-tags pull-right">{% for tag in post.tags %}<a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</span>
     </div><!-- /.entry-meta -->
 
     <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a>{% if post.link %} <sup><a class="fa fa-external-link" href="{{ post.link }}"></a></sup>{% endif %}</h1>
