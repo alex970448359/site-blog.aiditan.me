@@ -15,7 +15,7 @@ share:
   li { list-style-type:none; }
 </style>
 
-为了更有目的性的“实践”～
+为了更加有效地开展实践活动，在这里列一份清单供自己备忘～
 
 ## 吃一次
 - <a class="fa fa-square-o" target="_blank" href="http://ditu.baidu.com/detail?qt=ninf&uid=c111006bafff2c9a3a04b1eb&wd=&b=%2813463896.09,3549233.51;13464403.59,3549469.01%29&&detail=cater"> 鼓浪屿</a>
