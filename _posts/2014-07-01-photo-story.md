@@ -14,13 +14,13 @@ share:
 从知乎里找见的一个图文作品，字体、颜色等总体的排版感觉不错，留以学习～
 
 <figure>
-	<a href="{{site.url}}/images/2014/2014-07-01-photo-story-1.jpg"><img src="{{site.url}}/images/2014/2014-07-01-photo-story-1.jpg"></a>
-	<a href="{{site.url}}/images/2014/2014-07-01-photo-story-2.jpg"><img src="{{site.url}}/images/2014/2014-07-01-photo-story-2.jpg"></a>
-	<a href="{{site.url}}/images/2014/2014-07-01-photo-story-3.jpg"><img src="{{site.url}}/images/2014/2014-07-01-photo-story-3.jpg"></a>
-	<a href="{{site.url}}/images/2014/2014-07-01-photo-story-4.jpg"><img src="{{site.url}}/images/2014/2014-07-01-photo-story-4.jpg"></a>
-	<a href="{{site.url}}/images/2014/2014-07-01-photo-story-5.jpg"><img src="{{site.url}}/images/2014/2014-07-01-photo-story-5.jpg"></a>
-	<a href="{{site.url}}/images/2014/2014-07-01-photo-story-6.jpg"><img src="{{site.url}}/images/2014/2014-07-01-photo-story-6.jpg"></a>
-	<a href="{{site.url}}/images/2014/2014-07-01-photo-story-7.jpg"><img src="{{site.url}}/images/2014/2014-07-01-photo-story-7.jpg"></a>
-	<a href="{{site.url}}/images/2014/2014-07-01-photo-story-8.jpg"><img src="{{site.url}}/images/2014/2014-07-01-photo-story-8.jpg"></a>
-	<a href="{{site.url}}/images/2014/2014-07-01-photo-story-9.jpg"><img src="{{site.url}}/images/2014/2014-07-01-photo-story-9.jpg"></a>
+	<a href="{{site.url}}/images/2014/0701.jpg"><img src="{{site.url}}/images/2014/0701.jpg"></a>
+	<a href="{{site.url}}/images/2014/0702.jpg"><img src="{{site.url}}/images/2014/0702.jpg"></a>
+	<a href="{{site.url}}/images/2014/0703.jpg"><img src="{{site.url}}/images/2014/0703.jpg"></a>
+	<a href="{{site.url}}/images/2014/0704.jpg"><img src="{{site.url}}/images/2014/0704.jpg"></a>
+	<a href="{{site.url}}/images/2014/0705.jpg"><img src="{{site.url}}/images/2014/0705.jpg"></a>
+	<a href="{{site.url}}/images/2014/0706.jpg"><img src="{{site.url}}/images/2014/0706.jpg"></a>
+	<a href="{{site.url}}/images/2014/0707.jpg"><img src="{{site.url}}/images/2014/0707.jpg"></a>
+	<a href="{{site.url}}/images/2014/0708.jpg"><img src="{{site.url}}/images/2014/0708.jpg"></a>
+	<a href="{{site.url}}/images/2014/0709.jpg"><img src="{{site.url}}/images/2014/0709.jpg"></a>
 </figure>

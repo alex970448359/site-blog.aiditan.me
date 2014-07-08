@@ -4,7 +4,7 @@ title: "總舖師"
 modified: 2014-07-08 21:27:09 +0800
 tags: [电影]
 image:
-  feature: 
+  feature: 2014/0101.jpg
   credit: 
   creditlink: 
 comments: post-20140120-0

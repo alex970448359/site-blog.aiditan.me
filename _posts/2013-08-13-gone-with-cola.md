@@ -4,7 +4,7 @@ title: "可乐随想"
 modified: 2014-07-03 13:59:17 +0800
 tags: [心情]
 image:
-  feature: 2013/2013-08-13-gone-with-cola.jpg
+  feature: 2013/0801.jpg
   credit: 
   creditlink: 
 comments: post-20130813-0

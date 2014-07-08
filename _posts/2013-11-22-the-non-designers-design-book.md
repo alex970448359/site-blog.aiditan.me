@@ -4,7 +4,7 @@ title: "写给大家看的设计书"
 modified: 2014-07-08 21:23:12 +0800
 tags: [设计, 读书]
 image:
-  feature: 
+  feature: abstract-5.jpg
   credit: 
   creditlink: 
 comments: post-20131122-0

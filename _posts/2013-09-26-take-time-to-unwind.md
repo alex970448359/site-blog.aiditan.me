@@ -4,7 +4,7 @@ title: "Take time to unwind"
 modified: 2014-07-08 20:13:37 +0800
 tags: [心情]
 image:
-  feature: 
+  feature: abstract-2.jpg
   credit: 
   creditlink: 
 comments: post-20130926-0

@@ -4,7 +4,7 @@ title: "通往天国的倒计时"
 modified: 2014-07-08 21:34:26 +0800
 tags: [心情]
 image:
-  feature: 
+  feature: abstract-4.jpg
   credit: 
   creditlink: 
 comments: post-20140109-0

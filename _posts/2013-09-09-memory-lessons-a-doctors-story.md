@@ -4,7 +4,7 @@ title: "最后，才知道该如何爱你"
 modified: 2014-07-08 16:31:13 +0800
 tags: [读书]
 image:
-  feature: 2013/2013-09-09-memory-lessons.jpg
+  feature: 2013/0901.jpg
   credit: PhilipToledano
   creditlink: http://www.dayswithmyfather.com/
 comments: post-20130909-0
