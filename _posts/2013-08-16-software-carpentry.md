@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Software Carpentry"
+title: "Software carpentry"
 modified: 2014-07-08 16:20:56 +0800
 tags: [网站]
 image:
@@ -19,7 +19,8 @@ link: http://software-carpentry.org/v4/index.html
 > all the basic practicalities of dealing with code. Even if you plan to stay 
 > in academia, you should go read it, particularly if you plan to be a 
 > computational scientist. I’d differ from software carpentry in only one case: 
-> use git instead of subverson. — How to leave academia
+> use git instead of subverson.
+> <small> — How to leave academia </small>
 
 当时没来得及看这个网站，只是搜了一下Carpentry的意思，没有什么帮助。今天仔细研究了一下，
 不得不说这是一个好网站，如果将来有机会希望能够参与其中，贡献一份力量。这个组织的目的非常明确，
