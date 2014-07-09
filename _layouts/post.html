@@ -51,26 +51,24 @@
     {% endif %}
     
     </div><!-- /.entry-content -->
-    {% if site.related_posts.size %}
     <div class="read-more">
-      {% for post in site.related_posts limit:1 %}
-        <div class="read-more-header">
-          <a href="{{ site.url }}{{ page.previous.url }}" class="read-more-btn">更多内容</a>
-        </div><!-- /.read-more-header -->
-        <div class="read-more-content">
-          <h3><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h3>
-          <p>{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 140 }}&hellip;{% endif %} <a href="{{ site.url }}{{ post.url }}">继续阅读</a></p>
-        </div><!-- /.read-more-content -->
-      {% endfor %}
+      <div class="read-more-header">
+        <a href="{{ site.url }}{{ page.previous.url }}" class="read-more-btn">更多内容</a>
+      </div><!-- /.read-more-header -->
       <div class="read-more-list">
-        {% for post in site.related_posts limit:2 offset:1 %}
+        {% if page.previous %}
           <div class="list-item">
-            <h4><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h4>
-            <span>发表于{{ post.date | date: "%Y年%-m月%-d日" }}</span>
+            <h4><a href="{{ site.url }}{{ page.previous.url }}" title="{{ page.previous.title }}">{{ page.previous.title }}</a></h4>
+            <span>发表于{{ page.previous.date | date: "%Y年%-m月%-d日" }}</span>
           </div><!-- /.list-item -->
-        {% endfor %}
+        {% endif %}
+        {% if page.next %}
+          <div class="list-item">
+            <h4><a href="{{ site.url }}{{ page.next.url }}" title="{{ page.next.title }}">{{ page.next.title }}</a></h4>
+            <span>发表于{{ page.next.date | date: "%Y年%-m月%-d日" }}</span>
+          </div><!-- /.list-item -->
+        {% endif %}
       </div><!-- /.read-more-list -->
-      {% endif %}
     </div><!-- /.read-more -->
   </article>
 </div><!-- /#main -->

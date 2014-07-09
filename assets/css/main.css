@@ -4358,9 +4358,7 @@ body {
   }
 }
 
-.read-more-list {
-  border-top: solid 1px #bbbbbb;
-}
+/*.read-more-list { border-top:solid 1px #bbbbbb; }*/
 
 .list-item {
   width: 100%;
