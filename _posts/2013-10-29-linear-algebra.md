@@ -8,7 +8,7 @@ image:
   credit: 
   creditlink: 
 comments: post-20131029-1
-share: 
+share: true
 link: http://ccjou.wordpress.com/
 ---
 

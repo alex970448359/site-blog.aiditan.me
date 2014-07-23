@@ -8,7 +8,7 @@ image:
   credit: 
   creditlink: 
 comments: post-20131122-0
-share: 
+share: true
 link: http://book.douban.com/subject/3323633/
 ---
 

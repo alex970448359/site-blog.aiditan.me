@@ -8,7 +8,7 @@ image:
   credit: 
   creditlink: 
 comments: post-20140120-0
-share: 
+share: true
 link: http://movie.mtime.com/192197/
 ---
 

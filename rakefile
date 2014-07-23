@@ -40,7 +40,7 @@ image:
   credit: 
   creditlink: 
 comments: post-#{Time.now.strftime('%Y%m%d')}-0
-share: 
+share: true
 link: 
 ---
   END_OF_DOC
@@ -72,7 +72,7 @@ image:
   credit: 
   creditlink: 
 comments: 
-share: 
+share: false
 ---
   END_OF_DOC
   File.open(filename, 'w').puts rtn

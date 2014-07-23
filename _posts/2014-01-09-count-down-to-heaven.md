@@ -8,7 +8,7 @@ image:
   credit: 
   creditlink: 
 comments: post-20140109-0
-share: 
+share: true
 link: 
 ---
 

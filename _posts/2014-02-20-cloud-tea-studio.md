@@ -8,7 +8,7 @@ image:
   credit: 
   creditlink: 
 comments: post-20140220-0
-share: 
+share: true
 link: http://englishbreak.com/
 ---
 

@@ -8,7 +8,8 @@ image:
   credit: 
   creditlink: 
 comments: post-20140702-0
-share: 
+share: true
+link: 
 ---
 
 一直很喜欢Markdown的风格，因此在初遇Jekyll时，被惊艳了一次。从初遇到开始尝试，从尝试到最终确定搬迁，各间隔了俩月。

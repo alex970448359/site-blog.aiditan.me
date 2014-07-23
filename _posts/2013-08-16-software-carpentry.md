@@ -8,7 +8,7 @@ image:
   credit: 
   creditlink: 
 comments: post-20130816-0
-share: 
+share: true
 link: http://software-carpentry.org/v4/index.html
 ---
 

@@ -8,7 +8,7 @@ image:
   credit: PhilipToledano
   creditlink: http://www.dayswithmyfather.com/
 comments: post-20130909-0
-share: 
+share: true
 link: http://book.douban.com/subject/6534012/
 ---
 

@@ -8,7 +8,8 @@ image:
   credit: 
   creditlink: 
 comments: post-20140701-0
-share: 
+share: true
+link: 
 ---
 
 从知乎里找见的一个图文作品，字体、颜色等总体的排版感觉不错，留以学习～

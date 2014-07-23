@@ -8,7 +8,8 @@ image:
   credit: 
   creditlink:
 comments: post-20140630-0
-share: 
+share: true
+link: 
 ---
 
 调研智能家居无线技术的现状，为项目选择合适的实现方案，便是我来创能做的第一件事。

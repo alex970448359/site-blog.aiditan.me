@@ -8,7 +8,8 @@ image:
   credit: 海盐南北湖
   creditlink: http://www.nbh.com.cn/
 comments: post-20140708-0
-share: 
+share: true
+link: 
 ---
 
 <style type="text/css"><!--
