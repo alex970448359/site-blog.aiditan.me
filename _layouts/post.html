@@ -36,20 +36,28 @@
         <span><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">《{{ page.title }}》</a>发表于<span class="entry-date date published updated"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y年%-m月%-d日" }}</time></span></span>
         {% if page.modified %}(最新修订: <span class="entry-date date modified"><time datetime="{{ page.modified }}">{{ page.modified | date: "%Y/%m/%d" }}</time></span>){% endif %}
         {% if page.share %}<div class="social-share">
+          <!-- Using JiaThis here -->
+          <style type="text/css">ul.socialcount li{cursor:pointer;}</style>
           <ul class="socialcount socialcount-small inline-list">
-            <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
-            <li class="twitter"><a href="https://twitter.com/intent/tweet?text={{ site.url }}{{ page.url }}" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
-            <li class="googleplus"><a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+            <li><a class="jiathis_button_weixin"><i class="fa fa-weixin"></i></a></li>
+            <li><a class="jiathis_button_renren"><i class="fa fa-renren"></i> </a></li>
+            <li><a class="jiathis_button_tsina"><i class="fa fa-weibo"></i> </a></li>
+            <li><a class="jiathis_button_email"><i class="fa fa-envelope"></i> </a></li>
           </ul>
+          <script type="text/javascript" >
+            var jiathis_config={
+              title:"《{{page.title }}》",
+              summary:"{{ content | split:"</p>" | first | remove_first:'<p>' }}"
+            }
+          </script>
+          <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
         </div><!-- /.social-share -->{% endif %}
       </footer>
-
     {% if site.duoshuo_shortname and page.comments %}
     <!-- 多说评论框 start -->
     <div class="ds-thread" data-thread-key="{{ page.comments }} " data-title="{{ page.title }}" data-url="{{ site.duoshuo_url }}{{ page.url }}"></div>
     <!-- 多说评论框 end -->
     {% endif %}
-    
     </div><!-- /.entry-content -->
     <div class="read-more">
       <div class="read-more-header">
