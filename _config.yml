@@ -3,7 +3,7 @@ description:       "记录心情的点滴"
 duoshuo_shortname: adome
 duoshuo_url:       http://adome.aidistan.net
 #Your site's domain goes here. Leave localhost server or blank when working locally.
-url:               http://aidistan.github.io/blog
+url:               http://aidistan.github.io/adome
 
 # Owner/author information
 owner:
