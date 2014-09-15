@@ -2,7 +2,7 @@
 layout: post
 title: "如何拥有36个小时的一天"
 modified: 2014-08-23 01:14:45 +0800
-tags: [译文, 时间管理]
+tags: [译文, 自我]
 image:
   feature: 
   credit: 
