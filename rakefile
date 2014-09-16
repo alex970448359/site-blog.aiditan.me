@@ -33,6 +33,7 @@ task :new_post, :title do |t, args|
 ---
 layout: post
 title: \"#{title.gsub(/&/,'&amp;')}\"
+description: 
 modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
 tags: []
 image:
@@ -65,6 +66,7 @@ task :new_page, :title do |t, args|
 layout: page
 permalink: /#{title.to_url}/
 title: \"#{title}\"
+description: 
 modified: #{Time.now.strftime('%Y-%m-%d %H:%M')}
 tags: []
 image:

@@ -1,8 +1,8 @@
 ---
 layout: post-index
 permalink: /tags/
-title: 标签页
-description: "按标签归类日志."
+title: 标签云
+description: "按标签归类日志"
 ---
 
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
@@ -24,5 +24,5 @@ description: "按标签归类日志."
       <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
     {% endif %}{% endfor %}
 		</ul>
-	</article><!-- /.hentry -->
+	</article>
 {% endunless %}{% endfor %}
