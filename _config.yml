@@ -10,34 +10,6 @@ owner:
   name:            Aidi Stan
   avatar:          avatar.jpg
   bio:             Valar Morghulis
-  email:           aidistan@live.cn
-  # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:          aidistan
-  stackexchange:  
-  linkedin:       
-  instagram:      
-  flickr:         
-  tumblr:         
-  # For Google Authorship https://plus.google.com/authorship
-  google_plus:   
-
-# Background image to be tiled on all pages
-background: 
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:   
-google_verify:      
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
-
-# Links to include in top navigation
-# For external links add external: true
-links:
-  - title:    归根
-    url:      http://aidistan.net
-    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Asia/Shanghai
