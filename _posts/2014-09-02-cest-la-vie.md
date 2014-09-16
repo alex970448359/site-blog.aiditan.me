@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "C'est La Vie"
-description: ""
+description: 
 modified: 2014-09-02 09:18:43 +0800
 tags: [心情]
 image:
