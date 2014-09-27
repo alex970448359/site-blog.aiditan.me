@@ -1,13 +1,14 @@
 ---
 layout: post
 title: "催眠大师"
-modified: 2014-08-23 20:24:22 +0800
+description: "我不在乎我看见什么，关键是我为什么会看见。"
+modified: 2014-09-28 01:02:22 +0800
 tags: [电影]
 image:
   feature: 2014/0801.jpg
   credit: 
   creditlink: 
-comments: post-20140823-1
+comments: post-20140823
 share: true
 link: http://movie.mtime.com/208906/
 ---
