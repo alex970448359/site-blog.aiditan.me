@@ -1,15 +1,10 @@
 ---
 layout: post
 title: "如何拥有36个小时的一天"
+description: "十条法则，让一天不止24小时。"
 modified: 2014-08-23 01:14:45 +0800
 tags: [译文, 自我]
-image:
-  feature: 
-  credit: 
-  creditlink: 
-comments: post-20140823-0
-share: true
-link: 
+comments: post-20140823
 ---
 
 全文翻译自Jon Bischke的["How to Have a 36 Hour Day (Revised Edition)"](http://jonbischke.com/2011/07/16/how-to-have-a-36-hour-day-revised-edition/)一文，有大量删减。
