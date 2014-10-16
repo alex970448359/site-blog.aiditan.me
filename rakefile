@@ -33,7 +33,7 @@ task :new_post, :title do |t, args|
 ---
 layout: post
 title: \"#{title.gsub(/&/,'&amp;')}\"
-description: 
+description: \"\"
 modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
 tags: []
 image:
@@ -41,7 +41,6 @@ image:
   credit: 
   creditlink: 
 comments: post-#{Time.now.strftime('%Y%m%d')}
-share: true
 link: 
 ---
   END_OF_DOC
@@ -74,7 +73,6 @@ image:
   credit: 
   creditlink: 
 comments: 
-share: false
 ---
   END_OF_DOC
   File.open(filename, 'w').puts rtn
