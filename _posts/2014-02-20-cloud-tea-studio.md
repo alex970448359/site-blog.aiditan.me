@@ -7,8 +7,7 @@ image:
   feature: 2014/0201.jpg
   credit: 
   creditlink: 
-comments: post-20140220-0
-share: true
+comments: post-20140220
 link: http://englishbreak.com/
 ---
 

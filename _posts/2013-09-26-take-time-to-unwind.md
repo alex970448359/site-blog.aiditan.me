@@ -3,13 +3,7 @@ layout: post
 title: "Take time to unwind"
 modified: 2014-07-08 20:13:37 +0800
 tags: [心情]
-image:
-  feature: abstract-2.jpg
-  credit: 
-  creditlink: 
-comments: post-20130926-0
-share: true
-link: 
+comments: post-20130926
 ---
 
 距离上一次发日志已过去了半个月，给自己定下的每周一篇日志的计划显然没有得到贯彻。与周日志计划同样搁浅的是各种各样的锻炼计划及其他不可告人的计划...于是在这样一个夜黑风高月半弯的时候，我决定把各种计划执行一遍，趁台式机正勤勤恳恳地计算着。

@@ -7,8 +7,7 @@ image:
   feature: 2013/1003.jpg
   credit: 
   creditlink: 
-comments: post-20131026-0
-share: true
+comments: post-20131026
 link: http://movie.mtime.com/175142/
 ---
 

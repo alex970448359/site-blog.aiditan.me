@@ -3,13 +3,7 @@ layout: post
 title: "通往天国的倒计时"
 modified: 2014-07-08 21:34:26 +0800
 tags: [心情]
-image:
-  feature: abstract-4.jpg
-  credit: 
-  creditlink: 
-comments: post-20140109-0
-share: true
-link: 
+comments: post-20140109
 ---
 
 学弟在实验室看着柯南剧场版的《通往天国的倒计时》。我也许没看过柯南版的，却看过另一个版本的“通往天国的倒计时”。

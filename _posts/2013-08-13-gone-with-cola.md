@@ -7,9 +7,7 @@ image:
   feature: 2013/0801.jpg
   credit: 
   creditlink: 
-comments: post-20130813-0
-share: true
-link: 
+comments: post-20130813
 ---
 
 完成一点小工作，虽然效果没有调整完。看到自己的构思得以完全实现，感到非常欣慰。近来一周难以集中精力完成任何一项工作，尝试了菊花茶、绿茶都没什么效果，却恋上了之前从壹号店买来的小罐可乐。

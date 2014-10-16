@@ -3,12 +3,7 @@ layout: post
 title: "線代啟示錄"
 modified: 2014-07-08 21:16:03 +0800
 tags: [网站]
-image:
-  feature: abstract-3.jpg
-  credit: 
-  creditlink: 
-comments: post-20131029-1
-share: true
+comments: post-20131030
 link: http://ccjou.wordpress.com/
 ---
 

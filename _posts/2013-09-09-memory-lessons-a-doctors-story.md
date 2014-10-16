@@ -7,8 +7,7 @@ image:
   feature: 2013/0901.jpg
   credit: PhilipToledano
   creditlink: http://www.dayswithmyfather.com/
-comments: post-20130909-0
-share: true
+comments: post-20130909
 link: http://book.douban.com/subject/6534012/
 ---
 

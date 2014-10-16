@@ -3,7 +3,7 @@ layout: post
 title: "游戏改变世界"
 description: "无论你是否玩过电子游戏，本书都会促使你思考游戏的本质特征以及如何把它们运用到现实生活之中。"
 modified: 2014-10-16 09:11:47 +0800
-tags: [读书 游戏化]
+tags: [读书, 游戏化]
 comments: post-20141016
 link: http://book.douban.com/subject/10828002/
 ---

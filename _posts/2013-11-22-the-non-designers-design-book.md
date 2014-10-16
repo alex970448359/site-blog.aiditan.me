@@ -7,8 +7,7 @@ image:
   feature: abstract-5.jpg
   credit: 
   creditlink: 
-comments: post-20131122-0
-share: true
+comments: post-20131122
 link: http://book.douban.com/subject/3323633/
 ---
 
