@@ -18,12 +18,8 @@ require "stringex"
 
 # create new post
 desc "Create a new post in _posts"
-task :new_post, :title do |t, args|
-  if args.title
-    title = args.title
-  else
-    title = get_stdin("Enter a title for your post: ")
-  end
+task :new_post do |t, args|
+  title = get_stdin("Enter a title for your post: ")
   filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.md"
   if File.exist?(filename)
     abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
@@ -49,12 +45,8 @@ end
 
 # usage rake new_page
 desc "Create a new page"
-task :new_page, :title do |t, args|
-  if args.title
-    title = args.title
-  else
-    title = get_stdin("Enter a title for your page: ")
-  end
+task :new_page do |t, args|
+  title = get_stdin("Enter a title for your page: ")
   filename = "#{title.to_url}.md"
   if File.exist?(filename)
     abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
