@@ -6,8 +6,8 @@ modified: 2014-09-28 01:02:22 +0800
 tags: [电影]
 image:
   feature: 2014/0801.jpg
-  credit: Mtime
-  creditlink: http://movie.mtime.com/
+  credit: 
+  creditlink: 
 comments: post-20140823
 link: http://movie.mtime.com/208906/
 ---

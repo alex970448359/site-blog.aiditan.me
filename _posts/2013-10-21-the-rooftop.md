@@ -5,8 +5,8 @@ modified: 2014-07-08 20:19:26 +0800
 tags: [电影, 音乐]
 image:
   feature: 2013/1001.jpg
-  credit: Mtime
-  creditlink: http://movie.mtime.com/199595/
+  credit: 
+  creditlink: 
 comments: post-20131021
 link: http://movie.mtime.com/174731/
 ---
