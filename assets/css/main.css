@@ -4405,8 +4405,9 @@ body {
 }
 
 .footer-wrapper {
-  margin: 2em auto;
-  color: #555555;
+  padding: 1em 1em;
+  color: #fff;
+  background-color: #000;
   text-align: center;
   *zoom: 1;
 }
@@ -4423,7 +4424,11 @@ body {
 }
 
 .footer-wrapper a {
-  color: #555555;
+  color: #fff;
+}
+
+.footer-wrapper a:hover {
+  color: #00aeef;
 }
 
 .socialcount {
