@@ -1,73 +1,79 @@
 # encoding: UTF-8
 
-task :default => :serve
+namespace :serve do
+  task :config do
+    config = File.read('_config.yml')
+    regexp = /(^\s*url\s*:\s*)(\S+)(\s*)$/
+    config.sub!(regexp,'\1http://0.0.0.0:4000\3')
+    File.open('__config.yml', 'w') { |f| f.write(config) }
+  end
 
-# serve
-desc "Start the server by full compilation"
-task :serve do
-  system("jekyll serve --config _config_d.yml -w")
-end
+  desc "Serve posts"
+  task :post => :config do
+    system("jekyll serve --config __config.yml -w")
+  end
 
-# serve with drafts
-desc "Start the server with drafts"
-task :serve_with_drafts do
-  system("jekyll serve --config _config_d.yml -w -D")
+  # serve with drafts
+  desc "Serve posts and drafts"
+  task :all => :config do
+    system("jekyll serve --config __config.yml -w -D")
+  end
 end
 
 require "stringex"
 
-# create new post
-desc "Create a new post in _posts"
-task :new_post do |t, args|
-  title = get_stdin("Enter a title for your post: ")
-  filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.md"
-  if File.exist?(filename)
-    abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
+namespace :new do
+  desc "Create a new post in _posts"
+  task :post do |t, args|
+    title = get_stdin("Enter a title for your post: ")
+    filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.md"
+    if File.exist?(filename)
+      abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
+    end
+    puts "Creating new post: #{filename}"
+    rtn = <<-END_OF_DOC
+  ---
+  layout: post
+  title: \"#{title.gsub(/&/,'&amp;')}\"
+  description: \"\"
+  modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
+  tags: []
+  image:
+    feature: 
+    credit: 
+    creditlink: 
+  comments: post-#{Time.now.strftime('%Y%m%d')}
+  link: 
+  ---
+    END_OF_DOC
+    File.open(filename, 'w').puts rtn
   end
-  puts "Creating new post: #{filename}"
-  rtn = <<-END_OF_DOC
----
-layout: post
-title: \"#{title.gsub(/&/,'&amp;')}\"
-description: \"\"
-modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
-tags: []
-image:
-  feature: 
-  credit: 
-  creditlink: 
-comments: post-#{Time.now.strftime('%Y%m%d')}
-link: 
----
-  END_OF_DOC
-  File.open(filename, 'w').puts rtn
-end
 
-# usage rake new_page
-desc "Create a new page"
-task :new_page do |t, args|
-  title = get_stdin("Enter a title for your page: ")
-  filename = "#{title.to_url}.md"
-  if File.exist?(filename)
-    abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
+  desc "Create a new page"
+  task :page do |t, args|
+    title = get_stdin("Enter a title for your page: ")
+    filename = "#{title.to_url}.md"
+    if File.exist?(filename)
+      abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
+    end
+    puts "Creating new page: #{filename}"
+    rtn = <<-END_OF_DOC
+  ---
+  layout: page
+  permalink: /#{title.to_url}/
+  title: \"#{title}\"
+  description: 
+  modified: #{Time.now.strftime('%Y-%m-%d %H:%M')}
+  tags: []
+  image:
+    feature: 
+    credit: 
+    creditlink: 
+  comments: 
+  ---
+    END_OF_DOC
+    File.open(filename, 'w').puts rtn
   end
-  puts "Creating new page: #{filename}"
-  rtn = <<-END_OF_DOC
----
-layout: page
-permalink: /#{title.to_url}/
-title: \"#{title}\"
-description: 
-modified: #{Time.now.strftime('%Y-%m-%d %H:%M')}
-tags: []
-image:
-  feature: 
-  credit: 
-  creditlink: 
-comments: 
----
-  END_OF_DOC
-  File.open(filename, 'w').puts rtn
 end
 
 def get_stdin(message)
