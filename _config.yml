@@ -1,41 +1,24 @@
-title:             Adome
-description:       "记录心情的点滴"
-duoshuo_shortname: adome
-duoshuo_url:       http://adome.aidistan.net
-#Your site's domain goes here. Leave localhost server or blank when working locally.
-url:               http://aidistan.github.io/adome
-
-# Owner/author information
-owner:
-  name:            Aidi Stan
-  avatar:          avatar.jpg
-  bio:             Valar Morghulis
-
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    Asia/Shanghai
-future:      true
-highlighter: pygments
-markdown:    kramdown
-
-# https://github.com/mojombo/jekyll/wiki/Permalinks
+#
+title:       Adome
 permalink:   pretty
+timezone:    Asia/Shanghai
+url:         http://aidistan.github.io/adome
 
-# Amount of post to show on home page
-paginate: 10
+# Owner
+owner:
+  name:      Aidi Stan
+  avatar:    avatar.jpg
+  bio:       Valar Morghulis
 
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  use_coderay: true
+# Paginate
+paginate:    10
 
-  coderay:
-    coderay_line_numbers: nil
-    coderay_line_numbers_start: 1
-    coderay_tab_width: 4
-    coderay_bold_every: 10
-    coderay_css: class
+# Duoshuo
+duoshuo:     adome
+duoshuo_url: http://adome.aidistan.net
 
-include: []
-exclude: ["README.md", "rakefile"]
+# 
+markdown:    kramdown
+highlighter: pygments
+include:     []
+exclude:     ["README.md", "rakefile"]
