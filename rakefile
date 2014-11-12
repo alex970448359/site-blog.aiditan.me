@@ -32,19 +32,19 @@ namespace :new do
     end
     puts "Creating new post: #{filename}"
     rtn = <<-END_OF_DOC
-  ---
-  layout: post
-  title: \"#{title.gsub(/&/,'&amp;')}\"
-  description: \"\"
-  modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
-  tags: []
-  image:
-    feature: 
-    credit: 
-    creditlink: 
-  comments: post-#{Time.now.strftime('%Y%m%d')}
-  link: 
-  ---
+---
+layout: post
+title: \"#{title.gsub(/&/,'&amp;')}\"
+description: \"\"
+modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
+tags: []
+image:
+  feature: 
+  credit: 
+  creditlink: 
+comments: post-#{Time.now.strftime('%Y%m%d')}
+link: 
+---
     END_OF_DOC
     File.open(filename, 'w').puts rtn
   end
@@ -58,19 +58,19 @@ namespace :new do
     end
     puts "Creating new page: #{filename}"
     rtn = <<-END_OF_DOC
-  ---
-  layout: page
-  permalink: /#{title.to_url}/
-  title: \"#{title}\"
-  description: 
-  modified: #{Time.now.strftime('%Y-%m-%d %H:%M')}
-  tags: []
-  image:
-    feature: 
-    credit: 
-    creditlink: 
-  comments: 
-  ---
+---
+layout: page
+permalink: /#{title.to_url}/
+title: \"#{title}\"
+description: 
+modified: #{Time.now.strftime('%Y-%m-%d %H:%M')}
+tags: []
+image:
+  feature: 
+  credit: 
+  creditlink: 
+comments: 
+---
     END_OF_DOC
     File.open(filename, 'w').puts rtn
   end
