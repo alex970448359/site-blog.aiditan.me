@@ -18,6 +18,6 @@ link: http://movie.mtime.com/94571/
 
 但我们对这种低成本电影还是不能要求太高吧，有第三部中那样的计中计作为亮点就足够了。很喜欢影片开头Phi在站在一望无际的大漠/一览众山小的楼顶上与Tracy的对话：
 
-> We fucked up. -- The Hungover Part:I
+> We are fucked up. -- The Hungover Part:I
 
-> This time, we really fucked up. -- The Hungover Part:II
+> This time, we are really fucked up. -- The Hungover Part:II
