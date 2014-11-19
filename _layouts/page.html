@@ -24,27 +24,11 @@ layout: default
     </header>
     <div class="entry-content">
       {{ content }}
-      <footer class="entry-meta">
-        {% if page.modified %}{{ page.title }} was last modified on <span class="entry-date date modified"><time datetime="{{ page.modified }}">{{ page.modified }}</time></span>
-        <span class="author vcard fn">{{ site.owner.name }}</span>{% endif %}
-        {% if page.share %}<div class="social-share">
-          <!-- Using JiaThis here -->
-          <style type="text/css">ul.socialcount li{cursor:pointer;}</style>
-          <ul class="socialcount socialcount-small inline-list">
-            <li><a class="jiathis_button_weixin"><i class="fa fa-weixin"></i></a></li>
-            <li><a class="jiathis_button_renren"><i class="fa fa-renren"></i> </a></li>
-            <li><a class="jiathis_button_tsina"><i class="fa fa-weibo"></i> </a></li>
-            <li><a class="jiathis_button_email"><i class="fa fa-envelope"></i> </a></li>
-          </ul>
-          <script type="text/javascript" >
-            var jiathis_config={
-              title:"《{{page.title }}》",
-              summary:"{{ content | split:"</p>" | first | remove_first:'<p>' }}"
-            }
-          </script>
-          <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-        </div><!-- /.social-share -->{% endif %}
-      </footer>
+      {% if site.duoshuo and page.comments %}
+      <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="{{ page.comments }} " data-title="{{ page.title }}" data-url="{{ site.duoshuo_url }}{{ page.url }}"></div>
+      <!-- 多说评论框 end -->
+      {% endif %}
     </div><!-- /.entry-content -->
   </article>
 </div><!-- /#main -->

@@ -28,8 +28,7 @@ layout: default
       <footer class="entry-meta">
         <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="tag">{{ tag }}</a>{% unless forloop.last %}{% endunless %}{% endfor %}</span>
         <span>发表日期: <span class="entry-date date published updated"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y/%m/%d" }}</time></span> | 最新修订: <span class="entry-date date modified"><time datetime="{{ page.modified }}">{{ page.modified | date: "%Y/%m/%d" }}</time></span></span>
-        {% if page.share %}<div class="social-share">
-          <!-- Using JiaThis here -->
+        <div class="social-share"><!-- Using JiaThis here -->
           <style type="text/css">ul.socialcount li{cursor:pointer;}</style>
           <ul class="socialcount socialcount-small inline-list">
             <li><a class="jiathis_button_weixin"><i class="fa fa-weixin"></i></a></li>
@@ -44,7 +43,7 @@ layout: default
             }
           </script>
           <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-        </div><!-- /.social-share -->{% endif %}
+        </div><!-- /.social-share -->
       </footer>
     {% if site.duoshuo and page.comments %}
     <!-- 多说评论框 start -->

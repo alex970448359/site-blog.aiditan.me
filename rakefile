@@ -63,8 +63,6 @@ layout: page
 permalink: /#{title.to_url}/
 title: \"#{title}\"
 description: 
-modified: #{Time.now.strftime('%Y-%m-%d %H:%M')}
-tags: []
 image:
   feature: 
   credit: 
