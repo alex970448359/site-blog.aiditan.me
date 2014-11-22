@@ -18,18 +18,6 @@ body {
   }
 }
 
-#post-index {
-  article {
-    box-shadow: 0 0 0 0, 0 0 0 $white;
-    @include rounded(0px);
-    margin-bottom: 0px;
-    @media #{$large} {
-      margin-bottom: 0px;
-      padding: 30px 60px;
-    }
-  }
-}
-
 .entry-image {
   top: 0%;
   left: 0%;

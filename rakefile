@@ -17,7 +17,7 @@ end
 
 namespace :new do
   desc "Create a new post in _posts"
-  task :post do |t, args|
+  task :post do
     title = get_stdin("Enter a title for your post: ")
     filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.md"
     if File.exist?(filename)
@@ -43,7 +43,7 @@ link:
   end
 
   desc "Create a new note in _notes"
-  task :note do |t, args|
+  task :note do
     title = get_stdin("Enter a title for your note: ")
     filename = "_notes/#{title.to_url}.md"
     if File.exist?(filename)
@@ -62,8 +62,20 @@ mathjax:
     File.open(filename, 'w').puts rtn
   end
 
+  desc "Create a new convict dairy in _convicts"
+  task :convict do
+    title = get_stdin("Enter the date of your convict: [2014-11-18]")
+    filename = "_convicts/#{title.to_url}.md"
+    if File.exist?(filename)
+      abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
+    end
+    puts "Creating new convict: #{filename}"
+    File.open(filename, 'w').puts "---\n---\n"
+    system("atom #{filename}")
+  end
+
   desc "Create a new page"
-  task :page do |t, args|
+  task :page do
     title = get_stdin("Enter a title for your page: ")
     filename = "#{title.to_url}.html"
     if File.exist?(filename)

@@ -10,24 +10,13 @@ image:
 comments: page-convict
 ---
 
-### 2014.11.21
-
-- 垂直引体 1&times;10
-- 墙壁俯卧撑 1&times;35
-
-### 2014.11.20
-
-恢复日
-
-### 2014.11.19
-
-- 墙壁俯卧撑 3&times;25
-- 肩倒立深蹲 1&times;10
-
-### 2014.11.18
-
-- 墙壁俯卧撑 2&times;30
-
-忙里抽闲把《囚徒健身》、《囚徒健身2》翻了一遍。正如“教练”所说：“别只读，要用！”
-
-遂有此记。
+<div id="post-index">
+  {% for convict in site.convicts  reversed | sort: 'relative_path' %}
+  <article>
+    <h2>{{ convict.relative_path | replace_first: "_convicts/" | date: "%m月%-d日" }}</h2>
+    <div class="entry-content">
+      {{ convict.output }}
+    </div>
+  </article>
+  {% endfor %}
+</div>

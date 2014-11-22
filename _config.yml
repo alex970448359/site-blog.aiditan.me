@@ -8,6 +8,8 @@ owner:
 collections:
   notes:
     output: true
+  convicts:
+    output: false
 
 # Jekyll
 baseurl:     http://adome.aidistan.net
