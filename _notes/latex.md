@@ -1,5 +1,5 @@
 ---
-layout:   post
+layout:   note
 title:    "LaTeX"
 date:     2014-11-10 18:09:20 +0800
 modified: 2014-11-22 13:49:54 +0800

@@ -67,7 +67,8 @@ body {
   }
 }
 
-#page {
+#page,
+#note {
   margin: 40px 2px 20px 2px;
   @media #{$medium} {
     margin-left: 20px;
@@ -79,6 +80,9 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+#page {
   article {
     padding: 15px;
     @media #{$medium} {
@@ -86,6 +90,39 @@ body {
     }
     @media #{$large} {
       padding: 15px 60px;
+    }
+  }
+}
+
+#note {
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 16px;
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
+
+    th {
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      padding: 6px 13px;
+      border: 1px solid #ddd;
+    }
+
+    tr {
+      background-color: #fff;
+      border-top: 1px solid #ccc;
+    }
+
+    tr:nth-child(2n) {
+      background-color: #f8f8f8;
     }
   }
 }

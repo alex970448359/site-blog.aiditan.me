@@ -1,5 +1,5 @@
 ---
-layout:   post
+layout:   note
 title:    "Linux"
 date:     2014-11-13 12:32:28 +0800
 modified: 2014-11-22 13:49:54 +0800

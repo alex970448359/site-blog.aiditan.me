@@ -1,5 +1,5 @@
 ---
-layout:   post
+layout:   note
 title:    "rvm"
 date:     2014-11-22 20:08:18 +0800
 modified: 2014-11-22 20:08:18 +0800

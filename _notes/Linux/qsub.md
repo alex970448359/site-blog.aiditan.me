@@ -1,5 +1,5 @@
 ---
-layout:   post
+layout:   note
 title:    "qsub"
 date:     2014-11-13 00:59:13 +0800
 modified: 2014-11-22 13:49:54 +0800
