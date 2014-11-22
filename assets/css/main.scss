@@ -17,8 +17,9 @@ sitemap: false
 @import "reset";
 @import "site";
 @import "typography";
-@import "pygments";
-@import "coderay";
+// @import "pygments";
+// @import "coderay";
+@import "syntax";
 @import "gist";
 @import "grid";
 @import "elements";
