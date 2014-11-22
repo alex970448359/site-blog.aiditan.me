@@ -1,61 +1,17 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html class="no-js" lang="zh">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="cleartype" content="on">
-  <meta name="MobileOptimized" content="320">
-  <meta name="HandheldFriendly" content="True">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-  {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-  {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
-  <link href="{{ site.baseurl }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
-  <!-- For all browsers -->
-  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
-  <!-- Load Modernizr -->
-  <script src="{{ site.baseurl }}/assets/js/modernizr-2.6.2.custom.min.js"></script>
-  <!-- Icons -->
-  <!-- 16x16 -->
-  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
-  <!-- 32x32 -->
-  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png">
-  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-  <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/images/apple-touch-icon-precomposed.png">
-  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/images/apple-touch-icon-72x72-precomposed.png">
-  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/images/apple-touch-icon-114x114-precomposed.png">
-  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/images/apple-touch-icon-144x144-precomposed.png">
+
+  {% include _head.html %}
+
 </head>
+<body {% if page.image.feature %}class="feature"{% endif %}>
 
-<!-- <body> should be placed in the content -->
-{{ content }}
+  {% include _header.html %}
 
-  <div class="footer-wrapper">
-    <footer role="contentinfo">
-      <div>Copyright &copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}, All Rights Reserved.</div>
-      <div>Proudly published by <a href="http://jekyllrb.com">Jekyll</a>, using a customized <a href="http://mademistakes.com/hpstr/">HPSTR Theme</a>.</div>
-    </footer>
-  </div><!-- /.footer-wrapper -->
+  {{ content }}
 
-  <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
-  <script src="{{ site.baseurl }}/assets/js/scripts.min.js"></script>
+  {% include _footer.html %}
 
-  <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-  {% if site.duoshuo %}<script type="text/javascript">
-    var duoshuoQuery = {short_name:"{{ site.duoshuo }}"};
-    (function() {
-        var ds = document.createElement('script');
-        ds.type = 'text/javascript';ds.async = true;
-        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-        ds.charset = 'UTF-8';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>{% endif %}
-  <!-- 多说公共JS代码 end -->
-
-  {% if page.mathjax %}<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>{% endif %}
 </body>
 </html>
