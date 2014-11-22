@@ -10,7 +10,7 @@ collections:
     output: true
 
 # Jekyll
-baseurl:     /adome
+baseurl:     http://adome.aidistan.net
 permalink:   pretty
 timezone:    Asia/Shanghai
 markdown:    kramdown
