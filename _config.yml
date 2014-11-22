@@ -1,18 +1,21 @@
-#
 title:       Adome
-permalink:   pretty
-timezone:    Asia/Shanghai
-url:         http://aidistan.github.io/adome
+owner:
+  name:      Aidi Stan
+  avatar:    avatar.jpg
+  bio:       Valar Morghulis
 
 collections:
   notes:
     output: true
 
-# Owner
-owner:
-  name:      Aidi Stan
-  avatar:    avatar.jpg
-  bio:       Valar Morghulis
+# Jekyll
+baseurl:     /adome
+permalink:   pretty
+timezone:    Asia/Shanghai
+markdown:    kramdown
+highlighter: pygments
+include:     []
+exclude:     ["README.md", "rakefile"]
 
 # Paginate
 paginate:    10
@@ -20,9 +23,3 @@ paginate:    10
 # Duoshuo
 duoshuo:     adome
 duoshuo_url: http://adome.aidistan.net
-
-#
-markdown:    kramdown
-highlighter: pygments
-include:     []
-exclude:     ["README.md", "rakefile"]
