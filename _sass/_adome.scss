@@ -80,12 +80,12 @@ body {
     margin-right: auto;
   }
   article {
-    padding: 25px 15px;
+    padding: 15px;
     @media #{$medium} {
-      padding: 30px;
+      padding: 15px 30px;
     }
     @media #{$large} {
-      padding: 30px 60px;
+      padding: 15px 60px;
     }
   }
 }
