@@ -65,7 +65,7 @@ mathjax:
   desc "Create a new page"
   task :page do |t, args|
     title = get_stdin("Enter a title for your page: ")
-    filename = "#{title.to_url}.md"
+    filename = "#{title.to_url}.html"
     if File.exist?(filename)
       abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
     end
@@ -80,7 +80,7 @@ image:
   feature:
   credit:
   creditlink:
-comments:
+comments: page-#{title.to_url}
 ---
     END_OF_DOC
     File.open(filename, 'w').puts rtn
