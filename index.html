@@ -16,7 +16,7 @@ image:
       <span class="entry-tags pull-right">{% for tag in post.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</span>
     </div><!-- /.entry-meta -->
 
-    <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a>{% if post.link %} <sup><a class="fa fa-external-link" href="{{ post.link }}"></a></sup>{% endif %}</h1>
+    <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a>{% if post.link %} <sup><a class="fa fa-external-link" href="{{ post.link }}" target="_blank"></a></sup>{% endif %}</h1>
 
   </header>
   {% if post.description %}
