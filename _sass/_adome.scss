@@ -1,0 +1,69 @@
+// Variables
+//---------------------------------------------------------
+$footer_hover_link: #009dcd;
+
+// Overwrite old styles
+//---------------------------------------------------------
+body {
+  background-color: $white;
+}
+
+#post,
+#page {
+  .entry-content {
+    box-shadow: 0 0 0 0, 0 0 0 $white;
+    @include rounded(0px);
+    @media #{$large} {
+      margin: 0px auto 0px auto;
+    }
+  }
+}
+
+#post-index {
+  article {
+    box-shadow: 0 0 0 0, 0 0 0 $white;
+    @include rounded(0px);
+    margin-bottom: 0px;
+    @media #{$large} {
+      margin-bottom: 0px;
+      padding: 30px 60px;
+    }
+  }
+}
+
+.entry-image {
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+.footer-wrapper {
+  padding: 1em 1em;
+  margin-bottom: 0;
+  color: #fff;
+  background-color: #000;
+
+  a {
+    color: $white;
+    border-bottom: 1px dotted $white;
+
+    &:hover {
+      color: $footer_hover_link;
+      border-bottom-style: solid;
+      border-bottom-color: $footer_hover_link;
+    }
+  }
+}
+
+// Add new styles
+//---------------------------------------------------------
+#post {
+  .entry-content > p {
+    text-indent: 2em;
+  }
+}
