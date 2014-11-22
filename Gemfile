@@ -1,9 +1,5 @@
 source 'https://ruby.taobao.org/'
 
-require 'json'
-require 'open-uri'
-versions = JSON.parse(open('https://pages.github.com/versions.json').read)
-
-ruby  versions['ruby']
-gem 'github-pages', versions['github-pages']
+ruby '2.1.1'
+gem 'github-pages', '28'
 gem 'stringex'
