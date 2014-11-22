@@ -39,11 +39,30 @@ description: \"\"
 modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
 tags: []
 image:
-  feature: 
-  credit: 
-  creditlink: 
+  feature:
+  credit:
+  creditlink:
 comments: post-#{Time.now.strftime('%Y%m%d')}
-link: 
+link:
+---
+    END_OF_DOC
+    File.open(filename, 'w').puts rtn
+  end
+
+  desc "Create a new note in _notes"
+  task :note do |t, args|
+    title = get_stdin("Enter a title for your note: ")
+    filename = "_notes/#{title.to_url}.md"
+    if File.exist?(filename)
+      abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
+    end
+    puts "Creating new post: #{filename}"
+    rtn = <<-END_OF_DOC
+---
+layout:   post
+title:    \"#{title.gsub(/&/,'&amp;')}\"
+date:     #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
+modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
 ---
     END_OF_DOC
     File.open(filename, 'w').puts rtn
@@ -62,12 +81,12 @@ link:
 layout: page
 permalink: /#{title.to_url}/
 title: \"#{title}\"
-description: 
+description:
 image:
-  feature: 
-  credit: 
-  creditlink: 
-comments: 
+  feature:
+  credit:
+  creditlink:
+comments:
 ---
     END_OF_DOC
     File.open(filename, 'w').puts rtn

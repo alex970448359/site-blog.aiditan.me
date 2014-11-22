@@ -1,4 +1,4 @@
-/*! 
+/*!
 // ===========================================================
 // HPSTR Jekyll Theme
 // By: Michael Rose
@@ -1617,10 +1617,10 @@ svg:not(:root) {
   display: none;
 }
 
-/* 
+/*
 When a submenu is openend, we will hide all li siblings.
 For that we give a class to the parent menu called "dl-subview".
-We also hide the submenu link. 
+We also hide the submenu link.
 The opened submenu will get the class "dl-subviewopen".
 All this is done for any sub-level being entered.
 */
@@ -4005,7 +4005,7 @@ body {
 }
 
 @media only screen and (min-width: 62.5em) {
-  
+
 }
 
 .feature .header-title h2 {
@@ -4454,55 +4454,34 @@ body {
   text-align: center;
 }
 
-#goog-fixurl ul {
-  padding-left: 0;
-  margin-left: 0;
-  list-style: none;
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
 }
 
-#goog-fixurl ul li {
-  list-style-type: none;
+table th {
+  font-weight: bold;
 }
 
-#goog-wm-qt {
-  display: inline-block;
-  width: auto;
-  padding: 8px 20px;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  font-size: 0.875rem;
-  color: #222222;
-  background-color: #ffffff;
-  border-color: #a2a2a2;
-  border-style: solid !important;
-  border-width: 2px !important;
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
+table th,
+table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
 }
 
-#goog-wm-sb {
-  display: inline-block;
-  padding: 8px 20px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  font-size: 0.875rem;
-  color: #ffffff;
-  background-color: #222222;
-  border-color: #222222;
-  border-style: solid !important;
-  border-width: 2px !important;
-  -webkit-border-radius: 3px;
-     -moz-border-radius: 3px;
-          border-radius: 3px;
+table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
 }
 
-#goog-wm-sb:visited {
-  color: #ffffff;
-}
-
-#goog-wm-sb:hover {
-  color: #222222;
-  background-color: #ffffff;
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
 }

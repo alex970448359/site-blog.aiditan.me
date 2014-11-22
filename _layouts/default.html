@@ -42,7 +42,7 @@
 
   <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
   <script src="{{ site.url }}/assets/js/scripts.min.js"></script>
-  
+
   <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
   {% if site.duoshuo %}<script type="text/javascript">
     var duoshuoQuery = {short_name:"{{ site.duoshuo }}"};
@@ -55,5 +55,7 @@
     })();
   </script>{% endif %}
   <!-- 多说公共JS代码 end -->
+
+  {% if page.mathjax %}<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>{% endif %}
 </body>
 </html>

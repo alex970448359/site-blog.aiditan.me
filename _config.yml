@@ -4,6 +4,10 @@ permalink:   pretty
 timezone:    Asia/Shanghai
 url:         http://aidistan.github.io/adome
 
+collections:
+  notes:
+    output: true
+
 # Owner
 owner:
   name:      Aidi Stan
@@ -17,7 +21,7 @@ paginate:    10
 duoshuo:     adome
 duoshuo_url: http://adome.aidistan.net
 
-# 
+#
 markdown:    kramdown
 highlighter: pygments
 include:     []
