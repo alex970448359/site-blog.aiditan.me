@@ -1,26 +1,19 @@
-# encoding: UTF-8
+require "stringex" # For String#to_url
+
+task :default => 'serve:default'
 
 namespace :serve do
-  task :config do
-    config = File.read('_config.yml')
-    regexp = /(^\s*url\s*:\s*)(\S+)(\s*)$/
-    config.sub!(regexp,'\1http://0.0.0.0:4000\3')
-    File.open('__config.yml', 'w') { |f| f.write(config) }
-  end
-
-  desc "Serve posts"
-  task :post => :config do
-    system("jekyll serve --config __config.yml -w")
+  desc "Run the server"
+  task :default do
+    system("bundle exec jekyll serve --baseurl '' -w")
   end
 
   # serve with drafts
-  desc "Serve posts and drafts"
-  task :all => :config do
-    system("jekyll serve --config __config.yml -w -D")
+  desc "Run the server with drafts"
+  task :with_drafts do
+    system("bundle exec jekyll serve --baseurl '' -w -D")
   end
 end
-
-require "stringex"
 
 namespace :new do
   desc "Create a new post in _posts"
@@ -59,10 +52,11 @@ link:
     puts "Creating new post: #{filename}"
     rtn = <<-END_OF_DOC
 ---
-layout:   post
+layout:   note
 title:    \"#{title.gsub(/&/,'&amp;')}\"
 date:     #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
 modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
+mathjax:
 ---
     END_OF_DOC
     File.open(filename, 'w').puts rtn
