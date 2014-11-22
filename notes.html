@@ -9,7 +9,7 @@ comments: page-notes
 {% for note in site.notes | sort: 'url' %}
 <article class="hentry">
   <header>
-    <h2 style="margin:0;"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ note.title }}" itemprop="url">{{ note.title }} <span class="entry-content pull-right">{{ note.url | replace_first: '/notes' }}</span></a></h2>
+    <h2 style="margin:0;"><a href="{{ site.baseurl }}{{ note.url }}" title="{{ note.title }}" itemprop="url">{{ note.title }} <span class="entry-content pull-right">{{ note.url | replace_first: '/notes' }}</span></a></h2>
     <span class="entry-meta entry-date date published">
       <time datetime="{{ note.date | date_to_xmlschema }}">
         Published: {{ note.date | date: "%Y年%-m月%-d日" }}
@@ -20,15 +20,5 @@ comments: page-notes
       </time>
     </span>
   </header>
-
-</article><!-- /.hentry -->
-<!-- <li><a class="post-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.url | replace_first: '/notes' }}</a> -->
-  <!-- <span class="post-meta">{{ note.date | date: "%b %-d, %Y" }}</span>
-
-  <h2>
-  <a class="post-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
-  </h2>
-
-  <span class="post-meta">{{ note.url | replace_first: '/notes' }}</span> -->
-<!-- </li> -->
+</article>
 {% endfor %}
