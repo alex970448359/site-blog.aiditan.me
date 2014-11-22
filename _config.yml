@@ -17,6 +17,9 @@ highlighter: pygments
 include:     []
 exclude:     ["README.md", "rakefile"]
 
+gems:
+  - jekyll-sitemap
+
 # Paginate
 paginate:    10
 
