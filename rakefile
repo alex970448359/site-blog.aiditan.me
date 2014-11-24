@@ -38,6 +38,7 @@ image:
 comments: post-#{Time.now.strftime('%Y%m%d')}
 link:
 ---
+
     END_OF_DOC
     File.open(filename, 'w').puts rtn
   end
@@ -58,6 +59,7 @@ date:     #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
 modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
 mathjax:
 ---
+
     END_OF_DOC
     File.open(filename, 'w').puts rtn
   end
@@ -94,6 +96,7 @@ image:
   creditlink:
 comments: page-#{title.to_url}
 ---
+
     END_OF_DOC
     File.open(filename, 'w').puts rtn
   end
