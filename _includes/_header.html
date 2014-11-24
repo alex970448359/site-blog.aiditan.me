@@ -20,7 +20,7 @@
       <a href="#"><i class="fa fa-fw fa-bars"></i> 关于</a>
       <ul class="dl-submenu">
         <li>
-          <img src="{{ site.baseurl }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="author-photo">
+          <img src="{{ site.baseurl }}/assets/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="author-photo">
           <h4>{{ site.owner.name }}</h4>
           <p>{{ site.owner.bio }}</p>
           <a href="http://github.com/{{ site.owner.github }}" target="_blank"><i class="fa fa-github"></i> GitHub</a>
@@ -32,5 +32,5 @@
 
 <div class="entry-header">
   {% if page.image.credit %}<div class="image-credit">封图: {% if page.image.creditlink %}<a href="{{ page.image.creditlink }}">{% endif %}{{ page.image.credit }}{% if page.image.creditlink %}</a>{% endif %}</div>{% endif %}
-  {% if page.image.feature %}<div class="entry-image" style="background-image: url({{ site.baseurl }}/images/{{ page.image.feature }});"></div>{% endif %}
+  {% if page.image.feature %}<div class="entry-image" style="background-image: url({{ site.baseurl }}/assets/images/{{ page.image.feature }});"></div>{% endif %}
 </div>
