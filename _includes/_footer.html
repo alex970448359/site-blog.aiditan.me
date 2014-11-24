@@ -3,13 +3,14 @@
     <div>Copyright &copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}, All Rights Reserved.</div>
     <div>Proudly published by <a href="http://jekyllrb.com">Jekyll</a>, using a customized <a href="http://mademistakes.com/hpstr/">HPSTR Theme</a>.</div>
   </footer>
-</div><!-- /.footer-wrapper -->
+</div>
 
 <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
 <script src="{{ site.baseurl }}/assets/js/scripts.min.js"></script>
 
+{% if site.duoshuo %}
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-{% if site.duoshuo %}<script type="text/javascript">
+<script type="text/javascript">
   var duoshuoQuery = {short_name:"{{ site.duoshuo }}"};
   (function() {
       var ds = document.createElement('script');
@@ -18,7 +19,10 @@
       ds.charset = 'UTF-8';
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
   })();
-</script>{% endif %}
+</script>
 <!-- 多说公共JS代码 end -->
+{% endif %}
 
-{% if page.mathjax %}<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>{% endif %}
+{% if page.mathjax %}
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+{% endif %}
