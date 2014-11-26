@@ -12,11 +12,11 @@ comments: page-notes
     <h2 style="margin:0;"><a href="{{ site.baseurl }}{{ note.url }}" title="{{ note.title }}" itemprop="url">{{ note.title }} <span class="entry-content pull-right">{{ note.url | replace_first: '/notes' }}</span></a></h2>
     <span class="entry-meta entry-date date published">
       <time datetime="{{ note.date | date_to_xmlschema }}">
-        Published: {{ note.date | date: "%Y年%-m月%-d日" }}
+        Published: {{ note.date | date: "%b %d, %Y" }}
       </time>
       |
       <time datetime="{{ note.modified | date_to_xmlschema }}">
-        Modified: {{ note.modified | date: "%Y年%-m月%-d日" }}
+        Modified: {{ note.modified | date: "%b %d, %Y" }}
       </time>
     </span>
   </header>
