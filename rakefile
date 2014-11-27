@@ -24,7 +24,7 @@ namespace :new do
       abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
     end
     puts "Creating new post: #{filename}"
-    rtn = <<-END_OF_DOC
+    File.open(filename, 'w').puts <<-END_OF_DOC
 ---
 layout: post
 title: \"#{title.gsub(/&/,'&amp;')}\"
@@ -40,7 +40,33 @@ link:
 ---
 
     END_OF_DOC
-    File.open(filename, 'w').puts rtn
+  end
+
+  desc "Create a new draft in _drafts"
+  task :draft do
+    title = get_stdin("Enter a title for your post: ")
+    filename = "_drafts/#{title.to_url}.md"
+    if File.exist?(filename)
+      abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
+    end
+    puts "Creating new draft: #{filename}"
+    File.open(filename, 'w').puts <<-END_OF_DOC
+---
+layout: post
+title: \"#{title.gsub(/&/,'&amp;')}\"
+description: \"\"
+modified:
+tags: []
+image:
+  feature:
+  credit:
+  creditlink:
+comments:
+link:
+---
+
+    END_OF_DOC
+    system("atom #{filename}")
   end
 
   desc "Create a new note in _notes"
@@ -51,7 +77,7 @@ link:
       abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
     end
     puts "Creating new post: #{filename}"
-    rtn = <<-END_OF_DOC
+    File.open(filename, 'w').puts <<-END_OF_DOC
 ---
 layout:   note
 title:    \"#{title.gsub(/&/,'&amp;')}\"
@@ -61,7 +87,6 @@ mathjax:
 ---
 
     END_OF_DOC
-    File.open(filename, 'w').puts rtn
   end
 
   desc "Create a new convict dairy in _convicts"
@@ -84,7 +109,7 @@ mathjax:
       abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
     end
     puts "Creating new page: #{filename}"
-    rtn = <<-END_OF_DOC
+    File.open(filename, 'w').puts <<-END_OF_DOC
 ---
 layout: page
 permalink: /#{title.to_url}/
@@ -98,8 +123,24 @@ comments: page-#{title.to_url}
 ---
 
     END_OF_DOC
-    File.open(filename, 'w').puts rtn
   end
+end
+
+desc "Publish a draft"
+task :publish do
+  drafts = Dir["_drafts/*.md"]
+  drafts.each_with_index { |d,i| puts "[#{i}]\t#{d}" }
+  k = ask("Which one to publish?", (0...drafts.size).collect { |i| (i).to_s } ).to_i
+  oldname = drafts[k]
+  newname = "_posts/#{Time.now.strftime('%Y-%m-%d')}-" + File.basename(oldname)
+  File.open(newname, "w").puts File.read(oldname).gsub(
+    /modified:[^\n]*/,
+    "modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}"
+  ).gsub(
+    /comments:[^\n]*/,
+    "comments: post-#{Time.now.strftime('%Y%m%d')}"
+  )
+  File.delete(oldname)
 end
 
 def get_stdin(message)
