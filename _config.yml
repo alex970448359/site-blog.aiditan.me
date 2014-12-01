@@ -3,13 +3,10 @@ owner:
   name:      Aidi Stan
   avatar:    avatar.jpg
   bio:       Valar Morghulis
-  github:    aidistan
 
 collections:
   notes:
     output: true
-  convicts:
-    output: false
 
 # Jekyll
 baseurl:     http://adome.aidistan.net
