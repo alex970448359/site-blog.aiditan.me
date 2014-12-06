@@ -28,8 +28,8 @@ layout: default
           </ul>
           <script type="text/javascript" >
             var jiathis_config={
-              title:"《{{page.title }}》",
-              summary:"{{ content | split:"</p>" | first | remove_first:'<p>' }}"
+              title:"{{ page.title }}",
+              summary:"{{ page.description }}"
             }
           </script>
           <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>

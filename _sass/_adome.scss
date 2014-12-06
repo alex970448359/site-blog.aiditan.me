@@ -47,21 +47,28 @@ body {
   }
 }
 
-#post {
-  .entry-content {
-    @media #{$large} {
-      > p:first-child {
-        @include font-size(16);
-      }
-    }
+#post.entry-content > p:first-child {
+  @media #{$large} {
+    @include font-size(16);
   }
 }
 
 // Add new styles
 //---------------------------------------------------------
 #post {
-  .entry-content > p {
-    text-indent: 2em;
+  blockquote {
+    font-style: normal;
+    color: lighten($text-color, 20%);
+  }
+
+  .entry-content {
+    > blockquote:first-child {
+      color: $text-color;
+    }
+
+    > p {
+      text-indent: 2em;
+    }
   }
 }
 
