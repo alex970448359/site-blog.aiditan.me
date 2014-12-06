@@ -47,6 +47,16 @@ body {
   }
 }
 
+#post {
+  .entry-content {
+    @media #{$large} {
+      > p:first-child {
+        @include font-size(16);
+      }
+    }
+  }
+}
+
 // Add new styles
 //---------------------------------------------------------
 #post {
