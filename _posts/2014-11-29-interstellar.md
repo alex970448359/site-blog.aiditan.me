@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "星际穿越"
-description: "两小时等待，三小时观影，影有所值"
+description: "两小时等待，三小时观影，影有所值。"
 modified: 2014-11-29 02:55:26 +0800
 tags: [电影]
 image:
