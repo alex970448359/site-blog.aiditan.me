@@ -12,13 +12,14 @@ mathjax:
 
 ## Fedora
 
+Install dependencies by
+
 {% highlight bash %}
-# Install dependencies
 yum install python-gevent pyOpenSSL
-# Download the latest goagent
-...
-# Upload
-...
-# Run
+{% endhighlight %}
+
+Download the latest version, upload the server-side and run the local-side by
+
+{% highlight bash %}
 local/proxy.sh start
 {% endhighlight %}

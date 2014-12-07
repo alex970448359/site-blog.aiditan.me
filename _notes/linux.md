@@ -5,38 +5,11 @@ date:     2014-11-13 12:32:28 +0800
 modified: 2014-11-22 13:49:54 +0800
 ---
 
-## Commands
+# Common Commands
 
-### Text Manipulating
+## Zip/Unzip
 
-
-
-## Issues
-
-# 常见问题
-#### 换行符问题
-
-##### 表现形式
-- 来自Windows的脚本程序运行异常
-- 程序读取来自Windows的数据文件后崩溃
-##### 解决方法
-- 将外来文件的换行符改为Unix格式
-#### 权限问题
-##### 表现形式
-- 访问web页面失败
-- 程序运行中创建/修改文件失败
-##### 解决方法
-
-- 修改目标文件夹权限
-- 将SELinux修改为被动模式
-
-
-
-## Common Commands
-
-### Zip/Unzip
-
-#### *.tar, *.tgz
+### *.tar, *.tgz
 
 {% highlight bash %}
 # Zip
@@ -50,56 +23,65 @@ tar -zxvf target.tgz
     # -z use gzip
 {% endhighlight %}
 
-#### *.zip
+### *.zip
 
 {% highlight bash %}
 unzip target.zip
 {% endhighlight %}
 
-###  查看系统版本
+## System version
 
-#### 内核版本
+### Kernal version
 
-```bash
+{% highlight bash %}
 cat /proc/version
 uname -r
 uname -a
-```
+{% endhighlight %}
 
-#### 发布版本
+### Release version
 
-```bash
+{% highlight bash %}
 cat /etc/issue
-```
-#### 查看文件夹大小
-```bash
+{% endhighlight %}
+
+## Directory size
+
+{% highlight bash %}
 du -h /home/aidistan
 # -h --human-readable
-```
-#### SSH
-```bash
-# 生成公匙/私匙
+{% endhighlight %}
+
+## SSH
+
+{% highlight bash %}
+# Generate a public/private key-pair
 ssh-keygen
-# 上传公匙
+# Upload the public key
 ssh-cody-id -i /root/.ssh/id_rsa user@remotehost
-```
+{% endhighlight %}
 
+# Common Issues
 
+## Line break
 
-```bash
-# 去重
-uniq
-# 统计重复数量
-uniq -c
-```
+### Manifestation
 
-```bash
-# 每4行显示第2行
-awk 'NR%4==2'
-```
+- The script from Windows raises unexpected expectations
+- The program failed when reading a data file from Windows
 
+### Solution
 
-```bash
-# 显示前100行
-head -n 100 file
-```
+- `dos2unix`
+
+## Permissions
+
+##### Manifestation
+
+- Failed to visit some specific web pages
+- Failed to create or modify files within the program
+
+##### Solution
+
+- Change the permissions of the target directory
+- Enable SELinux's permissive mode
