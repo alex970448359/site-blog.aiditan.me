@@ -2,19 +2,23 @@
 layout: default
 ---
 
-<header class="header-title">
-  <div class="header-title-wrap">
-    <h1 class="entry-title"><a href="{{ site.baseurl }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a>{% if page.link %} <sup><a class="fa fa-external-link" href="{{ page.link }}"></a></sup>{% endif %}</h1>
-  </div>
-</header>
-
 <div id="note" role="main">
+  <article class="hentry">
+    <header class="header-title">
+      <div class="header-title-wrap">
+        <h1><a href="{{ site.baseurl }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+        <h2>{{ page.url }}</h2>
+      </div>
+    </header>
 
-  {{ content }}
+    <div class="entry-content">
+      {{ content }}
 
-  {% if site.duoshuo and page.comments %}
-  <!-- 多说评论框 start -->
-  <div class="ds-thread" data-thread-key="{{ page.comments }} " data-title="{{ page.title }}" data-url="{{ site.duoshuo_url }}{{ page.url }}"></div>
-  <!-- 多说评论框 end -->
-  {% endif %}
+      {% if site.duoshuo and page.comments %}
+      <!-- 多说评论框 start -->
+      <div class="ds-thread" data-thread-key="{{ page.comments }} " data-title="{{ page.title }}" data-url="{{ site.duoshuo_url }}{{ page.url }}"></div>
+      <!-- 多说评论框 end -->
+      {% endif %}
+    </div><!-- /.entry-content -->
+  </article>
 </div>

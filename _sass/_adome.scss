@@ -8,12 +8,25 @@ body {
   background-color: $white;
 }
 
+#note {
+  .header-title h2 {
+    text-transform: none;
+    @include font-size(20);
+  }
+}
+
 #post {
   .entry-content {
     box-shadow: 0 0 0 0, 0 0 0 $white;
     @include rounded(0px);
     @media #{$large} {
       margin: 0px auto 0px auto;
+    }
+
+    > p:first-child {
+      @media #{$large} {
+        @include font-size(16);
+      }
     }
   }
 }
@@ -47,12 +60,6 @@ body {
   }
 }
 
-#post.entry-content > p:first-child {
-  @media #{$large} {
-    @include font-size(16);
-  }
-}
-
 // Add new styles
 //---------------------------------------------------------
 #post {
@@ -72,8 +79,7 @@ body {
   }
 }
 
-#page,
-#note {
+#page {
   margin: 40px 2px 20px 2px;
   @media #{$medium} {
     margin-left: 20px;
@@ -85,9 +91,7 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-}
 
-#page {
   article {
     padding: 15px;
     @media #{$medium} {
@@ -100,6 +104,18 @@ body {
 }
 
 #note {
+  margin: 0 2px 20px 2px;
+  @media #{$medium} {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media #{$large} {
+    max-width: 800px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   table {
     border-collapse: collapse;
     border-spacing: 0;
