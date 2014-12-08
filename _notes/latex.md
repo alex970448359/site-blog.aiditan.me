@@ -9,7 +9,7 @@ mathjax:   true
 
 > Don't learn, just use. -- To \\(\LaTeX\\)
 
-## Contents
+# Contents
 
 - [Fonts](#fonts)
 - [Fonts Styles](#font-styles)
@@ -27,19 +27,19 @@ mathjax:   true
 - [Math Constructs](#math-constructs)
 
 
-## Fonts
+# Fonts
 
-### Font Styles
+## Font Styles
 
 | \\(\mathrm{XYZ}\\) | `\mathrm` |
 | \\(\mathbf{XYZ}\\) | `\mathbf` | \\(\mathit{XYZ}\\) | `\mathit` | \\(\mathsf{XYZ}\\) | `\mathsf` | \\(\mathtt{XYZ}\\) | `\mathtt` |
 | \\(\mathfrak{XYZ}\\) | `\mathfrak` | \\(\mathcal{XYZ}\\) | `\mathcal` | \\(\mathbb{XYZ}\\) | `\mathbb` | \\(\mathscr{XYZ}\\) | `\mathscr` |
 
-#### Exceptions
+### Exceptions
 
 - `\mathbf\alpha` (\\(\mathbf\alpha\\)) should be `\boldsymbol\alpha` (\\(\boldsymbol\alpha\\))
 
-### Font Sizes
+## Font Sizes
 
 | \\(\tiny tiny\\) | `\tiny` | \\(\scriptsize script\\) | `\scriptsize` | \\(\small small\\) | `\small` | \\(\normalsize normal\\) | `\normalsize` |
 
@@ -48,9 +48,9 @@ mathjax:   true
 | \\(\huge huge\\) | `\huge` | \\(\Huge Huge\\) | `\Huge` |
 
 
-## Symbols
+# Symbols
 
-### Greek Letters
+## Greek Letters
 
 | \\(\alpha\\) | `\alpha` | \\(\theta\\) | `\theta` | o | o | \\(\tau\\) | `\tau` |
 | \\(\beta\\) | `\beta` | \\(\vartheta\\) | `\vartheta` | \\(\pi\\) | `\pi` | \\(\upsilon\\) | `\upsilon` |
@@ -65,7 +65,7 @@ mathjax:   true
 | \\(\Delta\\) | `\Delta` | \\(\Xi\\) | `\Xi` | \\(\Upsilon\\) | `\Upsilon` | \\(\Omega\\) | `\Omega` |
 | \\(\Theta\\) | `\Theta` | \\(\Pi\\) | `\Pi` | \\(\Phi\\) | `\Phi` |
 
-### Binary Operation Symbols
+## Binary Operation Symbols
 
 | \\(\pm\\) | `\pm` | \\(\cap\\) | `\cap` | \\(\diamond\\) | `\diamond` | \\(\oplus\\) | `\oplus` |
 | \\(\mp\\) | `\mp` | \\(\cup\\) | `\cup` | \\(\bigtriangleup\\) | `\bigtriangleup` | \\(\ominus\\) | `\ominus` |
@@ -76,7 +76,7 @@ mathjax:   true
 | \\(\circ\\) | `\circ` | \\(\wedge\\) | `\wedge` | \\(\rhd\\) | `\rhd` | \\(\dagger\\) | `\dagger` |
 | \\(\cdot\\) | `\cdot` | \\(\wr\\) | `\wr` | \\(\unrhd\\) | `\unrhd` | \\(\amalg\\) | `\amalg` |
 
-### Relation Symbols
+## Relation Symbols
 
 | \\(\leq\\) | `\leq` | \\(\geq\\) | `\geq` | \\(\equiv\\) | `\equiv` | \\(\models\\) | `\models` |
 | \\(\prec\\) | `\prec` | \\(\succ\\) | `\succ` | \\(\sim\\) | `\sim` | \\(\perp\\) | `\perp` |
@@ -89,7 +89,7 @@ mathjax:   true
 | \\(\doteq\\) | `\doteq` | \\(\in\\) | `\in` | \\(\ni\\) | `\ni` | \\(\propto\\) | `\propto` |
 | \\(\vdash\\) | `\vdash` | \\(\dashv\\) | `\dashv` | \\(<\\) | `<` | \\(>\\) | `>` |
 
-### Delimiters
+## Delimiters
 
 | \\(\rmoustache\\) | `\rmoustache` | \\(\lmoustache\\) | `\lmoustache` | \\(\rgroup\\) | `\rgroup` | \\(\lgroup\\) | `\lgroup` |
 | \\(\arrowvert\\) | `\arrowvert` | \\(\Arrowvert\\) | `\Arrowvert` | \\(\bracevert\\) | `\bracevert` |
@@ -99,7 +99,7 @@ mathjax:   true
 | \\(\langle\\) | `\langle` | \\(\rangle\\) | `\rangle` | \\(/\\) | `/` | \\(\backslash\\) | `\backslash` |
 | \\(\|\\) | `|` | \\(\\\\|\\) | `\|` |
 
-### Arrow Symbols
+## Arrow Symbols
 
 | \\(\leftarrow\\) | `\leftarrow` | \\(\longleftarrow\\) | `\longleftarrow` | \\(\uparrow\\) | `\uparrow` |
 | \\(\Leftarrow\\) | `\Leftarrow` | \\(\Longleftarrow\\) | `\Longleftarrow` | \\(\Uparrow\\) | `\Uparrow` |
@@ -112,7 +112,7 @@ mathjax:   true
 | \\(\leftharpoonup\\) | `\leftharpoonup` | \\(\rightharpoonup\\) | `\rightharpoonup` | \\(\swarrow\\) | `\swarrow` |
 | \\(\leftharpoondown\\) | `\leftharpoondown` | \\(\rightharpoondown\\) | `\rightharpoondown` | \\(\nwarrow\\) | `\nwarrow` |
 
-### Miscellaneous Symbols
+## Miscellaneous Symbols
 
 | \\(\dots\\) | `\dots` | \\(\cdots\\) | `\cdots` | \\(\vdots\\) | `\vdots` | \\(\ddots\\) | `\ddots` |
 | \\(\aleph\\) | `\aleph` | \\(\prime\\) | `\prime` | \\(\forall\\) | `\forall` | \\(\infty\\) | `\infty` |
@@ -124,7 +124,7 @@ mathjax:   true
 | \\(\heartsuit\\) | `\heartsuit` | \\(\spadesuit\\) | `\spadesuit` | \\(\mho\\) | `\mho` | \\(\Re\\) | `\Re` |
 | \\(\Im\\) | `\Im` | \\(\angle\\) | `\angle` | \\(\partial\\) | `\partial` |
 
-### Log-like Symbols
+## Log-like Symbols
 
 | \\(\arccos\\) | `\arccos` | \\(\cos\\) | `\cos` | \\(\csc\\) | `\csc` | \\(\exp\\) | `\exp` |
 | \\(\ker\\) | `\ker` | \\(\limsup\\) | `\limsup` | \\(\min\\) | `\min` | \\(\sinh\\) | `\sinh` |
@@ -135,20 +135,20 @@ mathjax:   true
 | \\(\arg\\) | `\arg` | \\(\coth\\) | `\coth` | \\(\dim\\) | `\dim` | \\(\inf\\) | `\inf` |
 | \\(\liminf\\) | `\liminf` | \\(\max\\) | `\max` | \\(\sin\\) | `\sin` | \\(\tanh\\) | `\tanh` |
 
-### Math Mode Accents
+## Math Mode Accents
 
 | \\(\hat{a}\\) | `\hat{a}` | \\(\acute{a}\\) | `\acute{a}` | \\(\bar{a}\\) | `\bar{a}` | \\(\dot{a}\\) | `\dot{a}` |
 | \\(\breve{a}\\) | `\breve{a}` | \\(\check{a}\\) | `\check{a}` | \\(\grave{a}\\) | `\grave{a}` | \\(\vec{a}\\) | `\vec{a}` |
 | \\(\ddot{a}\\) | `\ddot{a}` | \\(\tilde{a}\\) | `\tilde{a}` |
 
-### Variable-sized Symbols
+## Variable-sized Symbols
 
 | \\(\sum\\) | `\sum` | \\(\prod\\) | `\prod` | \\(\coprod\\) | `\coprod` | \\(\int\\) | `\int` |
 | \\(\oint\\) | `\oint` | \\(\bigcap\\) | `\bigcap` | \\(\bigcup\\) | `\bigcup` | \\(\bigsqcup\\) | `\bigsqcup` |
 | \\(\bigvee\\) | `\bigvee` | \\(\bigwedge\\) | `\bigwedge` | \\(\bigodot\\) | `\bigodot` | \\(\bigotimes\\) | `\bigotimes` |
 | \\(\bigoplus\\) | `\bigoplus` | \\(\biguplus\\) | `\biguplus` |
 
-### Math Constructs
+## Math Constructs
 
 | \\(\widetilde{abc}\\) | `\widetilde{abc}` | \\(\widehat{abc}\\) | `\widehat{abc}` |
 | \\(\overleftarrow{abc}\\) | `\overleftarrow{abc}` | \\(\overrightarrow{abc}\\) | `\overrightarrow{abc}` |
@@ -158,6 +158,6 @@ mathjax:   true
 | \\(f'\\) | `f'` | \\(\frac{abc}{xyz}\\) | `\frac{abc}{xyz}` |
 
 
-## Reference
+# Reference
 
 1. Essential \\(\LaTeX\\) [http://www.andy-roberts.net/res/writing/latex/symbols.pdf]()

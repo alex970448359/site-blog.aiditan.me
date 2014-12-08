@@ -7,9 +7,9 @@ modified:  2014-12-08 16:54:17 +0800
 mathjax:
 ---
 
-## Databases
+# Databases
 
-### Raw
+## Raw
 
 - Microbial
 - Integrated reference catalog of the human gut microbiome [http://meta.genomics.cn/metagene/meta/home]()
@@ -21,19 +21,19 @@ mathjax:
 - Cancer Cell Line Encyclopedia (CCLE) [http://www.broadinstitute.org/ccle/home]()
 - Cancer Therapeutics Response Portal (CTRP) : profiling cancer cell-line sensitivities with small molecules [http://www.broadinstitute.org/ctrp/]()
 
-### Node
+## Node
 
 - Chemical - Compounds
 - Pubchem [http://pubchem.ncbi.nlm.nih.gov/]()
 - Gene
 - HGNC [http://www.genenames.org/]()
 
-### Edge
+## Edge
 
 - Protein-protein interaction
 - Human Protein Reference Database (HPRD) [http://www.hprd.org/]()
 - STRING [http://string-db.org/]()
 
-### Other collections
+## Other collections
 
 -  [http://bioinformatics.ca/links_directory/]()
