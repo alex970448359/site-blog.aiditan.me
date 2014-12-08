@@ -31,12 +31,13 @@
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 {% endif %}
 
+{% if page.youziku %}
 <!-- 有字库Javascript调用 start -->
 <!-- <script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.min.js"></script> -->
 <script type="text/javascript" src="http://www.youziku.com/UserDownFile/jquery.md5.js"></script>
 <script type="text/javascript">
   function youzikujsm() {
-    var datastr = [], datamd5 = [], dataname = ["jdfyanti"], dataguid = ["b25684db7a9c43159673d120d4b5f41e"];
+    var datastr = [], datamd5 = [], dataname = ["{{ page.youziku.dataname | join: '","' }}"], dataguid = ["{{ page.youziku.dataguid | join: '","' }}"];
     for (var i = 0; i < dataname.length; i++) {
       var elem = dataname[i];
       var resultStr = $("." + elem).text();
@@ -75,3 +76,4 @@
   (function youziku() { youzikujsm(); })()
 </script>
 <!-- 有字库Javascript调用 end -->
+{% endif %}
