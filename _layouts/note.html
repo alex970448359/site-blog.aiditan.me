@@ -7,7 +7,7 @@ layout: default
     <header class="header-title">
       <div class="header-title-wrap">
         <h1><a href="{{ site.baseurl }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
-        <h2>{{ page.url }}</h2>
+        <h2>{% include breadcrumbs.html %}</h2>
       </div>
     </header>
 
