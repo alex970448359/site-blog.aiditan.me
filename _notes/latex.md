@@ -1,9 +1,10 @@
 ---
-layout:   note
-title:    "LaTeX"
-date:     2014-11-10 18:09:20 +0800
-modified: 2014-11-22 13:49:54 +0800
-mathjax:  true
+layout:    note
+permalink: /notes/latex/
+title:     "Latex"
+date:      2014-12-08 16:52:50 +0800
+modified:  2014-12-08 16:52:50 +0800
+mathjax:   true
 ---
 
 > Don't learn, just use. -- To \\(\LaTeX\\)
@@ -11,19 +12,19 @@ mathjax:  true
 ## Contents
 
 - [Fonts](#fonts)
-  - [Fonts Styles](#font-styles)
-  - [Fonts Sizes](#font-sizes)
+- [Fonts Styles](#font-styles)
+- [Fonts Sizes](#font-sizes)
 - [Symbols](#symbols)
-  - [Greek Letters](#greek-letters)
-  - [Binary Operation Symbols](#binary-operation-symbols)
-  - [Relation Symbols](#relation-symbols)
-  - [Delimiters](#delimiters)
-  - [Arrow Symbols](#arrow-symbols)
-  - [Miscellaneous Symbols](#miscellaneous-symbols)
-  - [Log-like Symbols](#log-like-symbols)
-  - [Math Mode Accents](#math-mode-accents)
-  - [Variable-sized Symbols](#variable-sized-symbols)
-  - [Math Constructs](#math-constructs)
+- [Greek Letters](#greek-letters)
+- [Binary Operation Symbols](#binary-operation-symbols)
+- [Relation Symbols](#relation-symbols)
+- [Delimiters](#delimiters)
+- [Arrow Symbols](#arrow-symbols)
+- [Miscellaneous Symbols](#miscellaneous-symbols)
+- [Log-like Symbols](#log-like-symbols)
+- [Math Mode Accents](#math-mode-accents)
+- [Variable-sized Symbols](#variable-sized-symbols)
+- [Math Constructs](#math-constructs)
 
 
 ## Fonts
@@ -51,18 +52,18 @@ mathjax:  true
 
 ### Greek Letters
 
- | \\(\alpha\\) | `\alpha` | \\(\theta\\) | `\theta` | o | o | \\(\tau\\) | `\tau` |
- | \\(\beta\\) | `\beta` | \\(\vartheta\\) | `\vartheta` | \\(\pi\\) | `\pi` | \\(\upsilon\\) | `\upsilon` |
- | \\(\gamma\\) | `\gamma` | \\(\gamma\\) | `\gamma` | \\(\varpi\\) | `\varpi` | \\(\phi\\) | `\phi` |
- | \\(\delta\\) | `\delta` | \\(\kappa\\) | `\kappa` | \\(\rho\\) | `\rho` | \\(\varphi\\) | `\varphi` |
- | \\(\epsilon\\) | `\epsilon` | \\(\lambda\\) | `\lambda` | \\(\varrho\\) | `\varrho` | \\(\chi\\) | `\chi` |
- | \\(\varepsilon\\) | `\varepsilon` | \\(\mu\\) | `\mu` | \\(\sigma\\) | `\sigma` | \\(\psi\\) | `\psi` |
- | \\(\zeta\\) | `\zeta` | \\(\nu\\) | `\nu` | \\(\varsigma\\) | `\varsigma` | \\(\omega\\) | `\omega` |
- | \\(\eta\\) | `\eta` | \\(\xi\\) | `\xi` |
- ||
- | \\(\Gamma\\) | `\Gamma` | \\(\Lambda\\) | `\Lambda` | \\(\Sigma\\) | `\Sigma` | \\(\Psi\\) | `\Psi` |
- | \\(\Delta\\) | `\Delta` | \\(\Xi\\) | `\Xi` | \\(\Upsilon\\) | `\Upsilon` | \\(\Omega\\) | `\Omega` |
- | \\(\Theta\\) | `\Theta` | \\(\Pi\\) | `\Pi` | \\(\Phi\\) | `\Phi` |
+| \\(\alpha\\) | `\alpha` | \\(\theta\\) | `\theta` | o | o | \\(\tau\\) | `\tau` |
+| \\(\beta\\) | `\beta` | \\(\vartheta\\) | `\vartheta` | \\(\pi\\) | `\pi` | \\(\upsilon\\) | `\upsilon` |
+| \\(\gamma\\) | `\gamma` | \\(\gamma\\) | `\gamma` | \\(\varpi\\) | `\varpi` | \\(\phi\\) | `\phi` |
+| \\(\delta\\) | `\delta` | \\(\kappa\\) | `\kappa` | \\(\rho\\) | `\rho` | \\(\varphi\\) | `\varphi` |
+| \\(\epsilon\\) | `\epsilon` | \\(\lambda\\) | `\lambda` | \\(\varrho\\) | `\varrho` | \\(\chi\\) | `\chi` |
+| \\(\varepsilon\\) | `\varepsilon` | \\(\mu\\) | `\mu` | \\(\sigma\\) | `\sigma` | \\(\psi\\) | `\psi` |
+| \\(\zeta\\) | `\zeta` | \\(\nu\\) | `\nu` | \\(\varsigma\\) | `\varsigma` | \\(\omega\\) | `\omega` |
+| \\(\eta\\) | `\eta` | \\(\xi\\) | `\xi` |
+||
+| \\(\Gamma\\) | `\Gamma` | \\(\Lambda\\) | `\Lambda` | \\(\Sigma\\) | `\Sigma` | \\(\Psi\\) | `\Psi` |
+| \\(\Delta\\) | `\Delta` | \\(\Xi\\) | `\Xi` | \\(\Upsilon\\) | `\Upsilon` | \\(\Omega\\) | `\Omega` |
+| \\(\Theta\\) | `\Theta` | \\(\Pi\\) | `\Pi` | \\(\Phi\\) | `\Phi` |
 
 ### Binary Operation Symbols
 

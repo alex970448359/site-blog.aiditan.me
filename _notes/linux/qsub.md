@@ -1,8 +1,10 @@
 ---
-layout:   note
-title:    "qsub"
-date:     2014-11-13 00:59:13 +0800
-modified: 2014-11-22 13:49:54 +0800
+layout:    note
+permalink: /notes/linux/qsub/
+title:     "qsub"
+date:      2014-12-08 16:56:17 +0800
+modified:  2014-12-08 16:56:17 +0800
+mathjax:
 ---
 
 We use `qsub` to submit tasks in Sun Grid Engine:

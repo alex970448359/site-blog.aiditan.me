@@ -1,8 +1,10 @@
 ---
-layout:   note
-title:    "Linux"
-date:     2014-11-13 12:32:28 +0800
-modified: 2014-11-22 13:49:54 +0800
+layout:    note
+permalink: /notes/linux/
+title:     "Linux"
+date:      2014-12-08 16:52:00 +0800
+modified:  2014-12-08 16:52:00 +0800
+mathjax:
 ---
 
 # Common Commands
@@ -17,10 +19,10 @@ tar -cf target.tar directory
 # Unzip
 tar -xvf target.tar
 tar -zxvf target.tgz
-    # -x extract
-    # -v verbose
-    # -f filename
-    # -z use gzip
+# -x extract
+# -v verbose
+# -f filename
+# -z use gzip
 {% endhighlight %}
 
 ### *.zip

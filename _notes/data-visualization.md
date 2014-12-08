@@ -1,8 +1,9 @@
 ---
-layout:   note
-title:    "data visualization"
-date:     2014-12-08 01:56:54 +0800
-modified: 2014-12-08 01:56:54 +0800
+layout:    note
+permalink: /notes/data-visualization/
+title:     "Data Visualization"
+date:      2014-12-08 16:53:44 +0800
+modified:  2014-12-08 16:53:44 +0800
 mathjax:
 ---
 
@@ -12,13 +13,13 @@ mathjax:
 # Softwares
 
 * Network
-  - Cytoscape
-    * PieChart: Use pies to present nodes
-  - Gephi
+- Cytoscape
+* PieChart: Use pies to present nodes
+- Gephi
 * Circle
-  - Circos
+- Circos
 * Library
-  - D3 - Data-Driven Documents
+- D3 - Data-Driven Documents
 
 # Examples
 

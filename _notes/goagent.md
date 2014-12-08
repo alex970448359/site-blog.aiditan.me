@@ -1,8 +1,9 @@
 ---
-layout:   note
-title:    "GoAgent"
-date:     2014-11-25 13:52:58 +0800
-modified: 2014-11-25 13:52:58 +0800
+layout:    note
+permalink: /notes/goagent/
+title:     "GoAgent"
+date:      2014-12-08 16:53:18 +0800
+modified:  2014-12-08 16:53:18 +0800
 mathjax:
 ---
 

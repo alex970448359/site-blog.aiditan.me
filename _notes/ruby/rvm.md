@@ -1,8 +1,10 @@
 ---
-layout:   note
-title:    "rvm"
-date:     2014-11-22 20:08:18 +0800
-modified: 2014-11-22 20:08:18 +0800
+layout:    note
+permalink: /notes/ruby/rvm/
+title:     "rvm"
+date:      2014-12-08 16:54:42 +0800
+modified:  2014-12-08 16:54:42 +0800
+mathjax:
 ---
 
 We have **Bundle** to manage the versions of gems we use, but some issues are brought by the ruby interpreter itself. [**Ruby Version Manager**](www.rvm.io) is needed here, which allows users to easily install, manage, and work with multiple ruby environments from interpreters to sets of gems.
