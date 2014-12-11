@@ -15,13 +15,15 @@ I was confused by R until I got two major differences from other script language
 
 # Common Usages
 
-#### Manipulate file paths
+#### Manipulate files & paths
 
 {% highlight R %}
 # Get current working directory
 getwd()
 # Set current working directory
 setwd()
+# Get files in a directory
+list.files()
 {% endhighlight %}
 
 #### Manipulate variables
