@@ -29,3 +29,12 @@ profsave(profile('info'), 'profiling_results')
 {% endhighlight %}
 
 For more details, please goolge "Profiling for Improving Performance".
+
+## Dimension manipulations
+
+{% highlight matlab %}
+# Dimension squeeze
+a=rand(2,1,3)
+b=squeeze(a)
+size(b)
+{% endhighlight %}
