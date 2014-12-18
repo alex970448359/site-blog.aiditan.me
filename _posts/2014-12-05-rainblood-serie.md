@@ -12,7 +12,7 @@ comments: post-20141205
 link: http://www.s-game.com.cn/
 ---
 
-{% include xiami.html sid="1771623056," %}
+{% include 163y3.html sid="27562512"%}
 
 最早接触《雨血1：死镇》是在某网站的RPG游戏排行榜上，“高评价“、”水墨画风”、“独立游戏”等标签一下就吸引住了我。两小时的游戏时间果然物有所值，阴暗的画风和缜密的剧情让我对剧本/美术/程序三位一体的Soulframe崇拜不已。
 
