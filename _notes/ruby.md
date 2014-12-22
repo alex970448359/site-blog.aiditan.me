@@ -7,21 +7,11 @@ modified:  2014-12-15 19:16:19 +0800
 mathjax:
 ---
 
-# Document
+# Bases
 
-Use [Yard](http://yardoc.org/) to document.
+## Special signs
 
-## FAQ
-
-##### How to list undocumented objects?
-
-{% highlight bash %}
-yard stats --list-undoc
-{% endhighlight %}
-
-# Special signs
-
-## %
+### %
 
 | Modifier | Meaning                                                            |
 | %q       | Non-interpolated String (except for \\)                            |
@@ -33,7 +23,7 @@ yard stats --list-undoc
 | %W       | Interpolated Array of words, separated by whitespace               |
 | %x       | Interpolated shell command                                         |
 
-## $
+### $
 
 | Name | Alias            | Description                                                                        |
 | \$!  | $ERROR_INFO      | The exception information message set by the last 'raise' (last exception thrown). |
@@ -41,9 +31,39 @@ yard stats --list-undoc
 | \$`  | $PREMATCH        | The string to the left of the last successful match.                               |
 | \$'  | $POSTMATCH       | The string to the right of the last successful match.                              |
 | \$:  | $LOAD_PATH       | Load path for scripts and binary modules by load or require.                       |
-| \$”  | $LOADED_FEATURES | The array contains the module names loaded by require.                             |
+| \$"  | $LOADED_FEATURES | The array contains the module names loaded by require.                             |
 
-# Operators
+# Tricks
+
+### Print Calling Stack
+
+{% highlight ruby %}
+# Just put
+puts caller
+{% endhighlight %}
+
+### String Magic Index
+
+{% highlight ruby %}
+# To match a string,
+str = 'Valar morghulis'
+# instead of using `match`
+str.match(/valar/i)[0] # => 'Valar'
+# or =~,
+/valar/i =~ str; $MATCH # => 'Valar'
+# we could use the magic index
+str[/valar/i] # => 'Valar'
+{% endhighlight %}
+
+# Spells
+
+# Change log
+
+## 2.0.0
+
+* No magic comment (''# encoding: UTF-8'') is needed in case the encoding is utf-8.
+
+<!-- # Operators
 
 ## &
 
@@ -453,9 +473,4 @@ yield [x, *args.map{ |a|
   <code ruby>
   "abcba" =~ /\A(?&lt;a&gt;|.|(?:(?&lt;b&gt;.)\g&lt;a&gt;\k&lt;b+0&gt;))\z/
   </code>
-
-  ===== 改动日志 | Change log =====
-
-  ==== 2.0.0 ====
-
-  * No magic comment (''# encoding: UTF-8'') is needed in case the encoding is utf-8.
+ -->
