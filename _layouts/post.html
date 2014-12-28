@@ -11,7 +11,7 @@ layout: default
     </header>
 
     <div class="entry-content">
-      {% if page.description %}<blockquote>总而言之：{{ page.description }}</blockquote>{% endif %}
+      {% if page.description %}<div class="entry-desc">{{ page.description }}</div>{% endif %}
 
       {{ content }}
 

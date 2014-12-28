@@ -63,14 +63,19 @@ body {
 // Add new styles
 //---------------------------------------------------------
 #post {
-  blockquote {
-    font-style: normal;
-    color: lighten($text-color, 20%);
+  .entry-desc {
+    font-size: 90%;
+    font-weight: bold;
+    background-color: #eee;
+    border: 10px solid #eee;
+    border-left-width: 20px;
+    border-right-width: 20px;
   }
 
   .entry-content {
-    > blockquote:first-child {
-      color: $text-color;
+    > blockquote {
+      font-style: normal;
+      color: lighten($text-color, 20%);
     }
 
     > p {

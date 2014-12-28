@@ -8,6 +8,19 @@
 {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 {% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
 <link href="{{ site.baseurl }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
+
+<!--  Meta for Twitter Card -->
+<meta content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" property="twitter:title">
+<meta content="{{ page.description }}" property="twitter:description">
+<meta content="{{ site.url }}{{ page.url }}" property="twitter:url">
+
+<!--  Meta for OpenGraph -->
+<meta content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" property="og:title">
+<meta content="{{ page.description }}">
+<meta content="Adome" property="og:site_name">
+<meta content="website" property="og:type">
+<meta content="{{ site.url }}{{ page.url }}" property="og:url">
+
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 <!-- Load Modernizr -->
