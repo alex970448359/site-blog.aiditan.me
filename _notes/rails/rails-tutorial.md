@@ -1,6 +1,6 @@
 ---
 layout:    note
-permalink: /notes/rails-tutorial/
+permalink: /notes/rails/rails-tutorial/
 title:     "Rails Tutorial"
 date:      2015-01-03 21:16:50 +0800
 modified:  2015-01-03 21:16:50 +0800
