@@ -1,31 +1,35 @@
+# Where things are
+collections:
+  notes:
+    output:  true
+
+# Handling Reading
+include:     []
+exclude:     ["README.md", "Rakefile", "Gemfile"]
+
+# Plugins
+sass:
+  style:     :compressed
+gems:
+  - jekyll-sitemap
+
+# Conversion
+markdown:    kramdown
+highlighter: pygments
+
+# Serving
+baseurl:     http://adome.aidistan.net
+
+# Outputting
+permalink:   pretty
+timezone:    Asia/Shanghai
+
+# Templating
 title:       Adome
 owner:
   name:      Aidi Stan
   avatar:    avatar.jpg
   bio:       Valar Morghulis
-
-collections:
-  notes:
-    output: true
-
-# Jekyll
-baseurl:     http://adome.aidistan.net
-permalink:   pretty
-timezone:    Asia/Shanghai
-markdown:    kramdown
-highlighter: pygments
-include:     []
-exclude:     ["README.md", "Rakefile", "Gemfile"]
-
-sass:
-  style: :compressed
-
-gems:
-  - jekyll-sitemap
-
-# Paginate
 paginate:    10
-
-# Duoshuo
 duoshuo:     adome
 duoshuo_url: http://adome.aidistan.net
