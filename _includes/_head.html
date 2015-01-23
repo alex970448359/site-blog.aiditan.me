@@ -3,32 +3,26 @@
 <meta name="MobileOptimized" content="320">
 <meta name="HandheldFriendly" content="True">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-{% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+<meta name="description" content="{% if page.description %}{{ page.description }}{% endif %}">
+<meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}{% endif %}">
 <link href="{{ site.baseurl }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
-<!--  Meta for Twitter Card -->
-<meta content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" property="twitter:title">
-<meta content="{{ page.description }}" property="twitter:description">
-<meta content="{{ site.url }}{{ page.url }}" property="twitter:url">
+<!-- Set render engine for 360 browser -->
+<meta name="renderer" content="webkit">
 
-<!--  Meta for OpenGraph -->
-<meta content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" property="og:title">
-<meta content="{{ page.description }}">
-<meta content="Adome" property="og:site_name">
-<meta content="website" property="og:type">
-<meta content="{{ site.url }}{{ page.url }}" property="og:url">
+<!-- No Baidu Siteapp-->
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
 
 <!-- For all browsers -->
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 <!-- Load Modernizr -->
 <script src="{{ site.baseurl }}/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
 <!-- Icons 16x16 -->
-<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
+<link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
 <!-- Icons 32x32 -->
-<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.png">
+<link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.png">
 <!-- Icons 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
 <link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/assets/images/apple-touch-icon-precomposed.png">
 <!-- Icons 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
