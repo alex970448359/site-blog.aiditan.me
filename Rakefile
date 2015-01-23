@@ -1,4 +1,4 @@
-require "stringex" # For String#to_url
+require "stringex"
 
 task :default => 'serve:default'
 

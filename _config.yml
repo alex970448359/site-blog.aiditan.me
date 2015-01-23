@@ -15,7 +15,7 @@ timezone:    Asia/Shanghai
 markdown:    kramdown
 highlighter: pygments
 include:     []
-exclude:     ["README.md", "rakefile", "Gemfile"]
+exclude:     ["README.md", "Rakefile", "Gemfile"]
 
 sass:
   style: :compressed
