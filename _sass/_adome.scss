@@ -1,7 +1,3 @@
-// Variables
-//---------------------------------------------------------
-$footer_hover_link: #009dcd;
-
 // Overwrite old styles
 //---------------------------------------------------------
 body {
@@ -43,20 +39,8 @@ body {
 }
 
 .footer-wrapper {
-  padding: 1em 1em;
-  margin-bottom: 0;
-  color: #fff;
-  background-color: #000;
-
-  a {
-    color: $white;
-    border-bottom: 1px dotted $white;
-
-    &:hover {
-      color: $footer_hover_link;
-      border-bottom-style: solid;
-      border-bottom-color: $footer_hover_link;
-    }
+  a:hover {
+    color: $text-color;
   }
 }
 
