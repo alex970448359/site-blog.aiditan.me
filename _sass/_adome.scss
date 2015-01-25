@@ -27,6 +27,18 @@ body {
   }
 }
 
+.dl-menuwrapper {
+  position: fixed;
+  top: 25px;
+  left: 25px;
+}
+
+.header-title {
+  h1 {
+    @include font-rem(42);
+  }
+}
+
 .entry-image {
   top: 0%;
   left: 0%;
