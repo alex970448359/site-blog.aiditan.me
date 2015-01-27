@@ -1,7 +1,7 @@
 ---
 layout:    note
 permalink: /notes/css/sketch-book/
-title:     "Sketch Book"
+title:     "CSS Sketch Book"
 date:      2014-12-12 20:24:53 +0800
 modified:  2014-12-12 20:24:53 +0800
 mathjax:

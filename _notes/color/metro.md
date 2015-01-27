@@ -1,7 +1,7 @@
 ---
 layout:    note
 permalink: /notes/color/metro/
-title:     "Metro Style"
+title:     "Metro Style Colors"
 date:      2014-12-11 17:46:14 +0800
 modified:  2014-12-11 17:46:14 +0800
 mathjax:

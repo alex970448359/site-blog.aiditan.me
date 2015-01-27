@@ -1,7 +1,7 @@
 ---
 layout:    note
 permalink: /notes/color/traditional-chinese/
-title:     "Traditional Chinese"
+title:     "Traditional Chinese Colors"
 date:      2014-12-12 19:58:27 +0800
 modified:  2014-12-12 19:58:27 +0800
 mathjax:
