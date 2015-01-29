@@ -47,7 +47,85 @@ comments: post-20150129
 
 ### 自定义弹幕
 
-*待更新...*
+目前支持自定义弹幕颜色、大小（可叠加）和位置，格式统一为“英文冒号 + 魔力字符”；未给定的属性将被赋予随机值。
+
+#### 魔力字符
+
+<style>
+.ctl-color {
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.ctl-other {
+  padding: 9px;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+#ctl-container {
+  width: 450px;
+  margin: 0 auto;
+}
+</style>
+
+<div id="ctl-container">
+  <span class="ctl-color" style="background: #00aeef">蓝</span>
+  <span class="ctl-color" style="background: #ea428a">红</span>
+  <span class="ctl-color" style="background: #eed500">黄</span>
+  <span class="ctl-color" style="background: #f5a70d">橙</span>
+  <span class="ctl-color" style="background: #8bcb30">绿</span>
+  <span class="ctl-color" style="background: #9962c1">紫</span>
+  <span class="ctl-color" style="background: #333333">黑</span>
+  <span class="ctl-other" style="font-size:20px;">大</span>
+  <span class="ctl-other" style="font-size:12px;">小</span>
+  <span class="ctl-other" style="padding-top: 0; padding-bottom: 18px;">顶</span>
+  <span class="ctl-other" style="padding-top: 18px; padding-bottom: 0;">底</span>
+</div>
+
+#### 效果示意
+
+<style>
+  #demo-container {
+    position: relative;
+    margin: 0 auto;
+    width: 480px;
+    height: 270px;
+    border: 1px solid black;
+  }
+
+  .demo-bullet {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .demo-lead {
+    color: #c8c8c8;
+  }
+
+  #demo-bullet1 {
+    color: #333333;
+    font-size: 24px;
+    top: 100px;
+  }
+
+  #demo-bullet2 {
+    color: #ea428a;
+    font-size: 12px;
+    bottom: 0px;
+  }
+
+</style>
+
+<div id="demo-container">
+  <p id="demo-bullet1" class="demo-bullet"><span class="demo-lead">:大:黑</span>Valar Morghulis</p>
+  <p id="demo-bullet2" class="demo-bullet"><span class="demo-lead">:红:底:小</span>Valar Dohaeris</p>
+</div>
+
+**备注**：实际中，英文冒号和魔力字符（灰色部分）不会显示。
 
 
 # 致谢
