@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ruby on Rails Tutorial"
-description: "优秀的 Rails 引路者"
+description: "带你走进 Rails 的国度"
 modified: 2015-01-25 15:44:59 +0800
 tags: [读书]
 comments: post-20150125
@@ -10,7 +10,7 @@ link: https://www.railstutorial.org/
 
 Rails 确实是一个伟大的框架，然而“干货” (Do not Repeat Yourself, DRY) 和“惯例先于配置” (Conventions over Configurations, CoC) 的思想在解放生产力的同时，也极大地增加了本身的学习成本。我想不论是刚入门的初学者还是有所成的魔法师，对 Rails 都有相同的问题：“这个法术到底怎么学 / 我是怎么学会这个法术的？”
 
-幸好有此书带领我们走过版本管理，跨过测试驱动，穿过应用部署，趟过 Ruby，来到 Rails的国度。感谢 Michael Hartl, : )
+幸好有此书带领我们走过版本管理，跨过测试驱动，穿过应用部署，趟过 Ruby，来到 Rails 的国度。感谢 Michael Hartl, : )
 
 # 摘抄
 
