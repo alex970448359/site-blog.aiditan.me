@@ -71,7 +71,7 @@ svg:not(:root) {
   border-width: 1px !important;
   border-style: solid !important;
   border-color: $primary;
-  @include rounded(14px);
+  @include rounded(5px);
   &:visited {
     color: $white;
   }
