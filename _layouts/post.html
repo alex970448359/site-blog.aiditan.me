@@ -18,13 +18,16 @@ layout: default
       <footer class="entry-meta">
         <span class="entry-tags">{% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="tag">{{ tag }}</a>{% unless forloop.last %}{% endunless %}{% endfor %}</span>
         <span>发表日期: <span class="entry-date date published updated"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y/%m/%d" }}</time></span> | 最新修订: <span class="entry-date date modified"><time datetime="{{ page.modified }}">{{ page.modified | date: "%Y/%m/%d" }}</time></span></span>
-        <div class="social-share"><!-- Using JiaThis here -->
+
+        <!-- Using JiaThis here -->
+        <div class="social-share">
           <style type="text/css">ul.socialcount li{cursor:pointer;}</style>
           <ul class="socialcount socialcount-small inline-list">
-            <li><a class="jiathis_button_weixin"><i class="fa fa-weixin"></i></a></li>
-            <li><a class="jiathis_button_renren"><i class="fa fa-renren"></i> </a></li>
-            <li><a class="jiathis_button_tsina"><i class="fa fa-weibo"></i> </a></li>
-            <li><a class="jiathis_button_email"><i class="fa fa-envelope"></i> </a></li>
+            <li><a class="jiathis_button_weixin"><i class="fa fa-weixin fa-lg"></i></a></li>
+            <li><a class="jiathis_button_qzone"><i class="fa fa-qq fa-lg"></i></a></li>
+            <li><a class="jiathis_button_tsina"><i class="fa fa-weibo fa-lg"></i></a></li>
+            <li><a class="jiathis_button_renren"><i class="fa fa-renren fa-lg"></i></a></li>
+            <li><a class="jiathis_button_email"><i class="fa fa-envelope fa-lg"></i></a></li>
           </ul>
           <script type="text/javascript" >
             var jiathis_config={
