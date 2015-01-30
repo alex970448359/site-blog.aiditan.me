@@ -23,7 +23,7 @@
 		border: none;
 		width: 48px;
 		height: 45px;
-		text-indent: -900em;
+		// text-indent: -900em;
 		overflow: hidden;
 		position: relative;
 		cursor: pointer;
@@ -40,16 +40,28 @@
 		background: #aaa;
 	}
 	button:after {
-		content: '';
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 42px;
+		line-height: 1;
+		color: $white;
+
+		content: '\f0c9';
 		position: absolute;
-		width: 68%;
-		height: 5px;
-		background: $white;
-		top: 10px;
-		left: 16%;
-		box-shadow:
-			0 10px 0 $white,
-			0 20px 0 $white;
+		top: 2px;
+		left: 6px;
+
+		// content: '';
+		// position: absolute;
+		// width: 68%;
+		// height: 5px;
+		// background: $white;
+		// top: 10px;
+		// left: 16%;
+		// box-shadow:
+		// 	0 10px 0 $white,
+		// 	0 20px 0 $white;
 	}
 	button.dl-active {
 		display: none;
