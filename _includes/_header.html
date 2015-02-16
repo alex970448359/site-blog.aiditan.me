@@ -52,6 +52,15 @@
 <!-- browser-upgrade -->
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 
+<!-- feature image -->
+<div class="entry-header">
+  {% if page.image.credit %}<div class="image-credit">封图: {% if page.image.creditlink %}<a href="{{ page.image.creditlink }}" target="_blank">{% endif %}{{ page.image.credit }}{% if page.image.creditlink %}</a>{% endif %}</div>{% endif %}
+  {% if page.image.feature %}<div class="entry-image" style="background-image: url({{ site.baseurl }}/assets/images/{{ page.image.feature }});">
+    <!-- 为了微信分享... -->
+    <div style="display:none;"><img src="{{ site.baseurl }}/assets/images/{{ page.image.feature }}"></div>
+  </div>{% endif %}
+</div>
+
 <!-- navigation -->
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
   <button class="dl-trigger">展开菜单</button>
@@ -80,8 +89,3 @@
     </li>
   </ul><!-- /.dl-menu -->
 </nav><!-- /.dl-menuwrapper -->
-
-<div class="entry-header">
-  {% if page.image.credit %}<div class="image-credit">封图: {% if page.image.creditlink %}<a href="{{ page.image.creditlink }}">{% endif %}{{ page.image.credit }}{% if page.image.creditlink %}</a>{% endif %}</div>{% endif %}
-  {% if page.image.feature %}<div class="entry-image" style="background-image: url({{ site.baseurl }}/assets/images/{{ page.image.feature }});"></div>{% endif %}
-</div>
