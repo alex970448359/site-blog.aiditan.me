@@ -27,6 +27,7 @@ timezone:    Asia/Shanghai
 # Templating
 title:       Adome
 owner:       Aidi Stan
+email:       aidistan@163.com
 paginate:    10
 duoshuo:     adome
 duoshuo_url: http://adome.aidistan.net
