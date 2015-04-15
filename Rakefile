@@ -21,7 +21,7 @@ namespace :new do
     title = get_stdin("Enter a title for your post: ")
     filename = "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{title.to_url}.md"
     if File.exist?(filename)
-      abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
+      abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'y'
     end
     puts "Creating new post: #{filename}"
     File.open(filename, 'w').puts <<-END_OF_DOC
@@ -47,7 +47,7 @@ link:
     title = get_stdin("Enter a title for your post: ")
     filename = "_drafts/#{title.to_url}.md"
     if File.exist?(filename)
-      abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
+      abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'y'
     end
     puts "Creating new draft: #{filename}"
     File.open(filename, 'w').puts <<-END_OF_DOC
@@ -74,7 +74,7 @@ link:
     title = get_stdin("Enter a title for your note: ")
     filename = "_notes/#{title.split('/').collect{ |s| s.to_url}.join('/')}.md"
     if File.exist?(filename)
-      abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
+      abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'y'
     end
     puts "Creating new post: #{filename}"
     FileUtils.mkdir_p File.dirname(filename)
@@ -85,7 +85,7 @@ permalink: /notes/#{title.split('/').collect{ |s| s.to_url}.join('/')}/
 title:     \"#{title.split('/').last}\"
 date:      #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
 modified:  #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
-mathjax:
+mathjax:   true
 ---
 
     END_OF_DOC
@@ -96,7 +96,7 @@ mathjax:
     title = get_stdin("Enter the date of your convict: [2014-11-18]")
     filename = "_convicts/#{title.to_url}.md"
     if File.exist?(filename)
-      abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
+      abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'y'
     end
     puts "Creating new convict: #{filename}"
     File.open(filename, 'w').puts "---\n---\n"
@@ -108,7 +108,7 @@ mathjax:
     title = get_stdin("Enter a title for your page: ")
     filename = "#{title.to_url}.html"
     if File.exist?(filename)
-      abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'N']) == 'y'
+      abort("rake aborted!") unless ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'y'
     end
     puts "Creating new page: #{filename}"
     File.open(filename, 'w').puts <<-END_OF_DOC
