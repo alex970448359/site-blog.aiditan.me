@@ -1,3 +1,3 @@
 # Adome
 
-Aidi's blog
+Aidi's personal blog
