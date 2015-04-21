@@ -40,10 +40,14 @@ rm(list=ls()) # Remove all variables
 {% endhighlight %}
 
 
-# Comman Cases
+# Common Cases
 
 - Fitting distribution in R: [http://cran.r-project.org/doc/contrib/Ricci-distributions-en.pdf](http://cran.r-project.org/doc/contrib/Ricci-distributions-en.pdf)
 
+# Packages
+
+- Venn Diagram
+  - [VennDiagram](http://cran.r-project.org/web/packages/VennDiagram/)
 
 # Other References
 
