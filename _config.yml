@@ -5,7 +5,7 @@ collections:
 
 # Handling Reading
 include:     []
-exclude:     ["README.md", "Rakefile", "Gemfile"]
+exclude:     ["README.md", "Rakefile", "Gemfile", "CNAME"]
 
 # Plugins
 sass:

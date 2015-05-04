@@ -26,7 +26,7 @@ namespace :new do
   desc "Create a new note in _notes"
   task :note do
     File.open(
-      '_notes/now-note.md', 'w'
+      '_notes/new-note.md', 'w'
     ).puts ERB.new(File.read('_templates/note.md.erb')).result
   end
 

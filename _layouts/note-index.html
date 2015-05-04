@@ -1,0 +1,25 @@
+---
+layout: note
+---
+
+{% for note in site.notes | sort: 'url' %}
+  {% if note.url contains page.permalink %}
+    {% if note.url == page.permalink %}{% continue %}{% endif %}
+    <article class="hentry">
+      <header>
+        <h2 style="margin:0;"><a href="{{ site.baseurl }}{{ note.url }}" title="{{ note.title }}" itemprop="url">{{ note.title }} <span class="entry-content pull-right">{{ note.url | replace_first: page.permalink }}</span></a></h2>
+        <span class="entry-meta entry-date date published">
+          <time datetime="{{ note.date | date_to_xmlschema }}">
+            Published: {{ note.date | date: "%b %d, %Y" }}
+          </time>
+          |
+          <time datetime="{{ note.modified | date_to_xmlschema }}">
+            Modified: {{ note.modified | date: "%b %d, %Y" }}
+          </time>
+        </span>
+      </header>
+    </article>
+  {% endif %}
+{% endfor %}
+
+{{ content }}
