@@ -1,10 +1,9 @@
 ---
 layout:    note
 permalink: /notes/windows/
-title:     "Windows"
+title:     Windows
 date:      2014-12-15 19:15:06 +0800
 modified:  2014-12-15 19:15:06 +0800
-mathjax:
 ---
 
 # Setup Formulas

@@ -1,10 +1,9 @@
 ---
 layout:    note
 permalink: /notes/r/
-title:     "R"
+title:     R
 date:      2014-12-09 11:32:59 +0800
 modified:  2014-12-09 11:32:59 +0800
-mathjax:
 ---
 
 I was confused by R until I got its two major differences from other script languages:

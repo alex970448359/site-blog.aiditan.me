@@ -1,10 +1,9 @@
 ---
 layout:    note
 permalink: /notes/matlab/
-title:     "MATLAB"
+title:     MATLAB
 date:      2014-12-11 17:39:31 +0800
 modified:  2014-12-11 17:39:31 +0800
-mathjax:
 ---
 
 # Common Operations

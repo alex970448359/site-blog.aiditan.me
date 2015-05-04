@@ -1,7 +1,7 @@
 ---
 layout:    note
 permalink: /notes/latex/
-title:     "Latex"
+title:     Latex
 date:      2014-12-08 16:52:50 +0800
 modified:  2014-12-08 16:52:50 +0800
 mathjax:   true

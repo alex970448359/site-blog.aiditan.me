@@ -1,10 +1,9 @@
 ---
 layout:    note
 permalink: /notes/maximal-information-coefficient/
-title:     "Maximal Information Coefficient"
+title:     Maximal Information Coefficient
 date:      2014-12-15 19:07:54 +0800
 modified:  2014-12-15 19:07:54 +0800
-mathjax:
 ---
 
 > Maximal information coefficient (MIC) is "a correlation for the 21st century". <br/>

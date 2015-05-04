@@ -1,10 +1,9 @@
 ---
 layout:    note
 permalink: /notes/data-visualization/
-title:     "Data Visualization"
+title:     Data Visualization
 date:      2014-12-08 16:53:44 +0800
 modified:  2014-12-08 16:53:44 +0800
-mathjax:
 ---
 
 > Every researcher should be a data visualization engineer.

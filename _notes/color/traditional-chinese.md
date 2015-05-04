@@ -1,10 +1,9 @@
 ---
 layout:    note
 permalink: /notes/color/traditional-chinese/
-title:     "Traditional Chinese Colors"
+title:     Traditional Chinese Colors
 date:      2014-12-12 19:58:27 +0800
 modified:  2014-12-12 19:58:27 +0800
-mathjax:
 ---
 
 <p style="text-align:right;">Original page: <a href="http://ylbook.com/cms/web/chuantongsecai/chuantongsecai.htm">中国传统色彩颜色表</a></div>

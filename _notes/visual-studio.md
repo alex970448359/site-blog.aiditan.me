@@ -1,10 +1,9 @@
 ---
 layout:    note
 permalink: /notes/visual-studio/
-title:     "Visual Studio"
+title:     Visual Studio
 date:      2014-12-15 19:15:54 +0800
 modified:  2014-12-15 19:15:54 +0800
-mathjax:
 ---
 
 # Inspect an array

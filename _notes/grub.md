@@ -1,10 +1,9 @@
 ---
 layout:    note
 permalink: /notes/grub/
-title:     "GRUB"
+title:     GRUB
 date:      2014-12-15 19:16:53 +0800
 modified:  2014-12-15 19:16:53 +0800
-mathjax:
 ---
 
 # 修改启动等级

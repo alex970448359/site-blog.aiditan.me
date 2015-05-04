@@ -1,7 +1,7 @@
 ---
 layout:    note
-permalink: /notes/jensen-inequation/
-title:     "Jensen Inequation"
+permalink: /notes/math/jensen-inequation/
+title:     Jensen Inequation
 date:      2014-12-15 19:11:28 +0800
 modified:  2014-12-15 19:11:28 +0800
 mathjax:   true

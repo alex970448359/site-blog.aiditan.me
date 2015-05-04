@@ -1,10 +1,9 @@
 ---
-layout:    note
+layout:    note-index
 permalink: /notes/linux/
-title:     "Linux"
+title:     Linux
 date:      2014-12-08 16:52:00 +0800
 modified:  2014-12-08 16:52:00 +0800
-mathjax:
 ---
 
 # Common Commands

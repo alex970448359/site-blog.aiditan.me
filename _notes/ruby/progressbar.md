@@ -1,10 +1,9 @@
 ---
 layout:    note
 permalink: /notes/ruby/progressbar/
-title:     "progressbar"
+title:     progressbar
 date:      2014-12-08 16:56:17 +0800
 modified:  2014-12-08 16:56:17 +0800
-mathjax:
 ---
 
 {% highlight ruby linenos %}

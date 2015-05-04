@@ -1,7 +1,7 @@
 ---
 layout:    note
 permalink: /notes/fast/
-title:     "Fast"
+title:     Fast
 date:      2015-04-12 22:29:47 +0800
 modified:  2015-04-12 22:29:47 +0800
 ---

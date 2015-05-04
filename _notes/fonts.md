@@ -1,10 +1,9 @@
 ---
 layout:    note
 permalink: /notes/fonts/
-title:     "Fonts"
+title:     Fonts
 date:      2014-12-08 18:30:29 +0800
 modified:  2014-12-08 18:30:29 +0800
-mathjax:
 youziku:
   dataname: ["jdfyanti", "WenQuanYi_Zen_Hei", "NaiYou", "GJJZhiYi-M12S"]
   dataguid: ["b25684db7a9c43159673d120d4b5f41e", "d449d025b70940a9a52a7473419a33cb", "f33752d7ffd240859faa03605e80493d", "9a5729f674bf4152901458cc47381666"]

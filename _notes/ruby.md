@@ -1,10 +1,9 @@
 ---
-layout:    note
+layout:    note-index
 permalink: /notes/ruby/
-title:     "Ruby"
+title:     Ruby
 date:      2014-12-15 19:16:19 +0800
 modified:  2014-12-15 19:16:19 +0800
-mathjax:
 ---
 
 # Bases

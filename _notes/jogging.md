@@ -1,7 +1,7 @@
 ---
 layout:    note
 permalink: /notes/jogging/
-title:     "Jogging"
+title:     Jogging
 date:      2015-04-01 21:33:11 +0800
 modified:  2015-04-01 21:33:11 +0800
 ---

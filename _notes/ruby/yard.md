@@ -1,10 +1,9 @@
 ---
 layout:    note
 permalink: /notes/ruby/yard/
-title:     "YARD"
+title:     YARD
 date:      2014-12-22 23:51:26 +0800
 modified:  2014-12-22 23:51:26 +0800
-mathjax:
 ---
 
 [YARD](http://yardoc.org/), "Yay! A Ruby Document Tool".

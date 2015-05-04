@@ -1,10 +1,9 @@
 ---
 layout:    note
 permalink: /notes/apache/
-title:     "Apache"
+title:     Apache
 date:      2014-12-15 19:17:55 +0800
 modified:  2014-12-15 19:17:55 +0800
-mathjax:
 ---
 
 # Optimazation

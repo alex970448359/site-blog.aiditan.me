@@ -1,11 +1,12 @@
 ---
 layout:    note
 permalink: /notes/bioinformatics/
-title:     "Bioinformatics"
+title:     Bioinformatics
 date:      2014-12-08 16:54:17 +0800
 modified:  2014-12-08 16:54:17 +0800
-mathjax:
 ---
+
+**Get prepared to shift to jc-database !!**
 
 # Databases
 

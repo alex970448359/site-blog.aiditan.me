@@ -1,10 +1,9 @@
 ---
 layout:    note
 permalink: /notes/goagent/
-title:     "GoAgent"
+title:     GoAgent
 date:      2014-12-08 16:53:18 +0800
 modified:  2014-12-08 16:53:18 +0800
-mathjax:
 ---
 
 [GoAgent](https://github.com/goagent/goagent/) is a gae-based proxy.

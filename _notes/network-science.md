@@ -1,7 +1,7 @@
 ---
 layout:    note
 permalink: /notes/network-science/
-title:     "Network Science"
+title:     Network Science
 date:      2014-12-23 00:07:53 +0800
 modified:  2014-12-23 00:07:53 +0800
 mathjax:   true

@@ -1,10 +1,9 @@
 ---
 layout:    note
 permalink: /notes/hosts/
-title:     "hosts"
+title:     hosts
 date:      2014-12-11 17:35:55 +0800
 modified:  2014-12-11 17:35:55 +0800
-mathjax:
 ---
 
 The hosts file is a computer file used by an operating system to map hostnames to IP addresses.

@@ -1,10 +1,9 @@
 ---
 layout:    note
 permalink: /notes/c-plus-plus/
-title:     "C++"
+title:     C++
 date:      2014-12-15 19:17:40 +0800
 modified:  2014-12-15 19:17:40 +0800
-mathjax:
 ---
 
 # STL Containers
