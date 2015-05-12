@@ -17,6 +17,13 @@ $(->
           position: target.position().top - target.height()
         false # Stop bubbling
 
+  # Data attribute: data-full-stretched
+  $('[data-full-stretched]').each ->
+    m = - ($(window).width() - $(this).width()) / 2
+    $(this).css
+      'margin-left':  m
+      'margin-right': m
+
   # Component: #gotop
   $('#gotop').css
     left: content.position().left + content.width() - $('#gotop').width()
