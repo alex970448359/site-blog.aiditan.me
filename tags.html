@@ -5,24 +5,31 @@ title: 标签
 description: 竹杖芒鞋轻胜马
 ---
 
-{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-{% assign tags_list = site_tags | split:',' | sort %}
+<!-- Convert site.tags into an array -->
+{% capture site_tags_ %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign site_tags = site_tags_ | split:',' | sort %}
 
-<ul class="entry-meta inline-list">
-  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-    {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
-  	<li><a href="#{{ this_word }}" class="tag">{{ this_word }} <span>{{ site.tags[this_word].size }}</span></a></li>
-  {% endunless %}{% endfor %}
-</ul>
+<div class="am-g am-padding-sm am-margin-bottom-lg">
+  {% for tag in site_tags %}
+  <a href="#{{ tag }}" class="am-btn am-btn-default am-round am-margin-bottom-sm" data-am-smooth-scroll>
+    {{ tag }} <sup>{{ site.tags[tag].size }}</sup>
+  </a>
+  {% endfor %}
+</div>
 
-{% for item in (0..site.tags.size) %}{% unless forloop.last %}
-  {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
-	<article>
-	<h2 id="{{ this_word }}">{{ this_word }}</h2>
-		<ul>
-    {% for post in site.tags[this_word] %}{% if post.title != null %}
-      <li class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+{% for tag in site_tags %}
+<div class="am-panel am-panel-default">
+  <div class="am-panel-hd">
+    <h2 id="{{ tag }}" class="am-panel-title">{{ tag }}</h4>
+  </div>
+  <ul class="am-list am-link-muted">
+    {% for post in site.tags[tag] %}{% if post.title != null %}
+    <li>
+      <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+        {{ post.title }}
+      </a>
+    </li>
     {% endif %}{% endfor %}
-		</ul>
-	</article>
-{% endunless %}{% endfor %}
+  </ul>
+</div>
+{% endfor %}

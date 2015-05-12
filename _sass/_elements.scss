@@ -1,0 +1,9 @@
+#gotop {
+  display: none;
+  position: fixed;
+  z-index: 9;
+
+  a {
+    box-shadow: 0px 0px 3px #888888, 3px 3px 1px #888888;
+  }
+}

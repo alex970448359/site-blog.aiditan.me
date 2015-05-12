@@ -2,20 +2,12 @@
 layout: default
 ---
 
-<header class="header-title">
-  <div class="header-title-wrap">
-    <h1>{{ site.title }}</h1>
-    <h2>{{ page.title }}</h2>
-  </div>
-</header>
+<div id="content" class="page am-container" role="main">
 
-<div id="page" role="main">
-  
   {{ content }}
 
+  <!-- 多说评论框 -->
   {% if site.duoshuo and page.comments %}
-  <!-- 多说评论框 start -->
   <div class="ds-thread" data-thread-key="{{ page.comments }} " data-title="{{ page.title }}" data-url="{{ site.duoshuo_url }}{{ page.url }}"></div>
-  <!-- 多说评论框 end -->
   {% endif %}
 </div>
