@@ -1,22 +1,23 @@
-<div class="footer-wrapper">
-  <footer role="contentinfo">
-    <div>Copyright &copy; {{ site.time | date: '%Y' }} <a href="mailto:{{ site.email }}">{{ site.owner }}</a>, All Rights Reserved.</div>
-    <div>Proudly published by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, using a customized <a href="https://mademistakes.com/work/hpstr-jekyll-theme/" target="_blank">HPSTR Theme</a>.</div>
-    <div style="display: none;">
-      <img src="http://upfiles.b0.upaiyun.com/logo/180x90.png" style="height: 45px;" />
-    </div>
-  </footer>
-</div>
+<footer class="am-footer am-footer-default">
+  <div class="am-footer-miscs ">
+    <div>Copyright &copy; {{ site.time | date: '%Y' }} <a href="about" target="_blank">{{ site.owner }}</a>, All Rights Reserved.</div>
+    <div>Proudly built on <a href="http://amazeui.org" target="_blank">Amaze UI</a>, published by <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, and hosted on <a href="https://github.com" target="_blank">Github</a>.</div>
+  </div>
+</footer>
 
-<script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
-<script src="{{ site.baseurl }}/assets/js/plugins/jquery.dlmenu.js"></script>
-<script src="{{ site.baseurl }}/assets/js/plugins/jquery.fitvids.js"></script>
-<script src="{{ site.baseurl }}/assets/js/plugins/jquery.magnific-popup.js"></script>
-<script src="{{ site.baseurl }}/assets/js/plugins/respond.js"></script>
+<!-- jQuery -->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<script src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js"></script>
+<!--<![endif]-->
+<!--[if lte IE 8 ]>
+<script src="http://libs.useso.com/js/jquery/1.11.1/jquery.min.js"></script>
+<![endif]-->
+
+<!-- Main JS -->
 <script src="{{ site.baseurl }}/assets/js/main.js"></script>
 
+<!-- 多说公共JS代码 -->
 {% if site.duoshuo %}
-<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
   var duoshuoQuery = {short_name:"{{ site.duoshuo }}"};
   (function() {
@@ -27,8 +28,14 @@
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
   })();
 </script>
-<!-- 多说公共JS代码 end -->
 {% endif %}
 
-{% if page.mathjax %}<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>{% endif %}
-{% if page.youziku %}{% include _youziku.html %}{% endif %}
+<!-- MathJax for LaTeX supporting -->
+{% if page.mathjax %}
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+{% endif %}
+
+<!-- 有字库 JS 方式调用 -->
+{% if page.youziku %}
+{% include _youziku.html %}
+{% endif %}

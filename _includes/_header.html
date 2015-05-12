@@ -1,11 +1,10 @@
-<head>
-
 <meta charset="utf-8">
 <meta http-equiv="cleartype" content="on">
 <meta name="MobileOptimized" content="320">
 <meta name="HandheldFriendly" content="True">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% endif %}">
 <meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}{% endif %}">
@@ -13,11 +12,46 @@
 
 <!-- Set render engine for 360 browser -->
 <meta name="renderer" content="webkit">
-
-<!-- No Baidu Siteapp-->
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<!-- No Baidu siteapp-->
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
 <!-- Baidu site verification -->
 <meta name="baidu-site-verification" content="dcXVtLtIQN" />
+
+<!-- Icons 16x16 -->
+<link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
+<!-- Icons 32x32 -->
+<link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.png">
+
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="{{ site.baseurl }}/assets/images/favicon-256.png">
+
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="{{ site.title }}"/>
+<!-- Icons 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/assets/images/apple-touch-icon-precomposed.png">
+<!-- Icons 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/assets/images/apple-touch-icon-72x72-precomposed.png">
+<!-- Icons 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/assets/images/apple-touch-icon-114x114-precomposed.png">
+<!-- Icons 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/images/apple-touch-icon-144x144-precomposed.png">
+
+<!-- Tile icon for Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/images/apple-touch-icon-72x72-precomposed.png">
+<meta name="msapplication-TileColor" content="#000000">
+
+<!-- Amasze UI -->
+<link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.3.0/css/amazeui.min.css">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
+
+<!-- Load modernizr -->
+<script src="http://libs.useso.com/js/modernizr/2.6.2/modernizr.min.js"></script>
+
 <!-- Baidu Statistics  -->
 <script>
   var _hmt = _hmt || [];
@@ -28,64 +62,3 @@
     s.parentNode.insertBefore(hm, s);
   })();
 </script>
-
-<!-- For all browsers -->
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
-<!-- Load Modernizr -->
-<script src="{{ site.baseurl }}/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
-<!-- Icons 16x16 -->
-<link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
-<!-- Icons 32x32 -->
-<link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.png">
-<!-- Icons 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
-<link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/assets/images/apple-touch-icon-precomposed.png">
-<!-- Icons 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/assets/images/apple-touch-icon-72x72-precomposed.png">
-<!-- Icons 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/assets/images/apple-touch-icon-114x114-precomposed.png">
-<!-- Icons 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/images/apple-touch-icon-144x144-precomposed.png">
-
-</head>
-<body id="top" {% if page.image.feature %}class="feature"{% endif %}>
-
-<!-- browser-upgrade -->
-<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
-
-<!-- feature image -->
-<div class="entry-header">
-  {% if page.image.credit %}<div class="image-credit">封图: {% if page.image.creditlink %}<a href="{{ page.image.creditlink }}" target="_blank">{% endif %}{{ page.image.credit }}{% if page.image.creditlink %}</a>{% endif %}</div>{% endif %}
-  {% if page.image.feature %}<div class="entry-image" style="background-image: url({{ site.baseurl }}/assets/images/{{ page.image.feature }});">
-    <!-- 为了微信分享... -->
-    <div style="display:none;"><img src="{{ site.baseurl }}/assets/images/{{ page.image.feature }}"></div>
-  </div>{% endif %}
-</div>
-
-<!-- navigation -->
-<nav id="dl-menu" class="dl-menuwrapper" role="navigation">
-  <button class="dl-trigger">展开菜单</button>
-  <ul class="dl-menu">
-    <li><a href="#top" class="dl-close"><i class="fa fa-fw fa-arrow-up"></i> 顶部</a></li>
-    <li><a href="{{ site.baseurl }}/"><i class="fa fa-fw fa-home"></i> 首页</a></li>
-    <li>
-      <a href="#"><i class="fa fa-fw fa-ellipsis-h"></i> 更多</a>
-      <ul class="dl-submenu">
-        <li><a href="{{ site.baseurl }}/posts/"><i class="fa fa-fw fa-clock-o"></i> 时光穿梭</a></li>
-        <li><a href="{{ site.baseurl }}/tags/"><i class="fa fa-fw fa-tags"></i> 标签浮云</a></li>
-        <li><a href="{{ site.baseurl }}/notes/"><i class="fa fa-fw fa-book"></i> 知识笔记</a></li>
-      </ul><!-- /.dl-submenu -->
-    </li>
-    <li>
-      <a href="#"><i class="fa fa-fw fa-bars"></i> 关于</a>
-      <ul class="dl-submenu">
-        <li>
-          <img src="{{ site.baseurl }}/assets/images/avatar.jpg" alt="{{ site.owner }} photo" class="author-photo">
-          <h4>{{ site.owner }}</h4>
-          <p>Valar Morghulis</p>
-          <a href="http://github.com/aidistan" target="_blank"><i class="fa fa-github"></i> GitHub</a>
-          <a href="http://photo.aidistan.net" target="_blank"><i class="fa fa-photo"></i> Lofter</a>
-        </li>
-      </ul><!-- /.dl-submenu -->
-    </li>
-  </ul><!-- /.dl-menu -->
-</nav><!-- /.dl-menuwrapper -->
