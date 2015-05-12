@@ -1,11 +1,4 @@
 .highlight {
-  // margin-bottom: 1.5em;
-  pre {
-    position: relative;
-    margin: 0;
-    padding: 0 1em;
-    @include font(14);
-  }
   .c { color: #999988; font-style: italic } /* Comment */
   .err { color: #a61717; background-color: #e3d2d2 } /* Error */
   .k { font-weight: bold } /* Keyword */
