@@ -9,49 +9,40 @@ image:
 ---
 
 {% for post in paginator.posts %}
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.date | date: "%Y年%-m月%-d日" }}</a></time></span>
-      <span class="entry-tags pull-right">{% for tag in post.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="tag">{{ tag }}</a>{% endfor %}</span>
-    </div><!-- /.entry-meta -->
-
-    <h1 class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a>{% if post.link %} <sup><a class="fa fa-external-link" href="{{ post.link }}" target="_blank"></a></sup>{% endif %}</h1>
-
-  </header>
-  {% if post.description %}
-  <div class="entry-content">{{ post.description }}</div>
-  {% endif %}
-</article><!-- /.hentry -->
+<article class="am-article">
+  <h1 class="am-article-title">
+    <a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a>
+    {% if post.link %} <sup><a class="am-icon-external-link" href="{{ post.link }}" target="_blank"></a></sup>{% endif %}
+  </h1>
+  {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+  <p class="am-article-meta">
+    <span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y年%-m月%-d日" }}</time></span>
+    <span class="am-fr">{% for tag in post.tags %} <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="am-badge am-round">{{ tag }}</a>{% endfor %}</span>
+  </p>
+  <hr class="am-article-divider" />
+</article>
 {% endfor %}
 
-<div class="pagination">
+<ul class="am-pagination am-pagination-centered">
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
-      <a href="{{ site.baseurl }}/" class="btn">上一页</a>
+  <li class="am-pagination-prev"><a href="{{ site.baseurl }}/"><span class="am-icon-angle-double-left"></span></a></li>
     {% else %}
-      <a href="{{ site.baseurl }}/page{{ paginator.previous_page }}" class="btn">上一页</a>
+  <li class="am-pagination-prev"><a href="{{ site.baseurl }}/page{{ paginator.previous_page }}/"><span class="am-icon-angle-double-left"></span></a></li>
     {% endif %}
+  {% else %}
+  <li class="am-pagination-prev am-disabled"><a href="#"><span class="am-icon-angle-double-left"></span></a></li>
   {% endif %}
-  <ul class="inline-list">
-    <li>
-      {% if paginator.page == 1 %}
-        <span class="current-page">1</span>
-      {% else %}
-        <a href="{{ site.baseurl }}/">1</a>
-      {% endif %}
-    </li>
-    {% for count in (2..paginator.total_pages) %}
-      <li>
-        {% if count == paginator.page %}
-          <span class="current-page">{{ count }}</span>
-        {% else %}
-          <a href="{{ site.baseurl }}/page{{ count }}">{{ count }}</a>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
+
+  {% for count in (1..paginator.total_pages) %}
+  <li{% if count == paginator.page %} class="am-active"{% endif %}>
+    <a href="{% if count == 1 %}{{ site.baseurl }}/{% else %}{{ site.baseurl }}/page{{ count }}{% endif %}">{{ count }}</a>
+  </li>
+  {% endfor %}
+
   {% if paginator.next_page %}
-    <a href="{{ site.baseurl }}/page{{ paginator.next_page }}" class="btn">下一页</a>
+  <li class="am-pagination-next"><a href="{{ site.baseurl }}/page{{ paginator.next_page }}"><span class="am-icon-angle-double-right"></span></a></li>
+  {% else %}
+  <li class="am-pagination-next am-disabled"><a href="#"><span class="am-icon-angle-double-right"></span></a></li>
   {% endif %}
-</div><!-- /.pagination -->
+</ul>
