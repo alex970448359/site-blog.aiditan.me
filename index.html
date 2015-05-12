@@ -11,7 +11,7 @@ image:
 {% for post in paginator.posts %}
 <article class="am-article">
   <h1 class="am-article-title">
-    <a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a>
+    <a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url"><strong>{{ post.title }}</strong></a>
     {% if post.link %} <sup><a class="am-icon-external-link" href="{{ post.link }}" target="_blank"></a></sup>{% endif %}
   </h1>
   {% if post.description %}<p>{{ post.description }}</p>{% endif %}
