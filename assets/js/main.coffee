@@ -15,7 +15,7 @@ $(->
       $(this).click ->
         target = $($(this).attr('href'))
         $(window).smoothScroll
-          position: target.position().top - target.height()
+          position: target.position().top
         false # Stop bubbling
 
   # Data attribute: data-stretch-full-width

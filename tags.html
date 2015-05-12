@@ -18,18 +18,14 @@ description: 竹杖芒鞋轻胜马
 </div>
 
 {% for tag in site_tags %}
-<div class="am-panel am-panel-default">
-  <div class="am-panel-hd">
-    <h2 id="{{ tag }}" class="am-panel-title">{{ tag }}</h4>
-  </div>
-  <ul class="am-list am-link-muted">
-    {% for post in site.tags[tag] %}{% if post.title != null %}
-    <li>
-      <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
-        {{ post.title }}
-      </a>
-    </li>
-    {% endif %}{% endfor %}
-  </ul>
-</div>
+<h2 id="{{ tag }}">{{ tag }}</h2>
+<ul class="am-list">
+  {% for post in site.tags[tag] %}{% if post.title != null %}
+  <li>
+    <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+      {{ post.title }}
+    </a>
+  </li>
+  {% endif %}{% endfor %}
+</ul>
 {% endfor %}
