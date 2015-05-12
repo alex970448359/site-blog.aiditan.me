@@ -10,21 +10,29 @@ description: 一蓑烟雨任平生
   {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
   {% if forloop.first %}
-    <article>
-      <h2 id="{{ this_year }}-ref">{{ this_year }}</h2>
-      <ul>
+  <div class="am-panel am-panel-default">
+    <div class="am-panel-hd">
+      <h2 id="{{ this_year }}-ref" class="am-panel-title">{{ this_year }}</h4>
+    </div>
+    <ul class="am-list am-link-muted">
   {% endif %}
 
-        <li class="entry-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
+          {{ post.title }}
+        </a>
+      </li>
 
   {% if forloop.last %}
-      </ul>
-    </article>
+    </ul>
+  </div>
   {% else %}{% if this_year != next_year %}
-      </ul>
-    </article>
-    <article>
-      <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
-      <ul>
+    </ul>
+  </div>
+  <div class="am-panel am-panel-default">
+    <div class="am-panel-hd">
+      <h2 id="{{ next_year }}-ref" class="am-panel-title">{{ next_year }}</h4>
+    </div>
+    <ul class="am-list am-link-muted">
   {% endif %}{% endif %}
 {% endfor %}
