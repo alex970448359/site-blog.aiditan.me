@@ -7,7 +7,9 @@
   <![endif]-->
 
   <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+  {% if page.layout == 'note' %}{% include _breadcrumbs.html %}{% else %}
   <p>{{ page.description }}</p>
+  {% endif %}
 
   <nav role="navigation">
     <ul class="am-text-center">

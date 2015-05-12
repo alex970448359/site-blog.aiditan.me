@@ -2,23 +2,12 @@
 layout: default
 ---
 
-<div id="note" role="main">
-  <article class="hentry">
-    <header class="header-title">
-      <div class="header-title-wrap">
-        <h1><a href="{{ site.baseurl }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
-        <h2>{% include breadcrumbs.html %}</h2>
-      </div>
-    </header>
+<div id="content" class="note am-container" role="main">
 
-    <div class="entry-content">
-      {{ content }}
+  {{ content }}
 
-      {% if site.duoshuo and page.comments %}
-      <!-- 多说评论框 start -->
-      <div class="ds-thread" data-thread-key="{{ page.comments }} " data-title="{{ page.title }}" data-url="{{ site.duoshuo_url }}{{ page.url }}"></div>
-      <!-- 多说评论框 end -->
-      {% endif %}
-    </div><!-- /.entry-content -->
-  </article>
+  <!-- 多说评论框 -->
+  {% if site.duoshuo and page.comments %}
+  <div class="ds-thread" data-thread-key="{{ page.comments }} " data-title="{{ page.title }}" data-url="{{ site.duoshuo_url }}{{ page.url }}"></div>
+  {% endif %}
 </div>
