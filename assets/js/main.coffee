@@ -39,13 +39,20 @@ $(->
       height: $(window).height()
 
   # Component: #feature
-  if feature.length == 1
-    height = feature.offset().top + feature.height()
+  $('#feature img').load ->
+    # Foreground
+    forefeatureH = 300
+    feature.height(forefeatureH)
+    feature.slideDown 'slow', ->
+      $('#feature .credit').fadeIn('slow')
+    # Background
+    backfeatureH = feature.offset().top + forefeatureH
     ratio =
       width: $(window).width() / $('#feature img').width()
-      height: height / $('#feature img').height()
+      height: backfeatureH / $('#feature img').height()
     ratio = if ratio.width > ratio.height then ratio.width else ratio.height
     feature.css
+      'background-image': "url(#{$('#feature img').attr('src')})"
       'background-size':
         $('#feature img').width() * ratio + 'px ' +
         $('#feature img').height()* ratio + 'px'
@@ -53,8 +60,6 @@ $(->
     $(window).scroll ->
       offset = feature.offset().top - $(document).scrollTop()
       feature.css 'background-position', "50% #{-offset}px"
-  else
-    console.log('Wrong number of feature images.')
 
   # Component: #gotop
   $('#gotop').css
