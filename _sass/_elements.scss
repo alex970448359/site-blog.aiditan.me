@@ -52,6 +52,17 @@
       content: '封图：'
     }
   }
+
+  .close {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+
+    span {
+      color: #efefef;
+      cursor: pointer;
+    }
+  }
 }
 
 

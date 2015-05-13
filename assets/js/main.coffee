@@ -39,12 +39,15 @@ $(->
       height: $(window).height()
 
   # Component: #feature
+  feature.add(feature.children()).hide()
   $('#feature img').load ->
     # Foreground
     forefeatureH = 300
     feature.height(forefeatureH)
     feature.slideDown 'slow', ->
       $('#feature .credit').fadeIn('slow')
+      $('#feature .close').fadeIn('slow')
+      .click -> feature.slideUp 'slow'
     # Background
     backfeatureH = feature.offset().top + forefeatureH
     ratio =
