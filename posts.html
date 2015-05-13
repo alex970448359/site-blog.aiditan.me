@@ -11,7 +11,7 @@ description: 一蓑烟雨任平生
 
   {% if forloop.first %}
     <h1 id="{{ this_year }}-ref">{{ this_year }}</h1>
-    <ul class="am-list">
+    <ul class="am-list am-link-muted">
   {% endif %}
 
       <li>
@@ -25,6 +25,6 @@ description: 一蓑烟雨任平生
   {% else %}{% if this_year != next_year %}
     </ul>
     <h1 id="{{ next_year }}-ref">{{ next_year }}</h1>
-    <ul class="am-list">
+    <ul class="am-list am-link-muted">
   {% endif %}{% endif %}
 {% endfor %}

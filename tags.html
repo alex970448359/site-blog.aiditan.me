@@ -19,7 +19,7 @@ description: 竹杖芒鞋轻胜马
 
 {% for tag in site_tags %}
 <h2 id="{{ tag }}">{{ tag }}</h2>
-<ul class="am-list">
+<ul class="am-list am-link-muted">
   {% for post in site.tags[tag] %}{% if post.title != null %}
   <li>
     <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
