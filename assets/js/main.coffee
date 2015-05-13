@@ -59,10 +59,12 @@ $(->
       'background-size':
         $('#feature img').width() * ratio + 'px ' +
         $('#feature img').height()* ratio + 'px'
-      'background-position': '50% -' + feature.offset().top + 'px'
-    $(window).scroll ->
+    $(window)
+    .scroll ->
       offset = feature.offset().top - $(document).scrollTop()
-      feature.css 'background-position', "50% #{-offset}px"
+      feature.css 'background-position',
+        "50% #{(backfeatureH - $('#feature img').height()*ratio)/2 - offset}px"
+    .trigger('scroll')
 
   # Component: #gotop
   $('#gotop').css
