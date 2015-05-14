@@ -64,23 +64,28 @@ $(->
       #   Make the feature div visible in order to get the feature
       #   image's width & height later
       $('.feature-opener').click()
+      image =
+        width: $('#feature img').width()
+        height: $('#feature img').height()
+        src: $('#feature img').attr('src')
 
       # Background
       backfeatureH = $('#feature~.feature-trigger').offset().top + forefeatureH
       ratio =
-        width: $(window).width() / $('#feature img').width()
-        height: backfeatureH / $('#feature img').height()
+        width: $(window).width() / image.width
+        height: backfeatureH / image.height
       ratio = if ratio.width > ratio.height then ratio.width else ratio.height
       feature.css
-        'background-image': "url(#{$('#feature img').attr('src')})"
-        'background-size':
-          $('#feature img').width() * ratio + 'px ' +
-          $('#feature img').height()* ratio + 'px'
+        'background-image': "url(#{ image.src })"
+        'background-size': "#{ image.width * ratio }px #{ image.height * ratio }px"
       $(window)
         .scroll ->
-          offset = feature.offset().top - $(document).scrollTop()
+          offset = (
+            if feature.css('display') == 'none'
+            then $('#feature~.feature-trigger') else feature
+          ).offset().top - $(document).scrollTop()
           feature.css 'background-position',
-            "50% #{(backfeatureH - $('#feature img').height()*ratio)/2 - offset}px"
+            "50% #{(backfeatureH - image.height*ratio)/2 - offset}px"
         .trigger('scroll')
 
   # Component: #gotop
