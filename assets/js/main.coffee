@@ -2,11 +2,6 @@
 ---
 
 $(->
-  # Main objects
-  banner  = $('#banner')
-  feature = $('#feature')
-  content = $('#content')
-
   # Data attribute: data-am-smooth-scroll
   $('button[data-am-smooth-scroll]')
   .add $('a[data-am-smooth-scroll]')
@@ -39,38 +34,60 @@ $(->
       height: $(window).height()
 
   # Component: #feature
-  feature.add(feature.children()).hide()
+  $('#feature')
+    .add($('#feature span'))
+    .add($('.feature-trigger'))
+    .add($('.feature-trigger span'))
+    .hide()
   $('#feature img').load ->
-    # Foreground
-    forefeatureH = 300
-    feature.height(forefeatureH)
-    feature.slideDown 'slow', ->
-      $('#feature .credit').fadeIn('slow')
-      $('#feature .close').fadeIn('slow')
-      .click -> feature.slideUp 'slow'
-    # Background
-    backfeatureH = feature.offset().top + forefeatureH
-    ratio =
-      width: $(window).width() / $('#feature img').width()
-      height: backfeatureH / $('#feature img').height()
-    ratio = if ratio.width > ratio.height then ratio.width else ratio.height
-    feature.css
-      'background-image': "url(#{$('#feature img').attr('src')})"
-      'background-size':
-        $('#feature img').width() * ratio + 'px ' +
-        $('#feature img').height()* ratio + 'px'
-    $(window)
-    .scroll ->
-      offset = feature.offset().top - $(document).scrollTop()
-      feature.css 'background-position',
-        "50% #{(backfeatureH - $('#feature img').height()*ratio)/2 - offset}px"
-    .trigger('scroll')
+    feature = $('#feature')
+
+    # Triggers
+    $('.feature-opener').click ->
+      $('.feature-opener').fadeOut 'fast', -> $('.feature-closer').fadeIn 'slow'
+      feature.slideDown 'slow', ->
+        $('#feature span').fadeIn('slow')
+    $('.feature-closer').click ->
+      $('.feature-closer').fadeOut 'fast', -> $('.feature-opener').fadeIn 'slow'
+      feature.slideUp('slow')
+      $('#feature span').fadeOut('slow')
+
+    all_ready = false
+    $('.feature-trigger').slideDown 'slow', ->
+      return all_ready = true unless all_ready # action after all done
+
+      # Foreground
+      forefeatureH = $(window).height() / 2
+      feature.height(forefeatureH)
+
+      # Autoplay
+      #   Make the feature div visible in order to get the feature
+      #   image's width & height later
+      $('.feature-opener').click()
+
+      # Background
+      backfeatureH = $('#feature~.feature-trigger').offset().top + forefeatureH
+      ratio =
+        width: $(window).width() / $('#feature img').width()
+        height: backfeatureH / $('#feature img').height()
+      ratio = if ratio.width > ratio.height then ratio.width else ratio.height
+      feature.css
+        'background-image': "url(#{$('#feature img').attr('src')})"
+        'background-size':
+          $('#feature img').width() * ratio + 'px ' +
+          $('#feature img').height()* ratio + 'px'
+      $(window)
+        .scroll ->
+          offset = feature.offset().top - $(document).scrollTop()
+          feature.css 'background-position',
+            "50% #{(backfeatureH - $('#feature img').height()*ratio)/2 - offset}px"
+        .trigger('scroll')
 
   # Component: #gotop
   $('#gotop').css
-    left: content.position().left + content.width() - $('#gotop').width()
+    left: $('#content').position().left + $('#content').width() - $('#gotop').width()
     bottom: $('#gotop').height()
-  banner.waypoint
+  $('#banner').waypoint
     handler: (direction) ->
       if direction == 'down'
         $('#gotop').fadeIn("slow")
