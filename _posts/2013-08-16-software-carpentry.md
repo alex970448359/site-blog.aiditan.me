@@ -10,12 +10,12 @@ link: http://software-carpentry.org/v4/index.html
 昨天看的[《How to leave academia》](http://www.chrisstucchio.com/blog/2012/leaving_academia.html)
 一文中强烈推荐了Software Carpentry这个网站/课程/志愿者组织。
 
-> To begin with, go read Software Carpentry. Right now. This document covers 
-> all the basic practicalities of dealing with code. Even if you plan to stay 
-> in academia, you should go read it, particularly if you plan to be a 
-> computational scientist. I’d differ from software carpentry in only one case: 
+> To begin with, go read Software Carpentry. Right now. This document covers
+> all the basic practicalities of dealing with code. Even if you plan to stay
+> in academia, you should go read it, particularly if you plan to be a
+> computational scientist. I’d differ from software carpentry in only one case:
 > use git instead of subverson.
-> <small> — How to leave academia </small>
+> <small>—— *How to leave academia* </small>
 
 当时没来得及看这个网站，只是搜了一下Carpentry的意思，没有什么帮助。今天仔细研究了一下，
 不得不说这是一个好网站，如果将来有机会希望能够参与其中，贡献一份力量。这个组织的目的非常明确，
@@ -45,5 +45,3 @@ link: http://software-carpentry.org/v4/index.html
 - 多媒体编程
 - 软件工程
 - Essays （关于其他方面的一些小短文）
-
-

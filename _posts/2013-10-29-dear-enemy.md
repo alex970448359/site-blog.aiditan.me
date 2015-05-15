@@ -16,10 +16,10 @@ link: http://movie.mtime.com/147231/
 目测徐静蕾非常喜欢黄立行，片中有意思的话都让Derek说了：
 
 > 生意就在一瞬间，变化也就在一瞬间。如果我是你，昨天就算裸奔，我也会去找陈建东的。
-> <small>— Derek，伦敦交锋</small>
+> <small>—— Derek，伦敦交锋</small>
 
 > It's all about timing.
-> <small>— Derek，克雷环球加入收购战</small>
+> <small>—— Derek，克雷环球加入收购战</small>
 
 该片还是有那么一点点硬伤的，比如Amy刚进投行一年不到就成了项目负责人，比如Derek的姐姐奇怪地出现在了Amy家里这一点。但是对于豆瓣网上水军的各种一星评价，只能黯然；时光网上分数虽然不高，至少仍有一些中肯的评价。
 

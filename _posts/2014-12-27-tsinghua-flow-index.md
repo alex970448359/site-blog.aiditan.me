@@ -51,4 +51,4 @@ comments: post-20141227
 
 ---
 
-<div style="color:red;font-weight:bold;">本文中所有人名、数据均为杜撰，如有雷同，岂不快哉？</div>
+<p style="color:red;font-weight:bold;text-indent:0;text-align:center;">本文中所有人名、数据均为杜撰，如有雷同，岂不快哉？</p>

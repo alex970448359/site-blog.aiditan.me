@@ -7,6 +7,6 @@ modified:  2014-12-15 19:07:54 +0800
 ---
 
 > Maximal information coefficient (MIC) is "a correlation for the 21st century". <br/>
-> -- Speed, 2011
+> <small>—— Speed, 2011</small>
 
 **TODO**: MIC seems to be useful. I should look into it someday.

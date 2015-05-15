@@ -7,7 +7,7 @@ modified:  2014-12-08 16:53:44 +0800
 ---
 
 > Every researcher should be a data visualization engineer.
-> -- Aidi Stan
+> <small>—— Aidi Stan</small>
 
 # Softwares
 
