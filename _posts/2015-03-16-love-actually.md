@@ -4,6 +4,10 @@ title: "真爱至上"
 description: "值得每次圣诞节重温的佳片"
 modified: 2015-04-05 21:20:50 +0800
 tags: [电影, 音乐]
+image:
+  feature: 2015/0316.jpg
+  credit: 时光网
+  creditlink: http://movie.mtime.com/12609/posters_and_images/476943/
 comments: post-20150316
 link: http://movie.mtime.com/12609/
 ---

@@ -6,8 +6,6 @@ modified: 2014-12-06 16:19:47 +0800
 tags: [自我, 读书, 网站]
 image:
   feature: 2014/1118.jpg
-  credit:
-  creditlink:
 comments: post-20141118
 link: http://book.douban.com/subject/25717097/
 ---

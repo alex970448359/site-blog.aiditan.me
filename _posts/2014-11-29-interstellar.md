@@ -6,8 +6,6 @@ modified: 2014-11-29 02:55:26 +0800
 tags: [电影]
 image:
   feature: 2014/1129.jpg
-  credit:
-  creditlink:
 comments: post-20141129
 link: http://movie.mtime.com/51119/
 ---

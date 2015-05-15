@@ -5,8 +5,8 @@ modified: 2015-03-31 23:16:09 +0800
 tags: [电影]
 image:
   feature: 2015/0331.jpg
-  credit: Mtime
-  creditlink: http://www.mtime.com/
+  credit: 时光网
+  creditlink: http://movie.mtime.com/139718/posters_and_images/2166423/
 comments: post-20150331
 link: http://movie.mtime.com/139718/
 ---

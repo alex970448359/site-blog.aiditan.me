@@ -5,7 +5,7 @@ modified: 2014-07-08 16:31:13 +0800
 tags: [读书]
 image:
   feature: 2013/0901.jpg
-  credit: PhilipToledano
+  credit: Philip Toledano
   creditlink: http://www.dayswithmyfather.com/
 comments: post-20130909
 link: http://book.douban.com/subject/6534012/

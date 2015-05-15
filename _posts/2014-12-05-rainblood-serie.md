@@ -6,8 +6,8 @@ modified: 2014-12-06 13:21:37 +0800
 tags: [游戏]
 image:
   feature: 2014/1205.jpg
-  credit:
-  creditlink:
+  credit: 雨血官网
+  creditlink: http://yx.gamebar.com/Label/2011/12/08/000034.shtml
 comments: post-20141205
 link: http://www.s-game.com.cn/
 ---

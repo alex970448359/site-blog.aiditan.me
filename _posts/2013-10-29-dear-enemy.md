@@ -5,8 +5,6 @@ modified: 2014-07-08 20:35:58 +0800
 tags: [电影]
 image:
   feature: 2013/1004.jpg
-  credit: 
-  creditlink: 
 comments: post-20131029
 link: http://movie.mtime.com/147231/
 ---
@@ -26,4 +24,3 @@ link: http://movie.mtime.com/147231/
 该片还是有那么一点点硬伤的，比如Amy刚进投行一年不到就成了项目负责人，比如Derek的姐姐奇怪地出现在了Amy家里这一点。但是对于豆瓣网上水军的各种一星评价，只能黯然；时光网上分数虽然不高，至少仍有一些中肯的评价。
 
 电影圈的商战又能比金融圈高尚到何处去呢？只要“在一起”就好。
-

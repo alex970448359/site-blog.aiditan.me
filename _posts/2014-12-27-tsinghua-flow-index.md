@@ -6,7 +6,7 @@ modified: 2014-12-28 13:42:06 +0800
 tags: [今日槽点]
 image:
   feature: 2014/1227.jpg
-  credit: 受TFI上涨影响，自然出版集团降低了对清华大学2015年科研产出的预期
+  credit: 华清商报
   creditlink: http://www.shbiz.com.cn/Item/207963.aspx
 comments: post-20141227
 ---

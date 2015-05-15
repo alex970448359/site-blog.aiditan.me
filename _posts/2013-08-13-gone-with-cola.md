@@ -6,8 +6,6 @@ modified: 2014-10-23 12:28:17 +0800
 tags: [心情]
 image:
   feature: 2013/0801.jpg
-  credit: 
-  creditlink: 
 comments: post-20130813
 ---
 

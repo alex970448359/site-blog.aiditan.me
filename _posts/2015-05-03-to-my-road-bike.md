@@ -6,7 +6,7 @@ modified: 2015-05-03 18:57:01 +0800
 tags: [心情]
 image:
   feature: 2015/0503.jpg
-  credit: 八宝山革命烈士陵园
+  credit: Aidi Stan
 comments: post-20150503
 ---
 

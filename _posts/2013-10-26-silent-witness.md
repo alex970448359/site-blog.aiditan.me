@@ -5,8 +5,6 @@ modified: 2014-07-08 20:31:47 +0800
 tags: [电影]
 image:
   feature: 2013/1003.jpg
-  credit: 
-  creditlink: 
 comments: post-20131026
 link: http://movie.mtime.com/175142/
 ---
@@ -27,4 +25,3 @@ link: http://movie.mtime.com/175142/
 > <small> — 林泰 </small>
 
 了解并懂得运用这个道理，在如今网络发达，看似更加透明开放的社会中，尤为重要。
-

@@ -5,8 +5,8 @@ modified: 2014-07-08 22:05:09 +0800
 tags: [网站]
 image:
   feature: 2014/0201.jpg
-  credit: 
-  creditlink: 
+  credit: Cloud Tea Studio
+  creditlink: http://englishbreak.com/
 comments: post-20140220
 link: http://englishbreak.com/
 ---
@@ -20,4 +20,3 @@ link: http://englishbreak.com/
 很极客的队伍。占据了Web, App, Hardware这三个我最爱的方向。
 
 很可爱的队伍。我有一丝丝地羡慕，那视频最后出现的操着不熟练的英语解释系统实现原理的，追梦人。
-
