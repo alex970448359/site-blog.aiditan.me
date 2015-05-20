@@ -7,7 +7,7 @@ image:
   feature: 2015/0323.jpg
   credit: Natural Health Journals
   creditlink: http://www.natural-health-journals.com/
-tags: [电影]
+tags: [电影, 自我]
 comments: post-20150321
 link: http://movie.mtime.com/207492/
 ---

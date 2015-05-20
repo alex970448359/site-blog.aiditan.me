@@ -3,7 +3,7 @@ layout: post
 title: "12月TFI再创新高，同比上涨一倍以上"
 description: "清华网络中心22日公布的统计数据显示，12月份清华流量指数（Tsinghua Flow Index）同比上涨108.6%，环比上涨26.5%，再创新高。受TFI持续上涨影响，自然出版集团26日降低了对清华大学2015年科研产出的预期（封图）。"
 modified: 2014-12-28 13:42:06 +0800
-tags: [今日槽点]
+tags: [吐槽]
 image:
   feature: 2014/1227.jpg
   credit: 华清商报
