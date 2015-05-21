@@ -1,0 +1,21 @@
+---
+layout: post
+title: 机械姬
+description:
+modified: 2015-05-21 10:07:52 +0800
+tags: [电影]
+image:
+  feature: 2015/0521.jpg
+  credit: Mtime
+  creditlink: http://movie.mtime.com/58544/posters_and_images/7001186/
+comments: post-20150521
+link: http://movie.mtime.com/58544/
+---
+
+影片所要表现的主要矛盾浮现之前，难免觉得开篇的节奏有一点缓慢，不过同时也为发生整部电影故事的场景做好了铺垫；直到“测试”的真正面目水落石出，回过头再过一遍 Caleb 与 Ava 每一次接触的对话，不禁为编剧设计的 Ava 及她和 Caleb 的台词所折服。
+
+或许是这两个亮点过于夺目，耗费了编剧过多功力，影片中的 Nathan 和他的高科技住宅就显得美中不足了：前者有能力制造出 Ava，并且有着和那么多个版本的 AI 斗争的经验，居然毫无后手，而要跟机械人肉搏；后者放在现在也只是一般炫酷，与 Ava 摆在一起，简直像在金字塔遇见一台 Macbook。
+
+关于剧情本身，我比较有疑惑的是 Caleb 在第六天晚上看到了 Ava 之前的迭代版本的录象，居然没有对 Ava 产生一点怀疑。当然这一切都可以解释为“被爱情蒙蔽了双眼”吧。
+
+至于 Nathan 那占据搜索引擎市场份额 94% 的公司和他对机械人的各种迭代及命名，这不就是 Google 和 Android 吗?!
