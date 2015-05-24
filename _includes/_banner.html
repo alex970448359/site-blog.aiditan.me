@@ -10,7 +10,7 @@
     {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
     {% if page.link %}<sup><a class="am-icon-external-link" href="{{ page.link }}" target="_blank"></a></sup>{% endif %}
   </h1>
-  {% if page.layout == 'note' %}{% include _breadcrumbs.html %}{% else %}
+  {% if page.layout == 'note' or page.layout == 'note-index' %}{% include _breadcrumbs.html %}{% else %}
   <p>{{ page.description }}</p>
   {% endif %}
 

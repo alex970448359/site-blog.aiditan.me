@@ -2,8 +2,7 @@
 {% assign breadcrumbs = page.url | split:"/" %}
 
 <ol class="am-breadcrumb am-breadcrumb-slash">
-{% for _breadcrumb in breadcrumbs offset:1 %}
-  {% capture breadcrumb %}{% if forloop.last %}{{ _breadcrumb | replace_first:".html" }}{% else %}{{ _breadcrumb }}{% endif %}{% endcapture %}
+{% for breadcrumb in breadcrumbs offset:1 %}
   {% capture breadcrumb_url %}{{ breadcrumb_url }}{{ breadcrumb }}/{% endcapture %}
   {% if forloop.last %}
   <li class="am-active">{{ breadcrumb }}</li>
