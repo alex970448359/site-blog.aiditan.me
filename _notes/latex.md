@@ -41,12 +41,15 @@ mathjax:   true
 
 ## Font Sizes
 
-| \\(\tiny tiny\\) | `\tiny` | \\(\scriptsize script\\) | `\scriptsize` | \\(\small small\\) | `\small` | \\(\normalsize normal\\) | `\normalsize` |
-
-| \\(\large large\\) | `\large` | \\(\Large Large\\) | `\Large` | \\(\LARGE LARGE\\) | `\LARGE` |
-
-| \\(\huge huge\\) | `\huge` | \\(\Huge Huge\\) | `\Huge` |
-
+- `\tiny` \\(\tiny tiny\\)
+- `\scriptsize` \\(\scriptsize script\\)
+- `\small` \\(\small small\\)
+- `\normalsize` \\(\normalsize normal\\)
+- `\large` \\(\large large\\)
+- `\Large` \\(\Large Large\\)
+- `\LARGE` \\(\LARGE LARGE\\)
+- `\huge` \\(\huge huge\\)
+- `\Huge` \\(\Huge Huge\\)
 
 # Symbols
 
