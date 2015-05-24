@@ -9,7 +9,7 @@ modified:  2014-12-08 16:56:17 +0800
 We use `qsub` to submit tasks in Sun Grid Engine:
 
 {% highlight bash %}
-qsub [script]
+qsub script
 {% endhighlight %}
 
 And a typical scirpt looks like
