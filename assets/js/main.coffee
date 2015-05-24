@@ -2,6 +2,9 @@
 ---
 
 $(->
+  # Overwrite
+  $('table').addClass('am-table am-table-compact')
+
   # Data attribute: data-am-smooth-scroll
   $('button[data-am-smooth-scroll]')
   .add $('a[data-am-smooth-scroll]')
