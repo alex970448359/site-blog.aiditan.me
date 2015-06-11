@@ -3,7 +3,7 @@ require 'erb'
 task :default => 'serve:default'
 
 namespace :serve do
-  desc "Run the server"
+  desc "Run the server (default)"
   task :default do
     system("bundle exec jekyll serve --baseurl '' -w")
   end
