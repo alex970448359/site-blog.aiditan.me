@@ -1,7 +1,7 @@
 ---
 layout:    note
 permalink: /notes/ruby/yard/
-title:     YARD
+title:     yard
 date:      2014-12-22 23:51:26 +0800
 modified:  2014-12-22 23:51:26 +0800
 ---
