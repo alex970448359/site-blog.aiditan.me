@@ -25,9 +25,18 @@ namespace :new do
 
   desc "Create a new note in _notes"
   task :note do
-    File.open(
-      '_notes/new-note.md', 'w'
-    ).puts ERB.new(File.read('_templates/note.md.erb')).result
+    # Interact
+    puts 'Please specify the relative path: ("new-note[.md]" by default)'
+    path = STDIN.gets.chomp
+    path = path.empty? ? 'new-note' : path.gsub(/\.md$/, '')
+    puts 'Please specify the title: ("" by default)'
+    title = STDIN.gets.chomp
+
+    # Generate
+    filepath = "_notes/#{path}.md"
+    fail 'Specified directory not exists.' unless Dir.exist?(File.dirname(filepath))
+    puts "#{filepath.inspect} created"
+    File.open(filepath, 'w').puts ERB.new(File.read('_templates/note.md.erb')).result(binding)
   end
 
   desc "Create a new page"
