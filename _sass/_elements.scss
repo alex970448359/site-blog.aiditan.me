@@ -67,11 +67,11 @@
 
 #content.page {
   #about-me {
-    $about-tile-size: 20px;
+    $about-tile-size: 72px;
     i {
       font-size: $about-tile-size;
       line-height: $about-tile-size;
-      width: 30px;
+      width: $about-tile-size;
       text-align: center;
     }
     img {
