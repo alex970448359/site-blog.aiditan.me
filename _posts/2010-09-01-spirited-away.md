@@ -18,3 +18,6 @@ comments: post-20100901
 </div>
 
 在北洋口琴协会时留下的唯一的音像记忆，其中的副旋就是我啦。由于过于久远，日期就选录音那个学期的开学日吧 ：）
+
+<img src="/assets/images/2010/0901-1.jpg" class="am-img-responsive" alt=""/>
+<img src="/assets/images/2010/0901-2.jpg" class="am-img-responsive" alt=""/>
