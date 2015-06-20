@@ -6,6 +6,27 @@ date:      2015-06-02 21:20:54 +0800
 modified:  2015-06-02 21:20:54 +0800
 ---
 
+# Tips
+
+### Default flashes
+
+`notice` and `alert`
+
+### Write to the log
+
+{% highlight ruby %}
+# In any controller
+logger.error { 'This is an error.' }
+{% endhighlight %}
+
+### Check routes
+
+{% highlight bash %}
+rake routes
+{% endhighlight %}
+
+Or [http://0.0.0.0:3000/rails/info/routes](http://0.0.0.0:3000/rails/info/routes).
+
 # Attentions (in 4.x)
 
 <h2>Page Change Events <sup><a href='http://guides.rubyonrails.org/working_with_javascript_in_rails.html#page-change-events' target='_blank'><span class='am-icon-external-link'></span></a></sup></h2>
