@@ -7,11 +7,11 @@ modified:  2014-12-11 17:46:14 +0800
 ---
 
 <style type="text/css">
-.color-impact .colorbox{border:1px solid #cccccc;float:left;margin:0 20px 20px 0;padding:10px;width:140px;}
-.color-impact h1{font-size:130%;margin:0 0 20px;clear:left;}
-.color-impact h2{border-bottom:1px solid #dddddd;font-size:70%;margin:5px 0;padding-bottom:5px;text-align:center;white-space:nowrap;}
-.color-impact h3{font-size:80%;font-weight:normal;margin:0;white-space:nowrap;}
-.color-impact h6{background:transparent;clear:both;color:#888888;font:70% Arial,sans-serif;}
+.color-impact .colorbox {border:1px solid #cccccc;float:left;margin:0 10px 20px 0;padding:10px;width:140px;}
+#content .color-impact h1{font-size:130%;margin:0 0 20px;clear:left;}
+#content .color-impact h2{border-bottom:1px solid #dddddd;font-size:70%;margin:5px 0;padding-bottom:5px;text-align:center;white-space:nowrap;}
+#content .color-impact h3{font-size:80%;font-weight:normal;margin:0;white-space:nowrap;}
+#content .color-impact h6{background:transparent;clear:both;color:#888888;font:70% Arial,sans-serif;}
 .color-impact .Color01 {background-color: #00AEEF;border:1px solid #eeeeee; height:100px; width:100%}
 .color-impact .Color02 {background-color: #50A7EA;border:1px solid #eeeeee; height:100px; width:100%}
 .color-impact .Color03 {background-color: #EA428A;border:1px solid #eeeeee; height:100px; width:100%}
