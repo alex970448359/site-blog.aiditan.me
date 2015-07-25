@@ -7,7 +7,6 @@ modified:  2015-07-24 21:13:40 +0800
 ---
 
 <style>
-  ul { margin: 0 !important; }
   .am-container { max-width: 1000px; }
 </style>
 

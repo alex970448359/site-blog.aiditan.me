@@ -12,13 +12,13 @@ modified:  2014-12-08 16:53:44 +0800
 # Softwares
 
 * Network
-- Cytoscape
-* PieChart: Use pies to present nodes
-- Gephi
+  - Cytoscape
+    * PieChart: Use pies to present nodes
+  - Gephi
 * Circle
-- Circos
+  - Circos
 * Library
-- D3 - Data-Driven Documents
+  - D3 - Data-Driven Documents
 
 # Examples
 
