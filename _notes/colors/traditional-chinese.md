@@ -1,6 +1,6 @@
 ---
 layout:    note
-permalink: /notes/color/traditional-chinese/
+permalink: /notes/colors/traditional-chinese/
 title:     Traditional Chinese Colors
 date:      2014-12-12 19:58:27 +0800
 modified:  2014-12-12 19:58:27 +0800
