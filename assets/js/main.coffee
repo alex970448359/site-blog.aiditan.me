@@ -101,5 +101,5 @@ $(->
         $('#gotop').fadeIn("slow")
       else
         $('#gotop').fadeOut("slow")
-    offset: '-100%'
+    offset: '-25%'
 )
