@@ -2,7 +2,7 @@
 layout: post
 title: "智能家居无线技术"
 modified: 2014-11-13 11:53:54 +0800
-tags: [未分类]
+tags: [互联网]
 comments: post-20141113
 ---
 
