@@ -3,7 +3,7 @@ layout: post
 title: 当然我在扯淡
 description: 王垠的中文博客
 modified: 2015-10-19 23:13:48 +0800
-tags: [网站, 吐槽]
+tags: [博客]
 comments: post-20151019
 link: http://www.yinwang.org/
 ---

@@ -7,7 +7,7 @@ tags: [网站]
 image:
   feature: 2014/0408.png
 comments: post-20140408
-link: http://aidistan.github.io/HappyMummy/
+link: http://aidistan.github.io/work-happy-mummy/
 ---
 
 参加经管学院**创办新企业**课程的成果...

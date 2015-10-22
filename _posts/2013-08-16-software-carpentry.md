@@ -2,7 +2,7 @@
 layout: post
 title: "Software carpentry"
 modified: 2014-07-08 16:20:56 +0800
-tags: [网站]
+tags: [网站, 编程]
 comments: post-20130816
 link: http://software-carpentry.org/v4/index.html
 ---
