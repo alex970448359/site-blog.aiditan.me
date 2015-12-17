@@ -3,7 +3,7 @@ collections:
   notes:
     output:  true
 
-# Handling Reading
+# Handling reading
 include:     []
 exclude:     ["README.md", "Rakefile", "Gemfile", "CNAME"]
 
