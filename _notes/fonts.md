@@ -5,8 +5,16 @@ title:     Fonts
 date:      2014-12-08 18:30:29 +0800
 modified:  2014-12-08 18:30:29 +0800
 youziku:
-  dataname: ["jdfyanti", "WenQuanYi_Zen_Hei", "NaiYou", "GJJZhiYi-M12S"]
-  dataguid: ["b25684db7a9c43159673d120d4b5f41e", "d449d025b70940a9a52a7473419a33cb", "f33752d7ffd240859faa03605e80493d", "9a5729f674bf4152901458cc47381666"]
+  names:
+    - WenQuanYi_Zen_Hei
+    - jdfyanti
+    - NaiYou
+    - GJJZhiYi-M12S
+  guids:
+    - d449d025-b709-40a9-a52a-7473419a33cb
+    - b25684db-7a9c-4315-9673-d120d4b5f41e
+    - f33752d7-ffd2-4085-9faa-03605e80493d
+    - 9a5729f6-74bf-4152-9014-58cc47381666
 ---
 
 <style>

@@ -36,12 +36,17 @@
 </script>
 {% endif %}
 
-<!-- MathJax for LaTeX supporting -->
+<!-- MathJax -->
 {% if page.mathjax %}
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 {% endif %}
 
-<!-- 有字库 JS 方式调用 -->
+<!-- Youziku -->
 {% if page.youziku %}
-{% include _youziku.html %}
+<script type="text/javascript">
+  var names = ["{{ page.youziku.names | join: '","' }}"];
+  var guids = ["{{ page.youziku.guids | join: '","' }}"];
+  for (var i in names) $youziku.load('.' + names[i], guids[i], names[i]);
+  $youziku.draw();
+</script>
 {% endif %}
