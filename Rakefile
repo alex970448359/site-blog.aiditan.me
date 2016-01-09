@@ -5,13 +5,13 @@ task default: 'serve:default'
 namespace :serve do
   desc 'Run the server (as: default)'
   task :default do
-    system("bundle exec jekyll serve --baseurl '' -w")
+    system("bundle exec jekyll serve --baseurl '' --watch")
   end
 
   # serve with drafts
   desc 'Run the server with drafts'
   task :with_drafts do
-    system("bundle exec jekyll serve --baseurl '' -w -D")
+    system("bundle exec jekyll serve --baseurl '' --watch --drafts")
   end
 end
 
