@@ -18,9 +18,17 @@ end
 namespace :new do
   desc 'Create a new post in _posts'
   task :post do
+    # Interact
+    puts 'Please specify the filename: ("new-post[.md]" by default)'
+    name = STDIN.gets.chomp
+    name = name.empty? ? 'new-post' : name.gsub(/\.md$/, '')
+    puts 'Please specify the title: ("" by default)'
+    title = STDIN.gets.chomp
+
+    # Generate
     File.open(
-      "_posts/#{Time.now.strftime('%Y-%m-%d')}-new-post.md", 'w'
-    ).puts ERB.new(File.read('_templates/post.md.erb')).result
+      "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{name}.md", 'w'
+    ).puts ERB.new(File.read('_templates/post.md.erb')).result(binding)
   end
 
   desc 'Create a new note in _notes'
