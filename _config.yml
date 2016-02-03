@@ -11,11 +11,13 @@ exclude:     ["README.md", "Rakefile", "Gemfile", "CNAME"]
 sass:
   style:     :compressed
 gems:
+  - jekyll-coffeescript
   - jekyll-sitemap
+  - jekyll-paginate
 
 # Conversion
 markdown:    kramdown
-highlighter: pygments
+highlighter: rouge
 
 # Serving
 baseurl:     http://adome.aidistan.net
