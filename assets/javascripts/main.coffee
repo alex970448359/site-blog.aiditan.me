@@ -92,9 +92,6 @@ $(->
         .trigger('scroll')
 
   # Component: #gotop
-  $('#gotop').css
-    left: $('#content').position().left + $('#content').width() - $('#gotop').width()
-    bottom: $('#gotop').height()
   $('#banner').waypoint
     handler: (direction) ->
       if direction == 'down'
