@@ -3,7 +3,7 @@ layout: post
 title: "12月TFI再创新高，同比上涨一倍以上"
 description: "清华网络中心22日公布的统计数据显示，12月份清华流量指数（Tsinghua Flow Index）同比上涨108.6%，环比上涨26.5%，再创新高。受TFI持续上涨影响，自然出版集团26日降低了对清华大学2015年科研产出的预期（封图）。"
 modified: 2014-12-28 13:42:06 +0800
-tags: [吐槽]
+tags: [钓鱼]
 image:
   feature: 2014/1227.jpg
   credit: 华清商报
@@ -48,7 +48,3 @@ comments: post-20141227
 3. 建立流量专项奖学金，通过用户访问分析，为在科研上花费流量最多的同学，颁发该奖以兹鼓励。
 
 “流量经济系统的完善，必将为我校成为世界一流大学提供重要推力！”王斐贵情绪激动地告诉记者。
-
----
-
-<p style="color:red;font-weight:bold;text-indent:0;text-align:center;">本文中所有人名、数据均为杜撰，如有雷同，岂不快哉？</p>

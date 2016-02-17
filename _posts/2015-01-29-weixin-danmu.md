@@ -3,7 +3,7 @@ layout: post
 title: 微信弹幕火狐版
 description: 将网页版微信的消息显示在任意页面上
 modified: 2015-06-19 00:34:17 +0800
-tags: [微信, 插件]
+tags: [极客, 产品]
 comments: post-20150129
 ---
 

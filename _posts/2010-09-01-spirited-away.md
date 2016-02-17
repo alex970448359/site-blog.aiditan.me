@@ -3,10 +3,11 @@ layout: post
 title: 神隐少女
 description: 《千与千寻的神隐》主题曲
 modified: 2010-09-01 00:18:59 +0800
-tags: [口琴, 音乐, 电影]
+tags: [演奏, 音乐, 电影]
 image:
   feature: 2010/0901.jpg
 comments: post-20100901
+link: http://movie.mtime.com/11550/
 ---
 
 <div class="am-margin am-text-center">

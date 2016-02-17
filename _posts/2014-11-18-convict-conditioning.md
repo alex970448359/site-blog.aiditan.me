@@ -3,7 +3,7 @@ layout: post
 title: "囚徒健身"
 description: "别只读，要用！"
 modified: 2014-12-06 16:19:47 +0800
-tags: [自我, 读书, 网站]
+tags: [读书, 网站]
 image:
   feature: 2014/1118.jpg
 comments: post-20141118

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 基因山平台上线
+title: 基因山上线
 description: 国内首个基因元件共享平台
 modified: 2016-01-09 22:35:00 +0800
-tags: [网站, 互联网]
+tags: [网站, 产品]
 image:
   feature: 2015/1218.jpg
 comments: post-20151218
