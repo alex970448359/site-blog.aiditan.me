@@ -2,6 +2,9 @@
 layout: page
 title:
 description: 竹杖芒鞋轻胜马
+image:
+  feature: 2014/0911.jpg
+  credit: Aidi Stan
 ---
 
 {% for post in paginator.posts %}
@@ -12,8 +15,8 @@ description: 竹杖芒鞋轻胜马
   </h1>
   {% if post.description %}<p>{{ post.description }}</p>{% endif %}
   <p class="am-article-meta">
-    <span><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y年%-m月%-d日" }}</time></span>
-    <span class="am-fr">{% for tag in post.tags %} <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="am-badge am-round">{{ tag }}</a>{% endfor %}</span>
+    <span>{% for tag in post.tags %} <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="am-badge am-round">{{ tag }}</a>{% endfor %}</span>
+    <span class="am-fr"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y年%-m月%-d日" }}</time></span>
   </p>
 </article>
 {% endfor %}
