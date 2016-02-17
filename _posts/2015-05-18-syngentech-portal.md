@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 合生基因门户网站
-description: 第一个正式上线的商业网站
+description: 我第一个正式上线的商业网站作品
 modified: 2015-06-20 10:48:12 +0800
 tags: [网站]
 image:
