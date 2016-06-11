@@ -42,7 +42,7 @@ namespace :new do
 
     # Generate
     filepath = "_notes/#{path}.md"
-    fail 'Specified directory not exists.' unless Dir.exist?(File.dirname(filepath))
+    raise 'Specified directory not exists.' unless Dir.exist?(File.dirname(filepath))
     puts "#{filepath.inspect} created"
     File.open(filepath, 'w').puts ERB.new(File.read('_templates/note.md.erb')).result(binding)
   end
