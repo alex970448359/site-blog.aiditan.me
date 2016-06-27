@@ -1,3 +1,1 @@
-# Aidi's Blog
-
-Aidi's personal blog
+# Site: Aidi's Blog
