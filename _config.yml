@@ -22,7 +22,7 @@ highlighter: rouge
 
 # Serving
 url:         http://blog.aiditan.me
-baseurl:     http://blog.aiditan.me
+baseurl:     ""
 
 # Outputting
 permalink:   pretty
@@ -30,7 +30,7 @@ timezone:    Asia/Shanghai
 
 # Templating
 title:       Aidi's Blog
-author:      Aidi Stan
+author:      Aidi Tan
 paginate:    10
 duoshuo:     adome
 duoshuo_url: http://blog.aiditan.me
