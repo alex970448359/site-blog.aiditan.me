@@ -1,56 +1,81 @@
 require 'erb'
-
-task default: 'serve:default'
+require 'yaml'
+require 'highline/import'
 
 namespace :serve do
   desc 'Run the server (as: default)'
   task :default do
-    system('bundle exec jekyll serve --watch')
-  end
+    config = YAML.load(File.read('_config.yml'))
 
-  # serve with drafts
-  desc 'Run the server with drafts'
-  task :with_drafts do
-    system('bundle exec jekyll serve --watch --drafts')
+    %w(baidu duoshuo).each do |s|
+      config['service'].delete(s)
+    end
+
+    File.open('__config.yml', 'w') { |fout| fout.puts YAML.dump(config) }
+    system('bundle exec jekyll serve --drafts --config __config.yml')
   end
 end
 
 namespace :new do
-  desc 'Create a new post in _posts'
-  task :post do
-    # Interact
-    puts 'Please specify the filename: ("new-post[.md]" by default)'
-    name = STDIN.gets.chomp
-    name = name.empty? ? 'new-post' : name.gsub(/\.md$/, '')
-    puts 'Please specify the title: ("" by default)'
-    title = STDIN.gets.chomp
-
-    # Generate
-    File.open(
-      "_posts/#{Time.now.strftime('%Y-%m-%d')}-#{name}.md", 'w'
-    ).puts ERB.new(File.read('_templates/post.md.erb')).result(binding)
-  end
-
-  desc 'Create a new note in _notes'
-  task :note do
-    # Interact
-    puts 'Please specify the relative path: ("new-note[.md]" by default)'
-    path = STDIN.gets.chomp
-    path = path.empty? ? 'new-note' : path.gsub(/\.md$/, '')
-    puts 'Please specify the title: ("" by default)'
-    title = STDIN.gets.chomp
-
-    # Generate
-    filepath = "_notes/#{path}.md"
-    raise 'Specified directory not exists.' unless Dir.exist?(File.dirname(filepath))
-    puts "#{filepath.inspect} created"
-    File.open(filepath, 'w').puts ERB.new(File.read('_templates/note.md.erb')).result(binding)
+  desc 'Create a new draft'
+  task :draft do
+    File.open('_drafts/new-draft.md', 'w').puts File.read('_templates/draft.md')
+      .gsub(/^modified:$/, "modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}")
   end
 
   desc 'Create a new page'
   task :page do
-    File.open(
-      'new-page.html', 'w'
-    ).puts ERB.new(File.read('_templates/page.md.erb')).result
+    File.open('new-page.html', 'w').puts File.read('_templates/page.html')
+  end
+
+  desc 'Create a new note'
+  task :note do
+    # Interact
+    path = ask('Please specify the relative path:', -> (str) { str.gsub(/\.md$/, '') }) { |q| q.default = 'new-note' }
+    title = ask('Please specify the title:') { |q| q.default = '' }
+
+    # Generate
+    filepath = "_notes/#{path}.md"
+    raise 'Specified directory not exists.' unless Dir.exist?(File.dirname(filepath))
+    File.open(filepath, 'w').puts <<-END_OF_DOC
+---
+layout:    note
+permalink: /notes/#{path}/
+title:     #{title}
+date:      #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
+modified:  #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
+---
+    END_OF_DOC
+    say "#{filepath.inspect} created"
   end
 end
+
+namespace :publish do
+  desc 'Publish a draft (as :publish)'
+  task :draft do
+    drafts = Dir['_drafts/*.md']
+
+    if drafts.empty?
+      say 'No draft to publish'
+    elsif drafts.size == 1
+      publish_draft(drafts.first)
+    else
+      choose do |menu|
+        menu.prompt = 'Which draft to publish?'
+        drafts.each { |draft| menu.choice(draft) { publish_draft(draft) } }
+      end
+    end
+  end
+
+  def publish_draft(path)
+    File.open(
+      path.gsub(%r{^_drafts/}, "_posts/#{Time.now.strftime('%Y-%m-%d')}-"), 'w'
+    ).puts File.read(path)
+      .gsub(/^modified:[ 0-9\-:+]*$/, "modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}")
+      .gsub(/^comments:$/, "comments: post-#{Time.now.strftime('%Y%m%d')}")
+  end
+end
+
+# Aliases
+task default: 'serve:default'
+task publish: 'publish:draft'

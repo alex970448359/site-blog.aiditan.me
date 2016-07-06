@@ -1,2 +1,15 @@
 Metrics/LineLength:
   Enabled: false
+
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
+
+Style/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Style/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Style/NestedParenthesizedCalls:
+  Exclude:
+    - 'spec/**/*_spec.rb'
