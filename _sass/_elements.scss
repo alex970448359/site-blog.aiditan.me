@@ -57,24 +57,39 @@
   }
 }
 
-#gotop-fixer {
+#navbar-wrapper {
   position: fixed;
   z-index: 9;
   bottom: 0;
 
   width: 100%;
+
+  .am-container {
+    position: relative;
+  }
 }
 
-#gotop-container {
-  position: relative;
+#navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  a {
+    cursor: pointer;
+    box-shadow: 0 0 1px #888, 1px 2px 1px #888;
+  }
 }
 
-#gotop {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-
-  box-shadow: 0 0 3px #888, 2px 3px 1px #888;
+#toc-sidebar {
+  .toc-H2, .toc-H3, .toc-H4, .toc-H5, .toc-H6 {
+    cursor: pointer;
+    color: #ccc;
+  }
+  .toc-H2 { margin-left: 0em; }
+  .toc-H3 { margin-left: 1em; }
+  .toc-H4 { margin-left: 2em; }
+  .toc-H5 { margin-left: 3em; }
+  .toc-H6 { margin-left: 4em; }
 }
 
 #content.post {

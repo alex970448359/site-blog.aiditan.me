@@ -44,8 +44,19 @@
   </div>
 {% endif %}
 
-<div id="gotop-fixer">
-  <div id="gotop-container" class="am-container">
-    <a id="gotop" class="am-icon-btn am-icon-arrow-up am-margin-lg" href="#banner" title="回到顶部" data-am-smooth-scroll style="display: none;"></a>
+<div id="navbar-wrapper">
+  <div class="am-container">
+    <div id="navbar">
+    <a id="top" class="am-icon-btn am-icon-arrow-up am-margin-bottom" href="#banner" title="回到顶部" data-am-smooth-scroll style="display: none"></a>
+    {% if page.toc %}<a id="toc" class="am-icon-btn am-icon-bars am-margin-bottom" title="内容列表" data-am-offcanvas="{target: '#toc-sidebar', effect: 'push'}"></a>{% endif %}
+    </div>
+  </div>
+</div>
+
+<div id="toc-sidebar" class="am-offcanvas">
+  <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+    <div class="am-offcanvas-content">
+      <h3>内容目录</h3>
+    </div>
   </div>
 </div>
