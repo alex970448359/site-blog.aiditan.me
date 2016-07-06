@@ -1,7 +1,5 @@
 <meta charset="utf-8">
 <meta http-equiv="cleartype" content="on">
-<meta name="MobileOptimized" content="320">
-<meta name="HandheldFriendly" content="True">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -10,43 +8,14 @@
 <meta name="keywords" content="{% if page.tags %}{{ page.tags | join: ', ' }}{% endif %}">
 <link href="{{ site.baseurl }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed">
 
-<!-- Set render engine for 360 browser -->
-<meta name="renderer" content="webkit">
-<!-- No Baidu siteapp-->
-<meta http-equiv="Cache-Control" content="no-siteapp"/>
 <!-- Baidu site verification -->
 <meta name="baidu-site-verification" content="dcXVtLtIQN" />
 <!-- Bing site verification -->
 <meta name="msvalidate.01" content="E7BF1E5486657C4EBA604D298447936F" />
 
-<!-- Icons 16x16 -->
+<!-- Icons -->
 <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.ico">
-<!-- Icons 32x32 -->
 <link rel="shortcut icon" href="{{ site.baseurl }}/assets/images/favicon.png">
-
-<!-- Add to homescreen for Chrome on Android -->
-<meta name="mobile-web-app-capable" content="yes">
-<link rel="icon" sizes="192x192" href="{{ site.baseurl }}/assets/images/favicon-256.png">
-
-<!-- Add to homescreen for Safari on iOS -->
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="{{ site.title }}"/>
-<!-- Icons 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" href="{{ site.baseurl }}/assets/images/apple-touch-icon-precomposed.png">
-<!-- Icons 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/assets/images/apple-touch-icon-72x72-precomposed.png">
-<!-- Icons 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/assets/images/apple-touch-icon-114x114-precomposed.png">
-<!-- Icons 144x144 (precomposed) for iPad 3rd and 4th generation -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/assets/images/apple-touch-icon-144x144-precomposed.png">
-
-<!-- Tile icon for Win8 (144x144 + tile color) -->
-<meta name="msapplication-TileImage" content="{{ site.baseurl }}/assets/images/apple-touch-icon-72x72-precomposed.png">
-<meta name="msapplication-TileColor" content="#000000">
-
-<!-- Outdated Browser -->
-<link rel="stylesheet" href="{{ site.baseurl }}/assets/vendor/outdatedbrowser.min.css">
 
 <!-- Amasze UI -->
 <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.0/css/amazeui.min.css">
@@ -55,6 +24,7 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/stylesheets/main.css">
 
 <!-- Baidu Statistics  -->
+{% if site.service.baidu %}
 <script>
   var _hmt = _hmt || [];
   (function() {
@@ -64,6 +34,7 @@
     s.parentNode.insertBefore(hm, s);
   })();
 </script>
+{% endif %}
 
 <!-- Youziku -->
 <script type="text/javascript" src="http://api.youziku.com/webfont/FastJS/yzk_12C4AB2F87FC9AB1"></script>

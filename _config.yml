@@ -32,5 +32,6 @@ timezone:    Asia/Shanghai
 title:       Aidi's Blog
 author:      Aidi Tan
 paginate:    10
-duoshuo:     adome
-duoshuo_url: http://blog.aiditan.me
+service:
+  baidu:     true
+  duoshuo:   adome
