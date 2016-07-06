@@ -3,8 +3,8 @@ layout: post
 title: "天台爱情"
 modified: 2014-07-08 20:19:26 +0800
 tags: [电影, 音乐]
-image:
-  feature: 2013/1001.jpg
+feature:
+  image: 2013/1001.jpg
 comments: post-20131021
 link: http://movie.mtime.com/174731/
 ---

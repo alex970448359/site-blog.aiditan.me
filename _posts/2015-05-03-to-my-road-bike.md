@@ -4,8 +4,8 @@ title: 悼公路赛
 description: 福兮祸兮相倚伏，一蓑烟雨任平生
 modified: 2015-05-03 18:57:01 +0800
 tags: [心情]
-image:
-  feature: 2015/0503.jpg
+feature:
+  image: 2015/0503.jpg
   credit: Aidi Stan
 comments: post-20150503
 ---

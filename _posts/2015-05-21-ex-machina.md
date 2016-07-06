@@ -4,8 +4,8 @@ title: 机械姬
 description:
 modified: 2015-05-21 10:07:52 +0800
 tags: [电影]
-image:
-  feature: 2015/0521.jpg
+feature:
+  image: 2015/0521.jpg
   credit: Mtime
   creditlink: http://movie.mtime.com/58544/posters_and_images/7001186/
 comments: post-20150521

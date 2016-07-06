@@ -3,8 +3,8 @@ layout: post
 title: "總舖師"
 modified: 2014-07-08 21:27:09 +0800
 tags: [电影]
-image:
-  feature: 2014/0120.jpg
+feature:
+  image: 2014/0120.jpg
 comments: post-20140120
 link: http://movie.mtime.com/192197/
 ---

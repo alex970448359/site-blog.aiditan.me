@@ -4,8 +4,8 @@ title: "栖身何处"
 description: "2015寒假随笔，从英雄城和英雄车说起。"
 modified: 2015-02-16 22:23:35 +0800
 tags: [心情]
-image:
-  feature: 2015/0216.jpg
+feature:
+  image: 2015/0216.jpg
   credit: Lidi Stan
   creditlink: http://www.cd-pa.com/bbs/?16981
 comments: post-20150216

@@ -4,8 +4,8 @@ title: "催眠大师"
 description: "我不在乎我看见什么，关键是我为什么会看见。"
 modified: 2014-09-28 01:02:22 +0800
 tags: [电影]
-image:
-  feature: 2014/0801.jpg
+feature:
+  image: 2014/0801.jpg
   credit: 时光网
   creditlink: http://movie.mtime.com/208906/posters_and_images/2393047/
 comments: post-20140823

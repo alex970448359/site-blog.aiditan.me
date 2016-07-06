@@ -4,8 +4,8 @@ title: 白日梦想家
 description: The Secret Life of Walter Mitty
 modified: 2015-10-04 13:25:25 +0800
 tags: [电影]
-image:
-  feature: 2015/1004.jpg
+feature:
+  image: 2015/1004.jpg
 comments: post-20151004
 link: http://movie.mtime.com/21250/
 ---

@@ -4,8 +4,8 @@ title: "宿醉"
 description: "宿醉真的会一团糟..."
 modified: 2014-11-12 13:18:44 +0800
 tags: [电影]
-image:
-  feature: 2014/1112.jpg
+feature:
+  image: 2014/1112.jpg
 comments: post-20141112
 link: http://movie.mtime.com/94571/
 ---

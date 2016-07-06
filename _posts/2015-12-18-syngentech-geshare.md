@@ -4,8 +4,8 @@ title: 基因山上线
 description: 国内首个基因元件共享平台
 modified: 2016-01-09 22:35:00 +0800
 tags: [网站, 产品]
-image:
-  feature: 2015/1218.jpg
+feature:
+  image: 2015/1218.jpg
 comments: post-20151218
 link: http://www.geshare.com.cn
 ---

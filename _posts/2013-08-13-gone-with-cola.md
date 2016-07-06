@@ -4,8 +4,8 @@ title: "可乐随想"
 description: "累的时候，想要的其实是可乐和简单的生活。"
 modified: 2014-10-23 12:28:17 +0800
 tags: [心情]
-image:
-  feature: 2013/0801.jpg
+feature:
+  image: 2013/0801.jpg
 comments: post-20130813
 ---
 

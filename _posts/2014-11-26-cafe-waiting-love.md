@@ -4,8 +4,8 @@ title: "等一个人咖啡"
 description: "一部小清新的爱情童话。"
 modified: 2014-11-26 17:34:43 +0800
 tags: [电影]
-image:
-  feature: 2014/1126.jpg
+feature:
+  image: 2014/1126.jpg
 comments: post-20141126
 link: http://movie.mtime.com/212030/
 ---

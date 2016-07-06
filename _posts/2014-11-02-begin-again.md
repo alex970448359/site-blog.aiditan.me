@@ -4,8 +4,8 @@ title: "歌曲改变人生"
 description: "有些事可以重新开始，有些不能；有些人在意孰优孰劣，有些只看是否合适。"
 modified: 2014-11-02 18:04:54 +0800
 tags: [电影, 音乐]
-image:
-  feature: 2014/1102.jpg
+feature:
+  image: 2014/1102.jpg
 comments: post-20141102
 link: http://movie.mtime.com/161400/
 ---
