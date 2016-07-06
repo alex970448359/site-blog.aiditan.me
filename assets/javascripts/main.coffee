@@ -42,7 +42,7 @@ $(->
     .add($('.feature-trigger'))
     .add($('.feature-trigger span'))
     .hide()
-  $('#feature img').load ->
+  $('#feature img').one 'load', ->
     feature = $('#feature')
 
     # Triggers
@@ -90,6 +90,7 @@ $(->
           feature.css 'background-position',
             "50% #{(backfeatureH - image.height*ratio)/2 - offset}px"
         .trigger('scroll')
+  $('#feature img').each -> $(this).load() if this.complete
 
   # Component: #gotop
   $('#banner').waypoint
