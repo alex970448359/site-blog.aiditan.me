@@ -1,4 +1,4 @@
-require 'erb'
+require 'date'
 require 'yaml'
 require 'highline/import'
 
@@ -68,11 +68,15 @@ namespace :publish do
   end
 
   def publish_draft(path)
+    time = ask('At which date?', -> (str) { DateTime.parse(str + ' +0800').to_time }) { |q| q.default = Time.now.to_s }
+
     File.open(
-      path.gsub(%r{^_drafts/}, "_posts/#{Time.now.strftime('%Y-%m-%d')}-"), 'w'
+      path.gsub(%r{^_drafts/}, "_posts/#{time.strftime('%Y-%m-%d')}-"), 'w'
     ).puts File.read(path)
-      .gsub(/^modified:[ 0-9\-:+]*$/, "modified: #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}")
-      .gsub(/^comments:$/, "comments: post-#{Time.now.strftime('%Y%m%d')}")
+      .gsub(/^modified:[ 0-9\-:+]*$/, "modified: #{time.strftime('%Y-%m-%d %H:%M:%S %z')}")
+      .gsub(/^comments:$/, "comments: post-#{time.strftime('%Y%m%d')}")
+
+    File.unlink(path)
   end
 end
 
