@@ -7,7 +7,7 @@ namespace :serve do
   task :default do
     config = YAML.load(File.read('_config.yml'))
 
-    %w(baidu duoshuo).each do |s|
+    %w(baidu uyan_uid).each do |s|
       config['service'].delete(s)
     end
 

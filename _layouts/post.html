@@ -31,19 +31,9 @@ layout: default
       </span>
     </div>
 
-    <!-- 多说分享与评论 -->
-    {% if site.service.duoshuo and page.comments %}
-    <div class="ds-share flat" data-thread-key="{{ page.comments }}" data-title="{{ page.title }}" data-images="{{ site.baseurl }}/assets/images/{{ page.feature.image }}" data-content="{{ page.description }}" data-url="{{ site.url }}{{ page.url }}">
-      <div class="ds-share-inline">
-        <div class="ds-share-icons am-link-muted">
-          <a class="ds-wechat am-icon-wechat am-icon-md" href="javascript:void(0);" data-service="wechat"></a>
-          <a class="ds-qqt am-icon-qq am-icon-md" href="javascript:void(0);" data-service="qqt"></a>
-          <a class="ds-weibo am-icon-weibo am-icon-md" href="javascript:void(0);" data-service="weibo"></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="ds-thread" data-thread-key="{{ page.comments }}" data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}"></div>
+    {% if site.service.uyan_uid and page.comments %}
+    <hr>
+    <div id="uyan_frame"></div>
     {% endif %}
 
   </article>

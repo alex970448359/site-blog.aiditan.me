@@ -21,18 +21,19 @@
 <!-- Main JS -->
 <script src="{{ site.baseurl }}/assets/javascripts/main.js"></script>
 
-<!-- 多说公共JS代码 -->
-{% if site.service.duoshuo and page.comments %}
+<!-- 友言 -->
+{% if site.service.uyan_uid and page.comments %}
 <script type="text/javascript">
-  var duoshuoQuery = {short_name:"{{ site.service.duoshuo }}"};
-  (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
+var uyan_config = {
+  'title': '{{ page.title }}',
+  'url': '{{ site.url }}{{ page.url }}',
+  {% if page.feature.image %}
+  'pic': '{{ site.url }}/assets/images/{{ page.feature.image }}',
+  {% endif %}
+  'su': '{{ page.comments }}'
+};
 </script>
+<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid={{ site.service.uyan_uid }}"></script>
 {% endif %}
 
 <!-- MathJax -->

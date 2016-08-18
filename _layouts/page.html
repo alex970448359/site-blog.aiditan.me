@@ -6,8 +6,8 @@ layout: default
 
   {{ content }}
 
-  <!-- 多说评论框 -->
-  {% if site.service.duoshuo and page.comments %}
-  <div class="ds-thread" data-thread-key="{{ page.comments }} " data-title="{{ page.title }}" data-url="{{ site.url }}{{ page.url }}"></div>
+  {% if site.service.uyan_uid and page.comments %}
+  <div id="uyan_frame"></div>
   {% endif %}
+
 </div>
