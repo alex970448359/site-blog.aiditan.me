@@ -94,4 +94,29 @@
 
 #content.post {
   .am-article-bd > p { text-indent: 2em; }
+
+  .jiathis_style_32x32 {
+    border-bottom: 1px solid #E5E5E5 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    border-top: 1px solid #E5E5E5 !important;
+    margin: 20px 0;
+    text-align: center;
+
+    > a {
+      padding: 20px 30px;
+      margin-bottom: 3px;
+
+      cursor: pointer;
+
+      &:hover {
+        margin-bottom: 0;
+        border-bottom: 3px solid #0F9AE0;
+      }
+    }
+
+    .jtico {
+      display: none !important;
+    }
+  }
 }
