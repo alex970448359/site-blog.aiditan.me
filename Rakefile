@@ -3,7 +3,6 @@ require 'yaml'
 require 'highline/import'
 
 namespace :serve do
-  desc 'Run the server (as: default)'
   task :default do
     config = YAML.load(File.read('_config.yml'))
 
@@ -31,7 +30,10 @@ namespace :new do
   desc 'Create a new note'
   task :note do
     # Interact
-    path = ask('Please specify the relative path:', -> (str) { str.gsub(/\.md$/, '') }) { |q| q.default = 'new-note' }
+    path = ask(
+      'Please specify the relative path:',
+      ->(str) { str.gsub(/\.md$/, '') }
+    ) { |q| q.default = 'new-note' }
     title = ask('Please specify the title:') { |q| q.default = '' }
 
     # Generate
@@ -51,7 +53,6 @@ modified:  #{Time.now.strftime('%Y-%m-%d %H:%M:%S %z')}
 end
 
 namespace :publish do
-  desc 'Publish a draft (as :publish)'
   task :draft do
     drafts = Dir['_drafts/*.md']
 
@@ -62,24 +63,37 @@ namespace :publish do
     else
       choose do |menu|
         menu.prompt = 'Which draft to publish?'
-        drafts.each { |draft| menu.choice(draft) { publish_draft(draft) } }
+        drafts.each do |draft|
+          menu.choice(draft) { publish_draft(draft) }
+        end
       end
     end
   end
 
-  def publish_draft(path)
-    time = ask('At which date?', -> (str) { DateTime.parse(str + ' +0800').to_time }) { |q| q.default = Time.now.to_s }
-
-    File.open(
-      path.gsub(%r{^_drafts/}, "_posts/#{time.strftime('%Y-%m-%d')}-"), 'w'
-    ).puts File.read(path)
+  def publish_draft(path, time = ask_date)
+    File.open(path.gsub(%r{^_drafts/}, "_posts/#{time.strftime('%Y-%m-%d')}-"), 'w').puts File.read(path)
       .gsub(/^modified:[ 0-9\-:+]*$/, "modified: #{time.strftime('%Y-%m-%d %H:%M:%S %z')}")
       .gsub(/^comments:$/, "comments: post-#{time.strftime('%Y%m%d')}")
 
     File.unlink(path)
   end
+
+  def ask_date
+    ask(
+      'At which date?',
+      ->(str) { DateTime.parse(str + ' +0800').to_time }
+    ) { |q| q.default = Time.now.to_s }
+  end
 end
 
+#
 # Aliases
-task default: 'serve:default'
+#
+
+task default: :serve
+
+desc 'Run the server (as: default)'
+task serve: 'serve:default'
+
+desc 'Publish a draft'
 task publish: 'publish:draft'
