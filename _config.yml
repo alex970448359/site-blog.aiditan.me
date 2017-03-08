@@ -36,4 +36,4 @@ service:
   baidu:     true
   uyan_uid:  1820817
 
-theme: jekyll-theme-slate
+theme: jekyll-theme-minimal
